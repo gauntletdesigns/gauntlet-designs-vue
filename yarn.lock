@@ -5268,6 +5268,9 @@ vue-cli-plugin-bootstrap@~0.4.0:
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-bootstrap/-/vue-cli-plugin-bootstrap-0.4.0.tgz#bb4af09ea846afb7df6e52fb588a8b08485aa5a1"
   integrity sha512-otHhgK8dL9kwXk+fDetxPMlUo6A1thoYuJCiO4JrQr26Ok/y4Lx24uJ2VX2dv6T/G5XQZZYSkEMtWnTBFv2GUA==
 
+vue-cli-plugin-modern@../vue-cli-plugin-modern:
+  version "1.0.0"
+
 vue-functional-data-merge@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-3.1.0.tgz#08a7797583b7f35680587f8a1d51d729aa1dc657"
