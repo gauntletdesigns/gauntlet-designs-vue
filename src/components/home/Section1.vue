@@ -2,7 +2,7 @@
   <div class="outer">
 
     <b-container class="d-flex align-items-center flex-column section">
-      <Logo class="my-5"/>
+      <Logo class="my-5" large text/>
       <h2>
         Gauntlet Designs
       </h2>

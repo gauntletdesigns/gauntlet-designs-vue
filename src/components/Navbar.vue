@@ -32,4 +32,8 @@ export default {
  .nav-item {
    border-top: 3px solid $primary;
  }
+
+ h1 {
+   margin-bottom: unset;
+ }
 </style>
