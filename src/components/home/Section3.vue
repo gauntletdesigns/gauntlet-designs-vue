@@ -4,7 +4,7 @@
       <h2>Consulting</h2>
       <div>
         Don't need a website, but instead looking for expertise and assistance for your existing web infrastructure? We can help with
-        that two. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern Javascript
+        that to. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern Javascript
         frameworks, and web application backends.
       </div>
     </b-container>
