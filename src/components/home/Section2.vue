@@ -1,11 +1,11 @@
 <template>
   <div class="outer">
     <b-container class="d-flex flex-column align-items-center section py-5">
-      <h2 class="">Section 2</h2>
+      <h2 class="">We Make It Simple</h2>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores aut delectus dolorum, eligendi
-        enim, illum, molestiae mollitia necessitatibus nemo numquam omnis perferendis provident quisquam sit tempore
-        tenetur voluptates? Vitae.
+        Building a website is hard and time consuming. Let us take all the hard work off your hands.
+        We work with you to make sure that you get the stunning website that you want, while still having time to do
+        what matters most to you, running your business!.
       </div>
     </b-container>
   </div>

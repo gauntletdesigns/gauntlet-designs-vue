@@ -1,11 +1,11 @@
 <template>
   <div class="outer">
     <b-container class="d-flex flex-column align-items-center py-5">
-      <h2>Section 3</h2>
+      <h2>Consulting</h2>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque esse fugit laboriosam perferendis porro
-        repellat sed! Ipsam iure mollitia placeat quam reiciendis similique soluta? Alias cupiditate est nostrum sit
-        voluptatibus.
+        Don't need a website, but instead looking for expertise and assistance for your existing web infrastructure? We can help with
+        that two. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern Javascript
+        frameworks, and web application backends.
       </div>
     </b-container>
   </div>
