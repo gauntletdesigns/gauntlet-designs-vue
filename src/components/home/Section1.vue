@@ -4,11 +4,12 @@
     <b-container class="d-flex align-items-center flex-column section">
       <Logo class="my-5"/>
       <h2>
-        Business Name
+        Gauntlet Designs
       </h2>
       <p class="my-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea ex exercitationem fuga iure odio quae
-        ratione reprehenderit sequi vitae! Earum ipsam laboriosam necessitatibus neque possimus quis sapiente sed sunt.
+        Welcome to Gauntlet Designs. We design, build, and host custom websites to fit your needs. Be that a small
+        family owned business, or a enterprise looking to expand. We are a female owned business located in the DC Metro
+        Area. Our products are clean, light, responsive and fully customizable to meet your business needs.
       </p>
       <home-trinity class="my-3"/>
     </b-container>
