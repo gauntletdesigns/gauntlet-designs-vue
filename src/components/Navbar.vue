@@ -1,12 +1,9 @@
 <template>
-  <b-navbar variant="primary" type="dark" toggleable="lg">
+  <b-navbar sticky variant="danger" type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
-
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
     <b-collapse id="nav-collapse" is-nav>
-
-      <b-navbar-nav class="ml-auto">
+      <b-navbar-nav class="mr-auto">
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'home'}">Home</b-nav-item>
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'services'}">Services</b-nav-item>
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'about'}">About</b-nav-item>
@@ -26,11 +23,15 @@ export default {
 
 <style scoped lang="scss">
  .nav-item:hover, .nav-item:active {
-    border-top: 3px solid $info;
+    border-bottom: 3px solid $info;
  }
 
  .nav-item {
-   border-top: 3px solid $primary;
+   border-bottom: 3px solid $danger;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 10px;
  }
 
  h1 {

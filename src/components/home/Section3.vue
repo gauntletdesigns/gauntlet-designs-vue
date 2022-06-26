@@ -1,8 +1,8 @@
 <template>
   <div class="outer">
-    <b-container class="d-flex flex-column align-items-center py-5">
-      <h2>Consulting</h2>
-      <div>
+    <b-container class="d-flex flex-column align-items-left">
+      <h2 class="text">Consulting</h2>
+      <div class="text">
         Don't need a website, but instead looking for expertise and assistance for your existing web infrastructure? We
         can help with that to. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern
         Javascript frameworks, and web application backends.
@@ -20,5 +20,15 @@ export default {
 <style scoped lang="scss">
 .outer {
   background-color: $background;
+  padding: 60px 0px 60px 60px;
 }
+
+.text {
+  color: $light-text;
+  text-align: left;
+  max-width: 60%;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 </style>
