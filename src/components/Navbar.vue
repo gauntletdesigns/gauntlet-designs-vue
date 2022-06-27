@@ -29,9 +29,10 @@ export default {
  .nav-item {
    border-bottom: 3px solid $danger;
    font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
+   font-weight: bold;
+   font-size: 16px;
    text-transform: uppercase;
-   letter-spacing: 10px;
+   letter-spacing: 8px;
  }
 
  h1 {

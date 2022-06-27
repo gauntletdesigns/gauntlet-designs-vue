@@ -24,9 +24,9 @@ export default {
 }
 
 .text {
-  color: $light-text;
+  color: $dark-text;
   text-align: left;
-  max-width: 60%;
+  max-width: 40%;
   font-family: 'Montserrat', sans-serif;
 
 }

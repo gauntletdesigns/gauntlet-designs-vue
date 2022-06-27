@@ -33,19 +33,21 @@ export default {
 .triplet {
   width: 300px;
   text-align: center;
-  color: $light-text;
+  color: $dark-text;
   font-family: 'Montserrat', sans-serif;
-
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
+
 
 .icon-circle {
   width: 40px;
   height: 40px;
-  color: $info;
+  color: $primary;
 }
 
 .title {
-  color: $info;
+  color: $primary;
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
