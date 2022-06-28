@@ -1,20 +1,12 @@
 <template>
   <div class="outer">
-    <b-container class="d-flex align-items-center flex-column">
+    <b-container class="container d-flex align-items-center flex-row">
       <div class="intro d-flex flex-column align-items-left">
       <h2 class="headline">
         Gauntlet Designs
       </h2>
+        <p CLASS="subtext">AND DEVELOPMENT</p>
         <p class="tagline">Design. Build. Maintain</p>
-      <p class="text">
-        Welcome to Gauntlet Designs. We design, build, and host custom websites to fit your needs. Be that a small
-        family owned business, or a enterprise looking to expand. We are a female owned business located in the DC Metro
-        Area. Our products are clean, light, responsive and fully customizable to meet your business needs.
-      </p>
-      </div>
-
-      <div>
-        <b-img></b-img>
       </div>
     </b-container>
       <Navbar/>
@@ -34,17 +26,33 @@ export default {
 
 <style scoped lang="scss">
 .outer {
-  background-color: $background-accent;
+  background-image: url("../../assets/blue.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+ padding-top: 50px;
+ margin-bottom: 40vh;
 }
 
 .text {
   color: $light-text;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 40px;
+  max-width: 500px;
+}
+
+.subtext {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 8px;
+  padding-bottom: 20px;
 }
 
 .headline {
-  padding-top: 60px;
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 10px;
@@ -54,6 +62,7 @@ export default {
   font-size: 20px;
   padding-bottom: 40px;
   color: $info;
+  font-weight: bold;
 }
 
 .intro {

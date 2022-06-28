@@ -1,7 +1,8 @@
 $primary: #606472;
-$secondary: #2a7ea8;
-$info: #BAD4EB;
-$danger: rgba(92, 176, 248, 0.4);
+$secondary: #5CB0F8;
+$secondary-light: #90ccff;
+$secondary-transparent: rgba(92, 176, 248, 0.54);
+$accent: #b22650;
 
 // background-colors
 $background: #F2F4F7;
@@ -13,4 +14,7 @@ $light-text: #789FC1;
 $dark-text: #141517;
 
 //Font
+
+//Bootstrap Mods
+$info: $secondary-light;
 

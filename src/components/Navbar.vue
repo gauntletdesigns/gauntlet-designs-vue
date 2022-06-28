@@ -1,5 +1,5 @@
 <template>
-  <b-navbar sticky variant="danger" type="dark" toggleable="lg">
+  <b-navbar class="navbar"sticky type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
@@ -23,13 +23,12 @@ export default {
 
 <style scoped lang="scss">
  .nav-item:hover, .nav-item:active {
-    border-bottom: 3px solid $info;
+    border-bottom: 3px solid $accent;
  }
 
  .nav-item {
-   border-bottom: 3px solid $danger;
+   border-bottom: 3px solid transparent;
    font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
    font-size: 16px;
    text-transform: uppercase;
    letter-spacing: 8px;
@@ -37,5 +36,9 @@ export default {
 
  h1 {
    margin-bottom: unset;
+ }
+
+ .navbar {
+   background-color: $secondary-transparent;
  }
 </style>
