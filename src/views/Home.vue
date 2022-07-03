@@ -1,15 +1,17 @@
 <template>
   <div>
     <Section1 />
-    <div class="d-flex">
-      <div>
+    <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
+      <div class="sections">
         <section4 />
         <Section2 />
         <Section3 />
       </div>
-      <Logo class="logo" text />
+      <div class="logo d-flex align-self-center">
+      <Logo large text />
+      </div>
     </div>
-    <home-trinity />
+    <home-trinity class="trinity" />
   </div>
 </template>
 
@@ -31,8 +33,16 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.sections {
+  width: 700px;
+}
+
 .logo {
-  width: 100%;
-  height: auto;
+  padding-top: 30px;
+}
+
+.trinity {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 </style>

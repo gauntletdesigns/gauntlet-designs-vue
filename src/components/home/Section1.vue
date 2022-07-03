@@ -43,7 +43,6 @@ export default {
   color: $light-text;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 40px;
-  max-width: 500px;
 }
 
 .subtext {

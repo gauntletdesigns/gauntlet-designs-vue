@@ -31,7 +31,7 @@ export default {
 
 <style scoped lang="scss">
   .large {
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .small {
