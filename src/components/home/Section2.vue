@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 .outer {
   background-color: $background;
-  padding: 60px 0px 30px 60px;
+  padding: 60px 0px 30px 0px;
 }
 
 .text {

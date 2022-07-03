@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="navbar"sticky type="dark" toggleable="lg">
+  <b-navbar class="navbar" sticky type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>

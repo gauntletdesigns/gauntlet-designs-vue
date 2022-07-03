@@ -1,7 +1,7 @@
 <template>
-  <div class="outer">
-    <b-container class="container d-flex align-items-center flex-row">
-      <div class="intro d-flex flex-column align-items-left">
+  <div class="background">
+    <b-container class="header-container d-flex flex-column align-items-left">
+      <div class="intro">
       <h2 class="headline">
         Gauntlet Designs
       </h2>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.outer {
+.background {
   background-image: url("../../assets/blue.jpg");
   min-height: 600px;
   background-attachment: fixed;
@@ -34,7 +34,7 @@ export default {
   background-size: cover;
 }
 
-.container {
+.header-container {
  padding-top: 50px;
  margin-bottom: 40vh;
 }
