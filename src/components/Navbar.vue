@@ -1,4 +1,5 @@
 <template>
+  <div :class="!$route.home ? 'dark-background' : ''">
   <b-navbar class="navbar" sticky type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -11,6 +12,8 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+
+  </div>
 </template>
 
 <script>
@@ -36,6 +39,10 @@ export default {
 
  h1 {
    margin-bottom: unset;
+ }
+
+ .dark-background {
+   background-color: #141517;
  }
 
  .navbar {
