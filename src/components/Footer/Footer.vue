@@ -2,17 +2,15 @@
   <div class="footer d-flex flex-wrap align-items-center justify-content-between">
 
     <div>
-      <p class="contact">Contact</p>
-      <p>804-909-4118</p>
-      <p>afton@gauntletdesigns.com</p>
+      <p>(571) 303-9811</p>
       <p>Herndon, VA 20170</p>
+      <a class="email" href="mailto:afton.gauntlett@gmail.com">Email Us</a>
     </div>
 
-    <div>
-      <Logo class="mx-auto" />
-      <GauntletDesignsPlug class="ml-auto mr-3 align-self-end" />
+    <div class="footer-logo">
+      <Logo class="logo" />
       <p class="copyright">
-        &copy; Copyright {{ new Date().getFullYear() }} Gauntlet Designs
+        &copy; Copyright {{ new Date().getFullYear() }} built by Gauntlet Designs
       </p>
     </div>
 
@@ -35,7 +33,7 @@ export default {
 .footer {
   background-color: $primary;
   min-height: 50px;
-  color: $light-text;
+  color: #c7c7c7;
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -43,11 +41,19 @@ export default {
 
 .copyright {
   padding-top: 20px;
+  font-size: 14px;
 }
 
-.contact  {
-  font-size: 20px;
-  font-weight: bold;
-  color: $info;
+.footer-logo {
+  text-align: center;
 }
+
+.logo {
+  max-width: 115px;
+}
+
+.email {
+  color: $secondary-light;
+}
+
 </style>

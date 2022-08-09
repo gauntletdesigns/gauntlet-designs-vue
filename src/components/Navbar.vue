@@ -23,10 +23,9 @@ export default {
   components: {Logo}
 }
 </script>
-
 <style scoped lang="scss">
  .nav-item:hover, .nav-item:active {
-    border-bottom: 3px solid $accent;
+    border-bottom: 3px solid $accent-light;
  }
 
  .nav-item {

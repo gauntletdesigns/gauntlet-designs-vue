@@ -6,7 +6,6 @@
         Gauntlet Designs
       </h2>
         <p CLASS="subtext">AND DEVELOPMENT</p>
-        <p class="tagline">Design. Build. Maintain</p>
       </div>
     </b-container>
       <Navbar/>
