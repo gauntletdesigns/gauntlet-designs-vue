@@ -1,7 +1,7 @@
 import Home from '@/views/Home';
-import About from '@/views/About';
 import Contact from '@/views/Contact';
 import Services from '@/views/Services';
+import OurWork from "@/views/OurWork";
 export default [
     {
         path: '/',
@@ -9,9 +9,9 @@ export default [
         component: Home,
     },
     {
-        path: '/about',
-        name: 'about',
-        component: About,
+        path: '/our_work',
+        name: 'ourWork',
+        component: OurWork,
     },
     {
         path: '/contact',
