@@ -9,13 +9,28 @@ name: Deploy to Firebase Hosting on merge
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      USE_SECRETS: true
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
-      - run: npm run build
+
+      - name: Setup Node Env
+        run: npm install
+
+      - name: Setup Firebase Config
+        env:
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
+        run: |
+          echo export default $FIREBASE_CONFIG $gt;$gt; .firebase.conf.js 
+
+      - name: Build for production
+        with:
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
+        run: npm run build
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
