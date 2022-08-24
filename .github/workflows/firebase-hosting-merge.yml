@@ -17,14 +17,16 @@ jobs:
         with:
           node-version: 16
 
-      - name: Setup Node Env
-        run: npm install
-
       - name: Setup Firebase Config
         env:
           FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
         run: |
-          echo export default $FIREBASE_CONFIG $gt;$gt; .firebase.conf.js 
+          touch .firebase.conf.js
+          echo "export default ${$FIREBASE_CONFIG}" $gt;$gt; .firebase.conf.js 
+
+      - name: Setup Node Env
+        run: npm install
+
 
       - name: Build for production
         run: npm run build
