@@ -22,7 +22,7 @@ jobs:
           FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
         run: |
           touch .firebase.conf.js
-          echo "export default $FIREBASE_CONFIG" $gt;$gt; .firebase.conf.js 
+          echo "export default $FIREBASE_CONFIG $gt;$gt; .firebase.conf.js" 
 
       - name: Setup Node Env
         run: npm install
