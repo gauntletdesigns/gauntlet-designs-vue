@@ -1,6 +1,6 @@
 <template>
-  <div class="background">
-    <b-container class="header-container d-flex flex-column align-items-left">
+  <div class="background d-flex flex-column">
+    <b-container class="header-container d-flex flex-column align-items-left mb-auto">
       <div class="intro">
       <h2 class="headline">
         Gauntlet Designs
@@ -8,7 +8,7 @@
         <p CLASS="subtext">AND DEVELOPMENT</p>
       </div>
     </b-container>
-      <Navbar/>
+    <Navbar/>
   </div>
 </template>
 
@@ -35,7 +35,6 @@ export default {
 
 .header-container {
  padding-top: 50px;
- margin-bottom: 40vh;
 }
 
 .text {

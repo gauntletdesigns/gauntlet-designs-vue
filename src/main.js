@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 
-import firebaseConfig from "../.firebase.conf.js"
+import firebaseConfig from "../.firebase.conf.json"
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);

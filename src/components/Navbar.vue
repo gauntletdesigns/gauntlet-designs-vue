@@ -1,5 +1,5 @@
 <template>
-  <div :class="!$route.home ? 'dark-background' : ''">
+  <div :class="!$route.name !== 'home' ? 'dark-background' : 'mt-auto'">
   <b-navbar class="navbar" sticky type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
