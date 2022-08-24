@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="d-flex flex-column layout">
     <Navbar v-if="$route.name != 'home'"/>
-    <div class="app-container">
+    <div class="app-container h-100">
       <router-view/>
     </div>
     <Footer class="mt-auto"/>

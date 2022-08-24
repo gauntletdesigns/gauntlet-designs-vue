@@ -1,32 +1,37 @@
 <template>
   <b-container class="pt-5">
     <h2>What we Offer</h2>
-    <Design/>
-    <Development/>
-    <Hosting/>
-    <Maintenance/>
-    <Contracting/>
+    <div class="large-container d-none d-md-block">
+      <LargeServices :services="services"/>
+    </div>
   </b-container>
 </template>
 
 <script>
-import Design from "@/components/Services/Design";
-import Development from "@/components/Services/Development";
-import Hosting from "@/components/Services/Hosting";
-import Maintenance from "@/components/Services/Maintenance";
-import Contracting from "@/components/Services/Contracting";
+import services from '@/assets/Services';
+import LargeServices from "@/components/Services/LargeServices";
 export default {
   name: "Services",
-  components: {Contracting, Maintenance, Hosting, Development, Design}
-
+  components: {LargeServices},
+  computed: {
+    services(){
+      return services;
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
+h2{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: $primary;
+}
 
- /deep/ p {
-  max-width: 600px;
+.large-container{
+
 }
 
 </style>
