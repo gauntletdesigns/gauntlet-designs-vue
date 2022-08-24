@@ -7,6 +7,7 @@
           class="service-btn my-1"
           :class="{active: service.name === active}"
           @click="() => {selectService(service)}"
+          :key="service.name"
       >
         {{ service.name }}
       </b-btn>
@@ -14,7 +15,7 @@
     <b-col cols="8" class="d-flex justify-content-start h-100 flex-column selection">
       <div class="description-section" aria-live="polite">
         <h3>{{active}}</h3>
-        <p v-for="paragraph in paragraphs">
+        <p v-for="(paragraph, id) in paragraphs" :key="`${active}${id}}`">
           {{ paragraph }}
         </p>
       </div>
