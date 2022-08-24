@@ -8,7 +8,8 @@
         v-for="service in services"
         class="service-btn my-1"
         :class="{ active: service.name === active }"
-        @click="() => { selectService(service);}":key="service.name"
+        @click="() => { selectService(service);}"
+          :key="service.name"
       >
         {{ service.name }}
       </b-btn>
