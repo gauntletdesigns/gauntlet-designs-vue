@@ -27,11 +27,8 @@ jobs:
           echo export default $FIREBASE_CONFIG $gt;$gt; .firebase.conf.js 
 
       - name: Build for production
-        with:
-          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
         run: npm run build
-
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GAUNTLETT_DESIGN }}'
