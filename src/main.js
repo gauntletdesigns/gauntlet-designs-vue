@@ -7,6 +7,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+
+import firebaseConfig from "../.firebase.conf.js"
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 new Vue({
   router,
   render: h => h(App)
