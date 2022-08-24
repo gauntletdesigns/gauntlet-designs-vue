@@ -11,7 +11,7 @@
         {{ service.name }}
       </b-btn>
     </b-col>
-    <b-col cols="8" class="d-flex justify-content-center h-100 flex-column selection">
+    <b-col cols="8" class="d-flex justify-content-start h-100 flex-column selection">
       <div class="description-section" aria-live="polite">
         <h3>{{active}}</h3>
         <p v-for="paragraph in paragraphs">
@@ -29,7 +29,8 @@ export default {
   data() {
     return {
       paragraphs: this.services[0]?.paragraphs,
-      active: this.services[0]?.name
+      active: this.services[0]?.name,
+      showCollapse: true
     }
   },
   methods: {
@@ -45,6 +46,12 @@ export default {
 .service-btn {
   display: block;
   font-size: 24px;
+  :focus {
+  }
+}
+.service-btn:focus {
+    box-shadow: unset !important;
+
 }
 
 .active {
@@ -52,9 +59,8 @@ export default {
 }
 
 .description-section {
-  background-color: $background-accent;
   padding: 20px;
-  color: $light-text;
+  color: $dark-text;
 }
 
 .selection {

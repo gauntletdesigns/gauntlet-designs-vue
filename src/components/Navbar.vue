@@ -41,10 +41,11 @@ export default {
  }
 
  .dark-background {
-   background-color: #141517;
+   background-color: $background-accent;
  }
 
  .navbar {
    background-color: $secondary-transparent;
+   color: $light-text;
  }
 </style>

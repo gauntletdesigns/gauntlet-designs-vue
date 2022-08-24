@@ -1,8 +1,11 @@
 <template>
   <b-container class="pt-5">
     <h2>What we Offer</h2>
-    <div class="large-container d-none d-md-block">
+    <div class="large-container d-none d-lg-block">
       <LargeServices :services="services"/>
+    </div>
+    <div class="d-block d-lg-none">
+      <SmallServices :services="services"/>
     </div>
   </b-container>
 </template>
@@ -10,9 +13,10 @@
 <script>
 import services from '@/assets/Services';
 import LargeServices from "@/components/Services/LargeServices";
+import SmallServices from "@/components/Services/SmallServices";
 export default {
   name: "Services",
-  components: {LargeServices},
+  components: {SmallServices, LargeServices},
   computed: {
     services(){
       return services;
