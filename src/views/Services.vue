@@ -34,8 +34,4 @@ h2{
   color: $primary;
 }
 
-.large-container{
-
-}
-
 </style>
