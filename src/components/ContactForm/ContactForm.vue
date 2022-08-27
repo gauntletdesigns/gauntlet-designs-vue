@@ -22,6 +22,12 @@
 import NameInput from "@/components/ContactForm/NameInput";
 import EmailInput from "@/components/ContactForm/EmailInput";
 import DescriptionInput from "@/components/ContactForm/DescriptionInput";
+import {
+  collection,
+  doc,
+  setDoc,
+  getFirestore,
+} from 'firebase/firestore';
 
 export default {
   name: "ContactForm",
@@ -34,6 +40,17 @@ export default {
   methods: {
     onSubmit(event){
       event.preventDefault();
+      const newEmailRef = doc(collection(getFirestore(), 'mail'))
+      let form = this.form;
+      setDoc(newEmailRef, {
+        to: ['contact@gauntletdesigns.com'],
+        message: {
+          subject: `New Contact Us Submission from ${form.name}`,
+          html: `<h1>Submission From ${form.name}</h1><p>${form.email}</p><p>${form.description}</p> `
+        }
+      }).then(() => {
+        alert('submit')
+      })
     },
     onReset(event){
       this.form = {};
