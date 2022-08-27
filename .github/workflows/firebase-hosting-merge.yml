@@ -17,18 +17,13 @@ jobs:
         with:
           node-version: 16
 
-      - name: Setup Firebase Config
-        env:
-          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONF }}
-        run: |
-          touch .firebase.conf.json
-          echo "$FIREBASE_CONFIG >> .firebase.conf.json "
-
       - name: Setup Node Env
         run: npm install
 
 
       - name: Build for production
+        env:
+          FIREBASE_CONFIG: ${{secrets.FIREBASE_CONF}}
         run: npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
