@@ -13,14 +13,8 @@ import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import firebaseConfig from "../.firebase.conf.json"
 
-if (isEmpty(process.env.FIREBASE_CONFIG)){
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-} else {
-  const app = initializeApp(process.env.FIREBASE_CONFIG);
-  const analytics = getAnalytics(app);
-}
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 new Vue({
   router,

@@ -21,12 +21,12 @@ jobs:
         run: npm install
 
       - name: Fake firebase config
-        run: touch .firebase.conf.json
+        env:
+          FIREBASE_CONFIG: ${{secrets.FIREBASE_CONF}}
+        run: npm run setupFirebaseConf
 
 
       - name: Build for production
-        env:
-          FIREBASE_CONFIG: ${{secrets.FIREBASE_CONF}}
         run: npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
