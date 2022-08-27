@@ -17,7 +17,7 @@
       </div>
 
       <div>
-        <b-button variant="info">Contact Us</b-button>
+        <b-button variant="info" :to="{name: 'contact'}">Contact Us</b-button>
       </div>
     </div>
   </div>

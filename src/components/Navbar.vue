@@ -7,7 +7,7 @@
       <b-navbar-nav class="mr-auto">
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'home'}">Home</b-nav-item>
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'services'}">Services</b-nav-item>
-        <b-nav-item class="nav-item py-2 px-3" :to="{name: 'ourWork'}">Our Work</b-nav-item>
+<!--        <b-nav-item class="nav-item py-2 px-3" :to="{name: 'ourWork'}">Our Work</b-nav-item>-->
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'contact'}">Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>

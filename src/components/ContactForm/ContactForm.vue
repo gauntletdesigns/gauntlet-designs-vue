@@ -1,11 +1,19 @@
 <template>
-  <div class="form-container mt-5">
+  <div class="form-container my-5">
     <b-form
         @submit="onSubmit"
     >
       <NameInput :form="form"/>
       <EmailInput :form="form"/>
       <DescriptionInput :form="form"/>
+      <div class="d-flex">
+        <b-btn type="submit" variant="success" class="mx-3">
+          Submit
+        </b-btn>
+        <b-btn type="reset" variant="info" class="mx-3">
+          Clear
+        </b-btn>
+      </div>
     </b-form>
   </div>
 </template>
