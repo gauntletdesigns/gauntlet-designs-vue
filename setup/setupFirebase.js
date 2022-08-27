@@ -1,4 +1,6 @@
 let conf = process.env.FIREBASE_CONFIG;
 
 const fs = require('fs');
-fs.writeFile('./.firebase.conf.json', JSON.stringify(conf), 'utf8', () => {})
+fs.writeFile('./.firebase.conf.json', JSON.stringify(conf), 'utf8', () => {
+    console.log('wrote ', conf, ' to file')
+})
