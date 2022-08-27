@@ -8,9 +8,7 @@
         v-for="service in services"
         class="service-btn my-1"
         :class="{ active: service.name === active }"
-        @click="() => { selectService(service);}"
-          :key="service.name"
-      >
+        @click="() => { selectService(service);}">
         {{ service.name }}
       </b-btn>
     </b-col>
@@ -20,7 +18,7 @@
     >
       <div class="description-section" aria-live="polite">
         <h3>{{ active }}</h3>
-        <p class="fade-in" v-for="(paragraph, id) in paragraphs" :key="`${active}${id}}`">
+        <p class="fade-in" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
       </div>
