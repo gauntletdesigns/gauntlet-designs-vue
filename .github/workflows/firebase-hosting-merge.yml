@@ -20,6 +20,9 @@ jobs:
       - name: Setup Node Env
         run: npm install
 
+      - name: Fake firebase config
+        run: touch .firebase.conf.json
+
 
       - name: Build for production
         env:
