@@ -9,6 +9,9 @@ import {isEmpty} from 'lodash';
 Vue.config.productionTip = false
 
 
+import Notifications from 'vue-notification'
+Vue.use(Notifications);
+
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import firebaseConfig from "../.firebase.conf.json"

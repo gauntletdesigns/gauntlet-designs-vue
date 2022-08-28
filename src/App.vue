@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="d-flex flex-column layout">
+    <notifications group="main" />
     <Navbar v-if="$route.name != 'home'"/>
     <div class="app-container h-100">
       <router-view/>
@@ -23,6 +24,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
 
 export default {
-  components: {Footer, Navbar}
+  components: {Footer, Navbar},
 }
 </script>

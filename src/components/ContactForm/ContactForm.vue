@@ -49,7 +49,12 @@ export default {
           html: `<h1>Submission From ${form.name}</h1><p>${form.email}</p><p>${form.description}</p> `
         }
       }).then(() => {
-        alert('submit')
+        this.$notify({
+          group: 'main',
+          title: 'Submitted',
+          message: "Thank you, we'll be in touch shortly",
+        })
+        this.onReset({})
       })
     },
     onReset(event){
