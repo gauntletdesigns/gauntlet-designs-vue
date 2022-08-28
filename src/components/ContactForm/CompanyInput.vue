@@ -1,25 +1,24 @@
 <template>
   <b-form-group
-      id="input-company"
-      label="Company Name"
-      label-for="input-company"
+    id="input-company"
+    label="Company Name"
+    label-for="input-company"
   >
     <b-form-input
-        id="input-company"
-        v-model="form.company"
-        placeholder="Company"
-
-    />
+      id="input-company"
+      v-model="form.company"
+      placeholder="Company"
+    ></b-form-input>
   </b-form-group>
 </template>
+
 <script>
 export default {
-  name: 'CompanyInput',
+  name: "CompanyInput",
   props: {
-    form: {}
-  }
-}
+    form: {},
+  },
+};
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped></style>
