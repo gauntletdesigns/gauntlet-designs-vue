@@ -1,10 +1,10 @@
 <template>
   <b-container class="pt-5">
     <h2>What we Offer</h2>
-    <div class="large-container d-none d-lg-block">
+    <div class="large-container d-none d-lg-block pb-3">
       <LargeServices :services="services"/>
     </div>
-    <div class="d-block d-lg-none">
+    <div class="d-block d-lg-none pb-5">
       <SmallServices :services="services"/>
     </div>
   </b-container>

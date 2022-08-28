@@ -4,15 +4,18 @@
         @submit="onSubmit"
     >
       <NameInput :form="form"/>
+      <CompanyInput :form="form" />
       <EmailInput :form="form"/>
+      <PhoneInput :form="form" />
       <DescriptionInput :form="form"/>
       <div class="d-flex">
-        <b-btn type="submit" variant="success" class="mx-3">
-          Submit
-        </b-btn>
-        <b-btn type="reset" variant="info" class="mx-3">
+        <b-btn type="reset" class="clear">
           Clear
         </b-btn>
+        <b-btn type="submit" class="submit ml-3">
+          Submit
+        </b-btn>
+
       </div>
     </b-form>
   </div>
@@ -22,6 +25,8 @@
 import NameInput from "@/components/ContactForm/NameInput";
 import EmailInput from "@/components/ContactForm/EmailInput";
 import DescriptionInput from "@/components/ContactForm/DescriptionInput";
+import CompanyInput from "@/components/ContactForm/CompanyInput";
+import PhoneInput from "@/components/ContactForm/PhoneInput";
 import {
   collection,
   doc,
@@ -29,9 +34,10 @@ import {
   getFirestore,
 } from 'firebase/firestore';
 
+
 export default {
   name: "ContactForm",
-  components: {DescriptionInput, EmailInput, NameInput},
+  components: {PhoneInput, CompanyInput, DescriptionInput, EmailInput, NameInput},
   data(){
     return {
       form: {}
@@ -73,7 +79,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .form-container{
   max-width: 400px;
+}
+
+.submit {
+  background-color: #28a745;
+  color: white;
+}
+
+.clear {
+  background-color: grey;
+  color: white;
 }
 </style>
