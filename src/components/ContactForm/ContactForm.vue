@@ -52,7 +52,8 @@ export default {
         this.$notify({
           group: 'main',
           title: 'Submitted',
-          message: "Thank you, we'll be in touch shortly",
+          text: "Thank you, we'll be in touch shortly",
+          type: 'success'
         })
         this.onReset({})
       })
