@@ -1,10 +1,20 @@
 <template>
   <b-container class="pt-5">
-    <h2>Contact Us</h2>
     <div>
-      Looking for more information or to request a quote? Please reach out to us via the form below or you may call us at:
-      <a :href="`tel:${phone}`">{{phone}}</a>
-      <ContactForm/>
+      <h2 class="pb-3">Contact Us</h2>
+      <p class="pb-4">
+        Have questions or looking for a quote? Contact us today to schedule a
+        free consultation.
+      </p>
+      <div class="d-flex flex-row pb-2">
+        <div class="pr-3">Phone:</div>
+        <a :href="`tel:${phone}`">{{ phone }}</a>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="pr-3">Email:</div>
+        <a :href="`mailto:${email}`">{{ email }}</a>
+      </div>
+      <ContactForm />
     </div>
   </b-container>
 </template>
@@ -13,15 +23,14 @@
 import ContactForm from "@/components/ContactForm/ContactForm";
 export default {
   name: "Contact",
-  components: {ContactForm},
-  data(){
+  components: { ContactForm },
+  data() {
     return {
-      phone: '571-265-2903'
-    }
-  }
-}
+      phone: "571-265-2903",
+      email: "contact@gauntletdesigns.com",
+    };
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped lang="scss"></style>
