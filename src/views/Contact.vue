@@ -12,9 +12,7 @@
       </div>
       <div class="d-flex flex-row">
         <div class="pr-3">Email:</div>
-        <a href="mailto:contact@gauntletdesigns.com"
-          >contact@gauntletdesigns.com</a
-        >
+        <a :href="`mailto:${email}`">{{ email }}</a>
       </div>
       <ContactForm />
     </div>
@@ -29,6 +27,7 @@ export default {
   data() {
     return {
       phone: "571-265-2903",
+      email: "contact@gauntletdesigns.com",
     };
   },
 };
