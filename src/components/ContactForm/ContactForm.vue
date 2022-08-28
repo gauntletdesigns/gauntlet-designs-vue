@@ -56,6 +56,13 @@ export default {
           type: 'success'
         })
         this.onReset({})
+      }).catch(e => {
+        this.$notify({
+          group: 'main',
+          type: 'error',
+          title: 'Error Submitting,',
+          text: "That's embarassing, something went wrong, please try again later."
+        })
       })
     },
     onReset(event){
