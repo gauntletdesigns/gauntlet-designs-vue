@@ -1,7 +1,7 @@
 <template>
   <b-form-group
       id="input-email"
-      label="Your Email"
+      label="Email*"
       label-for="input-email"
   >
     <b-form-input
@@ -9,7 +9,7 @@
         v-model="form.email"
         type="email"
         required
-        placeholder="Enter Email"
+        placeholder="Email"
     >
     </b-form-input>
   </b-form-group>

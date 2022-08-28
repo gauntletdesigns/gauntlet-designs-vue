@@ -2,11 +2,11 @@
   <b-row class="mt-5">
     <b-col
       cols="4"
-      class="d-flex flex-column align-items-end justify-content-center selection">
+      class="pb-4 d-flex flex-column align-items-end justify-content-center selection">
       <b-btn
         variant="link"
         v-for="service in services"
-        class="service-btn my-1"
+        class="service-btn my-1 pb-2"
         :class="{ active: service.name === active }"
         @click="() => { selectService(service);}">
         {{ service.name }}
@@ -22,7 +22,6 @@
           {{ paragraph }}
         </p>
       </div>
-      <div class="w3-spin">Test</div>
     </b-col>
   </b-row>
 </template>
