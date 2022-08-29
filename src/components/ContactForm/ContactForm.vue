@@ -105,4 +105,8 @@ export default {
 .name {
   width: 100%;
 }
+
+.btn-secondary {
+  border-color: unset;
+}
 </style>

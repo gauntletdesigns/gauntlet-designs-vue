@@ -1,17 +1,28 @@
 <template>
   <b-container class="pt-5">
     <div>
-      <h2 class="pb-3">Contact Us</h2>
-      <p class="pb-4">
+      <h2 class="title pb-3">Contact Us</h2>
+      <p class="text pb-4">
         Have questions or looking for a quote? Contact us today to schedule a
         free consultation.
       </p>
-      <div class="d-flex flex-row pb-2">
-        <div class="pr-3">Phone:</div>
+      <div class="d-flex flex-row pb-4">
+        <b-icon
+          class="mr-3"
+          icon="telephone-fill"
+          font-scale="2"
+          variant="primary"
+        ></b-icon>
+
         <a :href="`tel:${phone}`">{{ phone }}</a>
       </div>
       <div class="d-flex flex-row">
-        <div class="pr-3">Email:</div>
+        <b-icon
+          class="mr-3"
+          icon="envelope-fill"
+          font-scale="2"
+          variant="primary"
+        ></b-icon>
         <a :href="`mailto:${email}`">{{ email }}</a>
       </div>
       <ContactForm />

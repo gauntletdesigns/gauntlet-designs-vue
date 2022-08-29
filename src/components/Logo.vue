@@ -1,9 +1,11 @@
 <template>
-<b-img
-    :src="require(`@/assets/${this.fileName}`)"
-    :class="{large, 'small': !large}"
-    alt="Gauntlet Designs Logo"
-/>
+  <div class="d-flex justify-content-center">
+    <b-img
+      :src="require(`@/assets/${this.fileName}`)"
+      :class="{ large, small: !large }"
+      alt="Gauntlet Designs Logo"
+    />
+  </div>
 </template>
 
 <script>
@@ -11,30 +13,31 @@ export default {
   name: "Logo",
   props: {
     large: {
-      type: Boolean
+      type: Boolean,
     },
     text: {
-      type: Boolean
-    }
+      type: Boolean,
+    },
   },
 
   computed: {
-    fileName(){
-      if (this.text){
-        return 'gauntlet-designs-logo.webp'
+    fileName() {
+      if (this.text) {
+        return "gauntlet-designs-logo.webp";
       }
-      return 'gauntlet-designs-logo-no-text.webp'
-    }
-  }
-}
+      return "gauntlet-designs-logo-no-text.webp";
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
-  .large {
-    max-width: 400px;
-  }
+.large {
+  width: 600px;
+  max-width: 80%;
+}
 
-  .small {
-    max-width: 75px;
-  }
+.small {
+  max-width: 75px;
+}
 </style>

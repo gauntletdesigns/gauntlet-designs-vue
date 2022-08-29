@@ -14,11 +14,29 @@ $background-accent: #141517;
 
 // Text colors
 $light-text: rgba(255,255,255,0.8);
-$dark-text: #141517;
-
-//Font
+$dark-text: #242728;
 
 //Bootstrap Mods
 $info: $secondary-light;
 $success: $accent;
 
+//Fonts
+
+.sub-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  color: $dark-text;
+}
+
+.text {
+  color: $dark-text;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: $dark-text;
+}

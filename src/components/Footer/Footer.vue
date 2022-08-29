@@ -1,25 +1,52 @@
 <template>
   <div class="color-background w-100 h-100">
-    <div class="footer d-flex flex-wrap align-items-center justify-content-between">
-
-
-      <div>
+    <b-row class="footer">
+      <b-col
+        cols="12"
+        md="3"
+        lg="2"
+        offset-lg="1"
+        offset-xl="2"
+        class="address d-flex flex-column align-items-center"
+      >
         <p>(571) 303-9811</p>
         <p>Herndon, VA 20170</p>
         <a class="email" href="mailto:afton.gauntlett@gmail.com">Email Us</a>
-      </div>
+      </b-col>
 
-      <div class="footer-logo">
-        <Logo class="logo"/>
-        <p class="copyright">
-          &copy; Copyright {{ new Date().getFullYear() }} built by Gauntlet Designs
+      <b-col
+        cols="12"
+        md="6"
+        lg="6"
+        xl="4"
+        class="justify-content-center d-none d-md-flex"
+      >
+        <b-button class="logo-button" :to="{ name: 'home' }">
+          <Logo class="logo" />
+        </b-button>
+      </b-col>
+
+      <b-col
+        cols="12"
+        lg="2"
+        md="3"
+        class="d-flex flex-column align-items-center mt-3 mt-md-0 justify-content-center"
+      >
+        <b-button
+          class="contact-button mb-3"
+          variant="success"
+          size="lg"
+          :to="{ name: 'contact' }"
+          >Contact Us</b-button
+        >
+      </b-col>
+      <b-col cols="12" class="d-flex justify-content-center mb-3">
+        <p class="copyright-text">
+          &copy; Copyright {{ new Date().getFullYear() }} built by Gauntlet
+          Designs
         </p>
-      </div>
-
-      <div>
-        <b-button variant="info" :to="{name: 'contact'}">Contact Us</b-button>
-      </div>
-    </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
@@ -29,7 +56,7 @@ import Logo from "../Logo";
 
 export default {
   name: "Footer",
-  components: {Logo, GauntletDesignsPlug},
+  components: { Logo, GauntletDesignsPlug },
 };
 </script>
 
@@ -41,6 +68,14 @@ export default {
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
+
+  // 0 px margin to fix default row spacing causing horizontal scroll bar
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.footer-container {
+  background-color: $secondary-transparent;
 }
 
 .copyright {
@@ -48,12 +83,12 @@ export default {
   font-size: 14px;
 }
 
-.footer-logo {
-  text-align: center;
+.copyright-container {
+  background-color: $secondary-transparent;
 }
 
-.logo {
-  max-width: 115px;
+.copyright-text {
+  color: #aeaeb0;
 }
 
 .email {
@@ -64,4 +99,16 @@ export default {
   background-color: $background-accent;
 }
 
+.contact-button {
+  border-radius: unset;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.logo-button {
+  background-color: unset;
+  border: unset;
+}
 </style>

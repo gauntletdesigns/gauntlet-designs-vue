@@ -1,8 +1,8 @@
 <template>
   <div class="mt-5">
     <div class="mt-3 pb-3" v-for="service in services">
-      <h3>{{ service.name }}</h3>
-      <p v-for="paragraph in service.paragraphs">
+      <h3 class="title">{{ service.name }}</h3>
+      <p class="text" v-for="paragraph in service.paragraphs">
         {{ paragraph }}
       </p>
     </div>
