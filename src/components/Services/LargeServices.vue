@@ -2,13 +2,19 @@
   <b-row class="mt-5">
     <b-col
       cols="4"
-      class="pb-4 d-flex flex-column align-items-end justify-content-center selection">
+      class="pb-4 d-flex flex-column align-items-end justify-content-center selection"
+    >
       <b-btn
         variant="link"
         v-for="service in services"
         class="service-btn my-1 pb-2"
         :class="{ active: service.name === active }"
-        @click="() => { selectService(service);}">
+        @click="
+          () => {
+            selectService(service);
+          }
+        "
+      >
         {{ service.name }}
       </b-btn>
     </b-col>
@@ -17,8 +23,8 @@
       class="d-flex justify-content-start h-100 flex-column selection"
     >
       <div class="description-section" aria-live="polite">
-        <h3>{{ active }}</h3>
-        <p class="fade-in" v-for="paragraph in paragraphs">
+        <h3 class="title pb-3">{{ active }}</h3>
+        <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
       </div>
@@ -50,15 +56,23 @@ export default {
 .service-btn {
   display: block;
   font-size: 24px;
-  :focus {
-  }
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.14);
 }
+
 .service-btn:focus {
   box-shadow: unset !important;
+  text-decoration: unset;
+}
+
+.service-btn:hover {
+  box-shadow: unset !important;
+  text-decoration: unset;
+  border-bottom: 3px solid $accent;
 }
 
 .active {
-  text-decoration: underline $accent 3px;
+  border-bottom: 3px solid $accent;
 }
 
 .description-section {

@@ -1,27 +1,28 @@
 <template>
   <div class="background d-flex flex-column">
-    <b-container class="header-container d-flex flex-column align-items-left mb-auto">
+    <b-container
+      class="header-container d-flex flex-column align-items-left mb-auto"
+    >
       <div class="intro">
-      <h2 class="headline">
-        Gauntlet Designs
-      </h2>
-        <p CLASS="subtext">AND DEVELOPMENT</p>
-        <p class="animation">CUSTOM <a id="style-2" data-replace="BUILD link"><span>DESIGN</span></a></p>
+        <h2 class="headline">Gauntlet Designs</h2>
+        <p class="subtext">AND DEVELOPMENT</p>
+        <p class="animation">
+          CUSTOM
+          <a id="style-2" data-replace="BUILD link"><span>DESIGN</span></a>
+        </p>
       </div>
     </b-container>
-    <Navbar/>
+    <Navbar />
   </div>
 </template>
 
 <script>
-import Logo from "../Logo";
-import HomeTrinity from "./home-trinity";
 import Navbar from "@/components/Navbar";
 
 export default {
   name: "Section1",
-  components: {Navbar}
-}
+  components: { Navbar },
+};
 </script>
 
 <style scoped lang="scss">
@@ -35,19 +36,7 @@ export default {
 }
 
 .header-container {
- padding-top: 50px;
-}
-
-.text {
-  color: $light-text;
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 40px;
-}
-
-.subtext {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 8px;
-  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .headline {
@@ -65,10 +54,10 @@ export default {
 
 .intro {
   color: $light-text;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-//beginning test
+//animated text
 
 a {
   overflow: hidden;
@@ -78,7 +67,7 @@ a {
 
 a::before,
 a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   left: 0;
@@ -89,7 +78,7 @@ a::before {
   bottom: 0;
   transform-origin: 100% 50%;
   transform: scaleX(0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 a::after {
   content: attr(data-replace);
@@ -97,7 +86,7 @@ a::after {
   top: 0;
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   color: #54b3d6;
 }
 
@@ -111,7 +100,7 @@ a:hover::after {
 
 a span {
   display: inline-block;
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 a:hover span {
@@ -121,7 +110,7 @@ a:hover span {
 /* Presentational Styles */
 body {
   display: grid;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 27px;
   line-height: 1.5;
   height: 100vh;
@@ -130,7 +119,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #18272F;
+  color: #18272f;
   font-weight: 700;
   vertical-align: top;
   font-size: 25px;
@@ -139,6 +128,4 @@ a {
 .animation {
   font-size: 25px;
 }
-
-
 </style>
