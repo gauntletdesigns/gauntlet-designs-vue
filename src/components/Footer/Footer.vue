@@ -1,6 +1,6 @@
 <template>
   <div class="color-background w-100 h-100">
-    <b-row class="footer">
+    <b-row class="footer text">
       <b-col
         cols="12"
         md="3"
@@ -40,7 +40,7 @@
           >Contact Us</b-button
         >
       </b-col>
-      <b-col cols="12" class="d-flex justify-content-center mb-3">
+      <b-col cols="12" class="d-flex justify-content-center">
         <p class="copyright-text">
           &copy; Copyright {{ new Date().getFullYear() }} built by Gauntlet
           Designs
@@ -65,7 +65,7 @@ export default {
   background-color: $secondary-transparent;
   min-height: 50px;
   color: $light-text;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
 
