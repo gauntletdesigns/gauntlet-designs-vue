@@ -13,7 +13,6 @@
           font-scale="2"
           variant="primary"
         ></b-icon>
-
         <a :href="`tel:${phone}`">{{ phone }}</a>
       </div>
       <div class="d-flex flex-row">
@@ -29,7 +28,6 @@
     </div>
   </b-container>
 </template>
-
 <script>
 import ContactForm from "@/components/ContactForm/ContactForm";
 export default {
