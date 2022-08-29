@@ -7,11 +7,13 @@
         lg="2"
         offset-lg="1"
         offset-xl="2"
-        class="address d-flex flex-column align-items-center"
+        class="d-flex flex-column align-items-center"
       >
-        <p>(571) 303-9811</p>
-        <p>Herndon, VA 20170</p>
-        <a class="email" href="mailto:afton.gauntlett@gmail.com">Email Us</a>
+        <p>571-265-2903</p>
+        <p>
+          <a class="email" href="mailto:afton.gauntlett@gmail.com">Email Us</a>
+        </p>
+        <p>Herndon, VA</p>
       </b-col>
 
       <b-col
