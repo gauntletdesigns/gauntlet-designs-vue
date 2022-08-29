@@ -35,6 +35,12 @@ export default {
   background-size: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  .background {
+    min-height: 400px;
+  }
+}
+
 .header-container {
   padding-top: 50px;
 }
