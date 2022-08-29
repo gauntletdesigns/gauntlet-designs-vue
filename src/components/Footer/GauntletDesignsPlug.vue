@@ -1,17 +1,17 @@
 <template>
-<div>
-  Created by <a href="https://gauntletdesigns.com">Gauntlet Designs</a>
-</div>
+  <div>
+    Created by <a href="https://gauntletdesigns.com">Gauntlet Designs</a>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "GauntletDesignsPlug"
-}
+  name: "GauntletDesignsPlug",
+};
 </script>
 
 <style scoped lang="scss">
-  a {
-    color: $light-text;
-  }
+a {
+  color: $light-text;
+}
 </style>
