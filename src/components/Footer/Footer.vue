@@ -11,7 +11,7 @@
       >
         <p>571-265-2903</p>
         <p>
-          <a class="email" href="mailto:afton.gauntlett@gmail.com">Email Us</a>
+          <a class="email" href="mailto:afton@gauntletdesigns.com">Email Us</a>
         </p>
         <p>Herndon, VA</p>
       </b-col>
