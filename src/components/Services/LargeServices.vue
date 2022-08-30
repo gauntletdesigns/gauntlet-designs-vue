@@ -28,13 +28,19 @@
           {{ paragraph }}
         </p>
       </div>
+      <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
+        <CloudLogo />
+      </div>
     </b-col>
   </b-row>
 </template>
 
 <script>
+import CloudLogo from "@/components/CloudLogo";
+
 export default {
   name: "LargeServices",
+  components: { CloudLogo },
   props: ["services"],
   data() {
     return {
