@@ -1,5 +1,5 @@
 <template>
-  <div :class="!$route.name !== 'home' ? 'dark-background' : 'mt-auto'">
+  <div :class="!$route.name !== 'home' ? 'dark-background' : 'mt-auto'" class="sticky">
   <b-navbar class="navbar" sticky type="dark" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}"><h1><logo/></h1></b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -11,6 +11,9 @@
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'contact'}">Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
+    <b-btn class="ml-auto my-auto" variant="success" :to="{name: 'contact'}">
+      Free Consultation
+    </b-btn>
   </b-navbar>
 
   </div>
@@ -47,5 +50,10 @@ export default {
  .navbar {
    background-color: $secondary-transparent;
    color: $light-text;
+ }
+
+ .sticky {
+   position: sticky;
+   top: 0;
  }
 </style>

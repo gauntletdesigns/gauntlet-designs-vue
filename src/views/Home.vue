@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Section1 />
     <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
       <div class="sections">
         <section4 />

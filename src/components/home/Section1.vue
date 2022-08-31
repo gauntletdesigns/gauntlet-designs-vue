@@ -12,7 +12,6 @@
         </p>
       </div>
     </b-container>
-    <Navbar />
   </div>
 </template>
 
