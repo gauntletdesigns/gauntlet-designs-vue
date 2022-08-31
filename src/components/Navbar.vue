@@ -11,7 +11,7 @@
         <b-nav-item class="nav-item py-2 px-3" :to="{name: 'contact'}">Contact</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
-    <b-btn class="ml-auto my-auto" variant="success" :to="{name: 'contact'}">
+    <b-btn class="ml-auto my-auto contact" variant="success" :to="{name: 'contact'}">
       Free Consultation
     </b-btn>
   </b-navbar>
@@ -55,5 +55,10 @@ export default {
  .sticky {
    position: sticky;
    top: 0;
+   z-index: 1000;
+ }
+
+ .contact {
+   border-radius: 0;
  }
 </style>
