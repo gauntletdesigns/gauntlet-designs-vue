@@ -6,7 +6,7 @@
         Building a website is hard and time consuming. Let us take all the hard
         work off your hands. We work with you to make sure that you get the
         stunning website that you want, while still having time to do what
-        matters most to you, running your business!.
+        matters most to you, running your business!
       </div>
     </b-container>
 
