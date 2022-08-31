@@ -51,13 +51,15 @@ export default {
   props: ["services"],
   data() {
     return {
-      paragraphs: this.services[0]?.paragraphs,
       showCollapse: true,
     };
   },
   computed:{
     active(){
       return this.$route.query?.active || this.services[0]?.name
+    },
+    paragraphs(){
+      return this.services.find(service => service.name === this.active).paragraphs
     }
   },
   methods: {
