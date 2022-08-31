@@ -16,6 +16,9 @@ export default [
     {
         path: '/contact',
         name: 'contact',
+        meta: {
+            title: 'Contact Gauntlet Designs'
+        },
         component: Contact,
     },
     {
@@ -23,5 +26,8 @@ export default [
         name: 'services',
         component: Services,
         props: true,
+        meta: {
+            title: 'Gauntlet Designs Services'
+        }
     }
 ]

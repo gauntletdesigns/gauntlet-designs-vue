@@ -27,7 +27,8 @@ export default {
 <style scoped lang="scss">
 .background {
   background-image: url("../../assets/blue.jpg");
-  min-height: 600px;
+  min-height: 400px;
+  height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +37,8 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .background {
-    min-height: 400px;
+    min-height: 300px;
+    height: 50vh;
   }
 }
 
