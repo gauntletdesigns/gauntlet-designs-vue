@@ -56,9 +56,11 @@ export default [
     {
         name: 'Enterprise Tools',
         paragraphs: [
-            'We can custom design, build, and host enterprise grade applications to fit your companies needs.',
-            'We can help combine existing tools, update existing tools, or create new tools so that you and your employees can focus on their work rather than toil on non-optimized tools.'
-        ]
+            'We build custom designed enterprise grade applications to fit your companies needs.',
+            'We can help combine existing tools, update existing tools, or create new tools so that you and your employees can focus on their work rather than toil on non-optimized tools.',
+          "Our tools and websites are built from scratch using modern web frameworks, and custom cloud based servers. This means that not only will your website be fast, but completely custom and built specifically to your companies needs",
+          "Furthermore, since we host using modern cloud based tools, you will benefit from the reliability and distributed networks provided by the modern web."
+      ]
     },
   {
     name: "Consulting",

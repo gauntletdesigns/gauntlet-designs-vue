@@ -22,11 +22,18 @@
       cols="8"
       class="d-flex justify-content-start h-100 flex-column selection"
     >
-      <div class="description-section" aria-live="polite">
+      <div class="description-section d-flex flex-column" aria-live="polite">
         <h3 class="title pb-3">{{ active }}</h3>
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
+        <b-btn
+          :to="{name: 'contact'}"
+          variant="link"
+          class="ml-auto mr-2 contact"
+        >
+          Schedule your free consultation today
+        </b-btn>
       </div>
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
         <CloudLogo />
@@ -97,5 +104,10 @@ export default {
 
 .selection {
   min-height: 300px;
+}
+
+.contact {
+  color: $accent;
+  font-weight: 600;
 }
 </style>
