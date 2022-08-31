@@ -22,5 +22,6 @@ export default [
         path: '/services',
         name: 'services',
         component: Services,
+        props: true,
     }
 ]

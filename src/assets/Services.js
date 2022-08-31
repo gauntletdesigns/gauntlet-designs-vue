@@ -53,6 +53,13 @@ export default [
         " scripting workarounds to accommodate some assistive technologies and color alternatives",
     ],
   },
+    {
+        name: 'Enterprise Tools',
+        paragraphs: [
+            'We can custom design, build, and host enterprise grade applications to fit your companies needs.',
+            'We can help combine existing tools, update existing tools, or create new tools so that you and your employees can focus on their work rather than toil on non-optimized tools.'
+        ]
+    },
   {
     name: "Consulting",
     paragraphs: [

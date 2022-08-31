@@ -4,6 +4,7 @@
       <div class="sections">
         <section4 />
         <Section2 />
+        <Enterprise/>
         <Section3 />
       </div>
       <div class="logo d-flex align-self-center">
@@ -21,9 +22,10 @@ import Section3 from "../components/home/Section3";
 import HomeTrinity from "@/components/home/home-trinity";
 import Section4 from "@/components/home/Section4";
 import Logo from "@/components/Logo";
+import Enterprise from "@/components/home/Enterprise";
 export default {
   name: "Home",
-  components: { Logo, Section4, HomeTrinity, Section3, Section2, Section1 },
+  components: {Enterprise, Logo, Section4, HomeTrinity, Section3, Section2, Section1 },
 };
 </script>
 

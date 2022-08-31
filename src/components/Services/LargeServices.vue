@@ -45,14 +45,23 @@ export default {
   data() {
     return {
       paragraphs: this.services[0]?.paragraphs,
-      active: this.services[0]?.name,
       showCollapse: true,
     };
+  },
+  computed:{
+    active(){
+      return this.$route.query?.active || this.services[0]?.name
+    }
   },
   methods: {
     selectService(service) {
       this.paragraphs = service.paragraphs;
-      this.active = service.name;
+      this.$router.push({
+        name: this.$route.name,
+        query: {
+          active: service.name
+        }
+      })
     },
   },
 };
