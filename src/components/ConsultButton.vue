@@ -19,6 +19,7 @@ export default {
   color: white !important;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -29,8 +30,12 @@ export default {
   border-radius: 0;
   z-index: 1000;
 }
+
+.consult-btn:hover {
+  color: black;
+}
 .consult-btn::before {
-  background: $secondary-dark;
+  background: $secondary;
   content: "";
   position: absolute;
   top: 50%;

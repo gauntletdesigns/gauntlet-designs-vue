@@ -29,12 +29,13 @@ export default {
 <style scoped lang="scss">
 .background {
   background-image: url("../../assets/blue.webp");
+  background-size: contain;
+  background-color: #111315;
   min-height: 400px;
   height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -83,7 +84,7 @@ export default {
   left: 0;
 }
 .hover-btn::before {
-  background-color: #54b3d6;
+  background-color: $secondary;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -97,7 +98,7 @@ export default {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #54b3d6;
+  color: $secondary;
 }
 
 .hover-btn:hover::before {

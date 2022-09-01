@@ -14,7 +14,7 @@
               >contact@gauntletdesigns.com</a
             >
           </div>
-          <!--          <div>Herndon, VA</div>-->
+          <div>Herndon, VA</div>
         </div>
       </b-col>
 
