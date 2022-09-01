@@ -27,6 +27,9 @@ import {
     // Icons
     BIconTelephoneFill,
     BIconEnvelopeFill,
+    BIconTrash,
+    BIconPencil,
+    BIconPerson,
 
 } from 'bootstrap-vue'
 import "../custom-vars.scss"
@@ -51,3 +54,6 @@ Vue.component('b-form-textarea', BFormTextarea);
 
 Vue.component('b-icon-telephone-fill', BIconTelephoneFill);
 Vue.component('b-icon-envelope-fill', BIconEnvelopeFill);
+Vue.component('b-icon-trash', BIconTrash);
+Vue.component('b-icon-pencil', BIconPencil);
+Vue.component('b-icon-person', BIconPerson);

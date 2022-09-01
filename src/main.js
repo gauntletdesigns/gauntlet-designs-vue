@@ -18,12 +18,6 @@ import firebaseConfig from "../.firebase.conf.json"
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const { initializeAppCheck, ReCaptchaV3Provider } = require("firebase/app-check");
-const appCheck = initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider('6LdP6bQhAAAAAOkXOic7A7a2BCIEz3hB6WYwW9A-'),
-  isTokenAutoRefreshEnabled: true
-});
-
 new Vue({
   router,
   render: h => h(App)
