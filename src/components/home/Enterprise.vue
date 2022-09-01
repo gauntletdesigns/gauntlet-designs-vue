@@ -1,11 +1,11 @@
 <template>
   <div class="outer">
-
     <b-container class="d-flex flex-column align-items-left">
       <h2 class="sub-title">Enterprise Scale Applications</h2>
       <div class="text">
-        Let us help you solve your businesses most time consuming problems. We create enterprise-grade applications that
-        are designed to scale with your business.
+        Let us help you solve your businesses most time consuming problems. We
+        create enterprise-grade applications that are designed to scale with
+        your business.
         <ul>
           <li>Built with mobile responsive design from the start</li>
           <li>Built with accessibility and usability from the start</li>
@@ -13,9 +13,9 @@
           <li>Custom permission and user management to meet your needs</li>
         </ul>
         <b-btn
-            :to="{name: 'services', query: {active: 'Enterprise Tools'}}"
-            class="learn-more"
-            variant="link"
+          :to="{ name: 'services', query: { active: 'Enterprise Tools' } }"
+          class="learn-more"
+          variant="link"
         >
           Learn more...
         </b-btn>
@@ -26,13 +26,13 @@
 
 <script>
 export default {
-  name: "Enterprise"
-}
+  name: "Enterprise",
+};
 </script>
 
 <style lang="scss" scoped>
 .learn-more {
-  color: $accent;
+  color: $accent-dark;
   font-weight: 600;
 }
 </style>

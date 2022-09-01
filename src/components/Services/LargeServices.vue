@@ -27,40 +27,41 @@
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
-        <b-btn
-          :to="{name: 'contact'}"
-          variant="link"
-          class="ml-auto mr-2 contact"
-        >
-          Schedule your free consultation today
-        </b-btn>
       </div>
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
-        <CloudLogo />
+        <CloudLogo class="d-flex justify-content-center" />
       </div>
+
+      <ServiceButton
+        class="mt-4"
+        text="Schedule a free consultation"
+        linkName="contact"
+      />
     </b-col>
   </b-row>
 </template>
 
 <script>
 import CloudLogo from "@/components/CloudLogo";
+import ServiceButton from "@/components/ServiceButton";
 
 export default {
   name: "LargeServices",
-  components: { CloudLogo },
+  components: { ServiceButton, CloudLogo },
   props: ["services"],
   data() {
     return {
       showCollapse: true,
     };
   },
-  computed:{
-    active(){
-      return this.$route.query?.active || this.services[0]?.name
+  computed: {
+    active() {
+      return this.$route.query?.active || this.services[0]?.name;
     },
-    paragraphs(){
-      return this.services.find(service => service.name === this.active).paragraphs
-    }
+    paragraphs() {
+      return this.services.find((service) => service.name === this.active)
+        .paragraphs;
+    },
   },
   methods: {
     selectService(service) {
@@ -68,9 +69,9 @@ export default {
       this.$router.push({
         name: this.$route.name,
         query: {
-          active: service.name
-        }
-      })
+          active: service.name,
+        },
+      });
     },
   },
 };

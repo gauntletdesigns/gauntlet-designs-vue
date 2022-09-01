@@ -8,7 +8,9 @@
         <p class="subtext">AND DEVELOPMENT</p>
         <p class="animation">
           CUSTOM
-          <a id="style-2" data-replace="BUILD link"><span>DESIGN</span></a>
+          <span class="hover-btn" id="style-2" data-replace="BUILD link"
+            ><span>DESIGN</span></span
+          >
         </p>
       </div>
     </b-container>
@@ -66,20 +68,21 @@ export default {
 
 //animated text
 
-a {
+.hover-btn {
   overflow: hidden;
   position: relative;
   display: inline-block;
+  color: white !important;
 }
 
-a::before,
-a::after {
+.hover-btn::before,
+.hover-btn::after {
   content: "";
   position: absolute;
   width: 100%;
   left: 0;
 }
-a::before {
+.hover-btn::before {
   background-color: #54b3d6;
   height: 2px;
   bottom: 0;
@@ -87,7 +90,7 @@ a::before {
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
-a::after {
+.hover-btn::after {
   content: attr(data-replace);
   height: 100%;
   top: 0;
@@ -97,34 +100,24 @@ a::after {
   color: #54b3d6;
 }
 
-a:hover::before {
+.hover-btn:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
-a:hover::after {
+.hover-btn:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
-a span {
+.hover-btn span {
   display: inline-block;
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-a:hover span {
+.hover-btn:hover span {
   transform: translate3d(-200%, 0, 0);
 }
 
-/* Presentational Styles */
-body {
-  display: grid;
-  font-family: "Poppins", sans-serif;
-  font-size: 27px;
-  line-height: 1.5;
-  height: 100vh;
-  place-items: center;
-}
-
-a {
+.hover-btn {
   text-decoration: none;
   color: #18272f;
   font-weight: 700;

@@ -1,22 +1,20 @@
 <template>
   <div class="color-background w-100 h-100">
-    <b-row class="footer">
+    <b-row class="footer d-flex justify-content-around">
       <b-col
         cols="12"
         md="3"
         lg="2"
-        offset-lg="1"
-        offset-xl="2"
         class="justify-content-center d-none d-md-flex"
       >
         <div class="address">
-          <div>703-296-4019</div>
-          <div>
-            <a class="email" href="mailto:afton@gauntletdesigns.com"
-              >Email Us</a
+          <div class="py-2">703-296-4019</div>
+          <div class="pb-2">
+            <a class="email" href="mailto:contact@gauntletdesigns.com"
+              >contact@gauntletdesigns.com</a
             >
           </div>
-          <div>Herndon, VA</div>
+          <!--          <div>Herndon, VA</div>-->
         </div>
       </b-col>
 
@@ -38,7 +36,7 @@
         md="3"
         class="d-flex flex-column align-items-center mt-md-0 justify-content-center"
       >
-        <GDButton text="Free Consultation" linkName="contact" />
+        <ConsultButton text="Contact Us" linkName="contact" />
       </b-col>
       <b-col cols="12" class="d-flex justify-content-center">
         <p class="copyright-text pt-3">
@@ -52,11 +50,11 @@
 <script>
 import GauntletDesignsPlug from "./GauntletDesignsPlug";
 import Logo from "../Logo";
-import GDButton from "@/components/Services/GD-Button";
+import ConsultButton from "@/components/ConsultButton";
 
 export default {
   name: "Footer",
-  components: { GDButton, Logo, GauntletDesignsPlug },
+  components: { ConsultButton, Logo, GauntletDesignsPlug },
 };
 </script>
 
