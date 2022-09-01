@@ -2,11 +2,11 @@
   <b-container class="pt-5">
     <div>
       <h2 class="title pb-3">Contact Us</h2>
-      <p class="text pb-4">
-        Have questions or looking for a quote? Contact us today to schedule a
-        free consultation.
+      <p class="text pb-2">
+        Have questions or looking for a quote? <br />
+        Contact us today to schedule a free consultation.
       </p>
-      <div class="d-flex flex-row pb-4">
+      <div class="d-flex flex-row pb-2">
         <a :href="`tel:${phone}`">{{ phone }}</a>
       </div>
       <div class="d-flex flex-row">
