@@ -16,26 +16,28 @@ export default {
   background-color: unset;
   position: relative;
   display: block;
-  color: white !important;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
-  border: 2px solid white !important;
+  border: 2px solid white;
   padding: 15px;
   overflow: hidden;
-  transition: 1s all ease;
+  transition: 0.8s all ease;
   border-radius: 0;
   z-index: 1000;
 }
 
 .consult-btn:hover {
-  color: black;
+  color: $dark-text;
+  transition: all 0.2s ease;
 }
+
 .consult-btn::before {
-  background: $secondary;
+  background: $accent-light;
   content: "";
   position: absolute;
   top: 50%;
