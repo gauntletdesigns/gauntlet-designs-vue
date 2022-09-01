@@ -10,7 +10,7 @@
       <ConsultButton
         text="Contact Us"
         linkName="contact"
-        class="mr-4 ml-auto my-auto d-lg-none"
+        class="mr-4 ml-auto my-auto d-lg-none small-btn"
       />
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -56,6 +56,10 @@ export default {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+
+.small-btn {
+  letter-spacing: unset;
 }
 
 h1 {
