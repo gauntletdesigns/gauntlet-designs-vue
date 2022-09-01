@@ -15,6 +15,8 @@
           <li>Custom permission and user management to meet your needs</li>
         </ul>
       </div>
+
+      <SlideButton text="Learn more about enterprise apps" linkName="services" :query="{active: 'Enterprise Tools'}" />
     </b-container>
   </div>
 </template>

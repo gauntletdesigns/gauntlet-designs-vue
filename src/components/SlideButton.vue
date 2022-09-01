@@ -1,5 +1,5 @@
 <template>
-  <b-btn class="ml-auto mr-2 service-consult" :to="{ name: linkName }"
+  <b-btn class="ml-auto mr-2 service-consult" :to="{ name: linkName, query }"
     ><span>{{ text }}</span>
   </b-btn>
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "SlideButton",
-  props: ["text", "linkName"],
+  props: ["text", "linkName", 'query'],
 };
 </script>
 
