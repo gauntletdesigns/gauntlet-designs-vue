@@ -33,7 +33,7 @@ export default {
   components: { ContactForm },
   data() {
     return {
-      phone: "571-265-2903",
+      phone: "703-296-4019",
       email: "contact@gauntletdesigns.com",
     };
   },

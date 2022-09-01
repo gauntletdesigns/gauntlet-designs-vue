@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .background {
-  background-image: url("../../assets/blue.jpg");
+  background-image: url("../../assets/blue.webp");
   min-height: 400px;
   height: 60vh;
   background-attachment: fixed;

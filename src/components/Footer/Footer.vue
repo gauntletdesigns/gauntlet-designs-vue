@@ -10,7 +10,7 @@
         class="justify-content-center d-none d-md-flex"
       >
         <div class="address">
-          <div>571-265-2903</div>
+          <div>703-296-4019</div>
           <div>
             <a class="email" href="mailto:afton@gauntletdesigns.com"
               >Email Us</a
@@ -38,13 +38,7 @@
         md="3"
         class="d-flex flex-column align-items-center mt-md-0 justify-content-center"
       >
-        <b-button
-          class="contact-button"
-          variant="success"
-          size="md"
-          :to="{ name: 'contact' }"
-          >Contact Us</b-button
-        >
+        <GDButton text="Free Consultation" linkName="contact" />
       </b-col>
       <b-col cols="12" class="d-flex justify-content-center">
         <p class="copyright-text pt-3">
@@ -58,10 +52,11 @@
 <script>
 import GauntletDesignsPlug from "./GauntletDesignsPlug";
 import Logo from "../Logo";
+import GDButton from "@/components/Services/GD-Button";
 
 export default {
   name: "Footer",
-  components: { Logo, GauntletDesignsPlug },
+  components: { GDButton, Logo, GauntletDesignsPlug },
 };
 </script>
 
@@ -90,15 +85,6 @@ export default {
 
 .color-background {
   background-color: $background-accent;
-}
-
-.contact-button {
-  border-radius: unset;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 4px;
-  font-weight: 600;
-  padding: 10px;
 }
 
 .logo-button {

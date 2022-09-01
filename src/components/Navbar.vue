@@ -7,13 +7,7 @@
       <b-navbar-brand :to="{ name: 'home' }"
         ><h1><logo /></h1
       ></b-navbar-brand>
-      <b-btn
-        class="mr-2 ml-auto my-auto contact d-lg-none"
-        variant="success"
-        :to="{ name: 'contact' }"
-      >
-        Free Consultation
-      </b-btn>
+      <GDButton class="mr-4 ml-auto my-auto d-lg-none" />
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mr-auto">
@@ -29,22 +23,21 @@
           >
         </b-navbar-nav>
       </b-collapse>
-      <b-btn
-        class="mr-2 ml-auto my-auto contact d-none d-lg-block"
-        variant="success"
-        :to="{ name: 'contact' }"
-      >
-        Free Consultation
-      </b-btn>
+      <GDButton
+        class="mr-2 ml-auto my-auto d-none d-lg-block"
+        text="Free Consultation"
+        linkName="contact"
+      />
     </b-navbar>
   </div>
 </template>
 
 <script>
 import Logo from "./Logo";
+import GDButton from "@/components/Services/GD-Button";
 export default {
   name: "Navbar",
-  components: { Logo },
+  components: { GDButton, Logo },
 };
 </script>
 <style scoped lang="scss">
@@ -78,10 +71,5 @@ h1 {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.contact {
-  border-radius: 0;
-  font-family: "Montserrat", sans-serif;
 }
 </style>
