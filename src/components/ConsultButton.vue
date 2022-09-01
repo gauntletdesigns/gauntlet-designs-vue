@@ -1,26 +1,17 @@
 <template>
-  <div clas="consult-container">
-    <b-btn class="consult-btn consult" :to="{ name: linkName }">
-      {{ text }}
-    </b-btn>
-  </div>
+  <b-btn class="consult-btn consult" :to="{ name: linkName }">
+    {{ text }}
+  </b-btn>
 </template>
 
 <script>
 export default {
-  name: "Button",
+  name: "ConsultButton",
   props: ["text", "linkName"],
 };
 </script>
 
 <style scoped lang="scss">
-.consult-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .consult-btn {
   background-color: unset;
   position: relative;
@@ -29,7 +20,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-decoration: none;
   border: 2px solid white !important;
   padding: 15px;

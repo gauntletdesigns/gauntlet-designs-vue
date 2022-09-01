@@ -39,12 +39,12 @@ export default {
 
 <style scoped lang="scss">
 .cloud {
-  width: 150px;
+  width: 100px;
 }
 
 .google-text {
-  font-size: 14px;
+  font-size: 12px;
   color: #888080;
-  max-width: 400px;
+  max-width: 500px;
 }
 </style>

@@ -7,7 +7,11 @@
       <b-navbar-brand :to="{ name: 'home' }"
         ><h1><logo /></h1
       ></b-navbar-brand>
-      <GDButton class="mr-4 ml-auto my-auto d-lg-none" />
+      <ConsultButton
+        text="Contact Us"
+        linkName="contact"
+        class="mr-4 ml-auto my-auto d-lg-none"
+      />
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mr-auto">
@@ -23,9 +27,9 @@
           >
         </b-navbar-nav>
       </b-collapse>
-      <GDButton
+      <ConsultButton
         class="mr-2 ml-auto my-auto d-none d-lg-block"
-        text="Free Consultation"
+        text="Contact Us"
         linkName="contact"
       />
     </b-navbar>
@@ -34,10 +38,10 @@
 
 <script>
 import Logo from "./Logo";
-import GDButton from "@/components/Services/GD-Button";
+import ConsultButton from "@/components/ConsultButton";
 export default {
   name: "Navbar",
-  components: { GDButton, Logo },
+  components: { ConsultButton, Logo },
 };
 </script>
 <style scoped lang="scss">
@@ -64,6 +68,10 @@ h1 {
 
 .navbar {
   background-color: $secondary-transparent;
+  color: $light-text;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: $light-text;
 }
 
