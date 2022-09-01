@@ -23,7 +23,11 @@ import {
     BFormGroup,
     BFormInput,
     BFormTextarea,
-    BootstrapVueIcons
+
+    // Icons
+    BIconTelephoneFill,
+    BIconEnvelopeFill,
+
 } from 'bootstrap-vue'
 import "../custom-vars.scss"
 
@@ -44,4 +48,6 @@ Vue.component('b-form', BForm);
 Vue.component('b-form-group', BFormGroup);
 Vue.component('b-form-input', BFormInput);
 Vue.component('b-form-textarea', BFormTextarea);
-Vue.use(BootstrapVueIcons)
+
+Vue.component('b-icon-telephone-fill', BIconTelephoneFill);
+Vue.component('b-icon-envelope-fill', BIconEnvelopeFill);

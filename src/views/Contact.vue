@@ -7,21 +7,19 @@
         free consultation.
       </p>
       <div class="d-flex flex-row pb-4">
-        <b-icon
+        <b-icon-telephone-fill
           class="mr-3"
-          icon="telephone-fill"
           font-scale="2"
           variant="primary"
-        ></b-icon>
+        ></b-icon-telephone-fill>
         <a :href="`tel:${phone}`">{{ phone }}</a>
       </div>
       <div class="d-flex flex-row">
-        <b-icon
-          class="mr-3"
-          icon="envelope-fill"
+        <b-icon-envelope-fill
+          class="mr-3""
           font-scale="2"
           variant="primary"
-        ></b-icon>
+        ></b-icon-envelope-fill>
         <a :href="`mailto:${email}`">{{ email }}</a>
       </div>
       <ContactForm />

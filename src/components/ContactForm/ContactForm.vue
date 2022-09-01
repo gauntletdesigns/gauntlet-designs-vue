@@ -34,7 +34,7 @@ import DescriptionInput from "@/components/ContactForm/DescriptionInput";
 import PhoneInput from "@/components/ContactForm/PhoneInput";
 import CompanyInput from "@/components/ContactForm/CompanyInput";
 
-import { collection, doc, setDoc, getFirestore } from "firebase/firestore";
+import { collection, doc, setDoc, getFirestore } from "firebase/firestore/lite";
 
 export default {
   name: "ContactForm",
