@@ -60,7 +60,6 @@ export default {
   },
   methods: {
     selectService(service) {
-      this.paragraphs = service.paragraphs;
       this.$router.push({
         name: this.$route.name,
         query: {
