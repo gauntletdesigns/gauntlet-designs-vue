@@ -33,7 +33,7 @@ export default {
 
 <style scoped lang="scss">
 .large {
-  width: 600px;
+  width: 500px;
   max-width: 80%;
 }
 

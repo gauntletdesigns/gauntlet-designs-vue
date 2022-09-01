@@ -3,9 +3,11 @@
     <b-container class="d-flex flex-column align-items-left">
       <h2 class="sub-title">Enterprise Scale Applications</h2>
       <div class="text">
-        Let us help you solve your businesses most time consuming problems. We
-        create enterprise-grade applications that are designed to scale with
-        your business.
+        <p>
+          Let us help you solve your businesses most time consuming problems. We
+          create enterprise-grade applications that are designed to scale with
+          your business.
+        </p>
         <ul>
           <li>Built with mobile responsive design from the start</li>
           <li>Built with accessibility and usability from the start</li>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
     <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
       <div class="sections">
         <section4 />
@@ -15,7 +15,7 @@
       </div>
     </div>
     <home-trinity class="trinity" />
-  </div>
+  </b-container>
 </template>
 
 <script>
