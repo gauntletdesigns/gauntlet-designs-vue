@@ -25,7 +25,7 @@ export default {
       if (this.text) {
         return "gauntlet-designs-logo.webp";
       }
-      return "gauntlet-designs-logo-no-text.webp";
+      return "gauntlet-designs-logo-no-text-small.webp";
     },
   },
 };

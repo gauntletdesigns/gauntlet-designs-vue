@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .learn-more {
-  color: $accent-dark;
+  color: $accent;
   font-weight: 600;
 }
 </style>

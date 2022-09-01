@@ -31,23 +31,19 @@
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
         <CloudLogo class="d-flex justify-content-center" />
       </div>
-
-      <ServiceButton
-        class="mt-4"
-        text="Schedule a free consultation"
-        linkName="contact"
-      />
     </b-col>
+    <b-btn :to="{ name: 'contact' }" class="ml-auto mr-2 service-consult"
+      ><span>Schedule your free consultation today</span>
+    </b-btn>
   </b-row>
 </template>
 
 <script>
 import CloudLogo from "@/components/CloudLogo";
-import ServiceButton from "@/components/ServiceButton";
 
 export default {
   name: "LargeServices",
-  components: { ServiceButton, CloudLogo },
+  components: { CloudLogo },
   props: ["services"],
   data() {
     return {
@@ -93,11 +89,11 @@ export default {
 .service-btn:hover {
   box-shadow: unset !important;
   text-decoration: unset;
-  border-bottom: 3px solid $accent;
+  border-bottom: 3px solid $accent-light;
 }
 
 .active {
-  border-bottom: 3px solid $accent;
+  border-bottom: 3px solid $accent-light;
 }
 
 .description-section {
@@ -112,5 +108,46 @@ export default {
 .contact {
   color: $accent;
   font-weight: 600;
+}
+
+//Button animation
+.service-consult {
+  border-radius: 0;
+  background-color: $accent-light;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.service-consult span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.service-consult span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.service-consult:hover span {
+  padding-right: 25px;
+}
+
+.service-consult:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 </style>

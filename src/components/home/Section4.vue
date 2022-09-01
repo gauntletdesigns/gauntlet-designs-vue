@@ -9,10 +9,15 @@
         female owned business located in the DC Metro Area. Our products are
         clean, light, responsive and fully customizable to meet your business
         needs.
-        <b-btn :to="{ name: 'services' }" variant="link" class="py-0 learn-more"
+      </p>
+      <div>
+        <b-btn
+          :to="{ name: 'services' }"
+          variant="link"
+          class="py-0 learn-more text"
           >Learn more...</b-btn
         >
-      </p>
+      </div>
     </b-container>
   </div>
 </template>
@@ -30,7 +35,7 @@ export default {
 }
 
 .learn-more {
-  color: $accent-dark;
+  color: $accent;
   font-weight: 600;
 }
 </style>

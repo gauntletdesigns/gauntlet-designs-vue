@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 h3 {
   color: $primary;
-  border-left: 3px solid $accent;
+  border-left: 3px solid $accent-light;
   padding-left: 10px;
   letter-spacing: 3px;
 }
