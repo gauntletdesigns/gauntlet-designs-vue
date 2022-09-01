@@ -12,21 +12,16 @@
           <li>Scales to your business needs, as your business scales</li>
           <li>Custom permission and user management to meet your needs</li>
         </ul>
-        <b-btn
-          :to="{ name: 'services', query: { active: 'Enterprise Tools' } }"
-          class="learn-more"
-          variant="link"
-        >
-          Learn more...
-        </b-btn>
       </div>
     </b-container>
   </div>
 </template>
 
 <script>
+import SlideButton from "@/components/SlideButton";
 export default {
   name: "Enterprise",
+  components: { SlideButton },
 };
 </script>
 

@@ -58,7 +58,7 @@ export default {
 .tagline {
   font-size: 20px;
   padding-bottom: 40px;
-  color: $info;
+  color: $accent-light;
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ export default {
   left: 0;
 }
 .hover-btn::before {
-  background-color: $secondary;
+  background-color: $accent-light;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -98,7 +98,7 @@ export default {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: $secondary;
+  color: $accent-light;
 }
 
 .hover-btn:hover::before {

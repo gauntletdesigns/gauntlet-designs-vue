@@ -32,18 +32,17 @@
         <CloudLogo class="d-flex justify-content-center" />
       </div>
     </b-col>
-    <b-btn :to="{ name: 'contact' }" class="ml-auto mr-2 service-consult"
-      ><span>Schedule your free consultation today</span>
-    </b-btn>
+    <SlideButton text="Schedule a free consultation" linkName="contact" />
   </b-row>
 </template>
 
 <script>
 import CloudLogo from "@/components/CloudLogo";
+import SlideButton from "@/components/SlideButton";
 
 export default {
   name: "LargeServices",
-  components: { CloudLogo },
+  components: { SlideButton, CloudLogo },
   props: ["services"],
   data() {
     return {
@@ -108,46 +107,5 @@ export default {
 .contact {
   color: $accent;
   font-weight: 600;
-}
-
-//Button animation
-.service-consult {
-  border-radius: 0;
-  background-color: $accent-light;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding: 15px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.service-consult span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.service-consult span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.service-consult:hover span {
-  padding-right: 25px;
-}
-
-.service-consult:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 </style>

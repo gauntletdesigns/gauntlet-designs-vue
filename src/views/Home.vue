@@ -4,11 +4,14 @@
       <div class="sections">
         <section4 />
         <Section2 />
-        <Enterprise/>
+        <Enterprise />
         <Section3 />
       </div>
-      <div class="logo d-flex align-self-center">
-      <Logo large text />
+      <div class="logo d-flex flex-column align-self-center">
+        <Logo large text />
+        <div class="pt-4 d-flex align-self-center">
+          <SlideButton text="View all of our services" linkName="services" />
+        </div>
       </div>
     </div>
     <home-trinity class="trinity" />
@@ -23,14 +26,23 @@ import HomeTrinity from "@/components/home/home-trinity";
 import Section4 from "@/components/home/Section4";
 import Logo from "@/components/Logo";
 import Enterprise from "@/components/home/Enterprise";
+import SlideButton from "@/components/SlideButton";
 export default {
   name: "Home",
-  components: {Enterprise, Logo, Section4, HomeTrinity, Section3, Section2, Section1 },
+  components: {
+    SlideButton,
+    Enterprise,
+    Logo,
+    Section4,
+    HomeTrinity,
+    Section3,
+    Section2,
+    Section1,
+  },
 };
 </script>
 
 <style scoped lang="scss">
-
 p {
   font-family: "Montserrat", sans-serif;
 }

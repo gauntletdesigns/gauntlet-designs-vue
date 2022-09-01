@@ -13,8 +13,10 @@
 </template>
 
 <script>
+import SlideButton from "@/components/SlideButton";
 export default {
   name: "Section3",
+  components: { SlideButton },
 };
 </script>
 

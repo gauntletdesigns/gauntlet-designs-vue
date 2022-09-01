@@ -1,22 +1,20 @@
-import Vue from 'vue'
+import Vue from "vue";
 
 import {
-    // Layout
-    BContainer,
-    BRow,
-    BCol,
-    BCollapse,
+  // Layout
+  BContainer,
+  BRow,
+  BCol,
+  BCollapse,
 
-    // Nav
-    BNavbar,
-    BNavbarBrand,
-    BNavbarNav,
-    BNavbarToggle,
-    BNavItem,
-
-
-    BImg,
-    BButton,
+  // Nav
+  BNavbar,
+  BNavbarBrand,
+  BNavbarNav,
+  BNavbarToggle,
+  BNavItem,
+  BImg,
+  BButton,
 
     // Form
     BForm,
@@ -25,8 +23,6 @@ import {
     BFormTextarea,
 
     // Icons
-    BIconTelephoneFill,
-    BIconEnvelopeFill,
     BIconTrash,
     BIconPencil,
     BIconPerson,
@@ -52,8 +48,6 @@ Vue.component('b-form-group', BFormGroup);
 Vue.component('b-form-input', BFormInput);
 Vue.component('b-form-textarea', BFormTextarea);
 
-Vue.component('b-icon-telephone-fill', BIconTelephoneFill);
-Vue.component('b-icon-envelope-fill', BIconEnvelopeFill);
 Vue.component('b-icon-trash', BIconTrash);
 Vue.component('b-icon-pencil', BIconPencil);
 Vue.component('b-icon-person', BIconPerson);

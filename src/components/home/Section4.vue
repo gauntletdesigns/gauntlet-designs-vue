@@ -10,21 +10,16 @@
         clean, light, responsive and fully customizable to meet your business
         needs.
       </p>
-      <div>
-        <b-btn
-          :to="{ name: 'services' }"
-          variant="link"
-          class="py-0 learn-more text"
-          >Learn more...</b-btn
-        >
-      </div>
+      <div></div>
     </b-container>
   </div>
 </template>
 
 <script>
+import SlideButton from "@/components/SlideButton";
 export default {
   name: "Section4",
+  components: { SlideButton },
 };
 </script>
 
