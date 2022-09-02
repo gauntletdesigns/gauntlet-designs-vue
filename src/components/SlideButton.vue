@@ -7,12 +7,13 @@
 <script>
 export default {
   name: "SlideButton",
-  props: ["text", "linkName", 'query'],
+  props: ["text", "linkName", "query"],
 };
 </script>
 
 <style scoped lang="scss">
 .service-consult {
+  min-width: 175px;
   border-radius: 0;
   background-color: $accent-light;
   border: none;

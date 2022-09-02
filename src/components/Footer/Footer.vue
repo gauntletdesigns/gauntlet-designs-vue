@@ -1,13 +1,8 @@
 <template>
   <div class="container-background w-100 h-100">
     <b-container>
-      <b-row class="footer d-flex justify-content-around">
-        <b-col
-          cols="12"
-          md="4"
-          lg="4"
-          class="justify-content-center d-none d-sm-flex"
-        >
+      <div class="footer d-flex flex-wrap justify-content-between">
+        <div class="d-flex justify-content-center d-none d-sm-flex">
           <div class="address">
             <div class="py-2">703-296-4019</div>
             <div class="pb-2">
@@ -17,33 +12,24 @@
             </div>
             <div>Herndon, VA</div>
           </div>
-        </b-col>
-
-        <b-col
-          cols="12"
-          md="4"
-          lg="4"
-          class="justify-content-center d-none d-sm-flex"
-        >
+        </div>
+        <div class="justify-content-center d-none d-sm-flex">
           <b-button class="logo-button" :to="{ name: 'home' }">
             <Logo class="logo" />
           </b-button>
-        </b-col>
+        </div>
 
-        <b-col
-          cols="12"
-          lg="4"
-          md="4"
-          class="d-flex flex-column align-items-center mt-md-0 justify-content-center"
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
         >
           <SlideButton text="Contact Us" linkName="contact" />
-        </b-col>
-        <b-col cols="12" class="d-flex justify-content-center">
-          <p class="copyright-text pt-3">
-            &copy; Copyright Gauntlet Designs {{ new Date().getFullYear() }}
-          </p>
-        </b-col>
-      </b-row>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p class="copyright-text pt-3">
+          &copy; Copyright Gauntlet Designs {{ new Date().getFullYear() }}
+        </p>
+      </div>
     </b-container>
   </div>
 </template>
@@ -63,9 +49,6 @@ export default {
   background-color: $primary;
   color: $light-text;
   padding-top: 20px;
-  // 0 px margin to fix default row spacing causing horizontal scroll bar
-  margin-right: 0px !important;
-  margin-left: 0px !important;
 }
 
 .container-background {

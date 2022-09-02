@@ -9,9 +9,7 @@
       </div>
       <div class="logo d-flex flex-column align-self-center">
         <Logo large text />
-        <div class="pt-4 d-flex align-self-center">
-          <SlideButton text="View all of our services" linkName="services" />
-        </div>
+        <div class="pt-4 d-flex align-self-center"></div>
       </div>
     </div>
     <home-trinity class="trinity" />
@@ -26,11 +24,9 @@ import HomeTrinity from "@/components/home/home-trinity";
 import Section4 from "@/components/home/Section4";
 import Logo from "@/components/Logo";
 import Enterprise from "@/components/home/Enterprise";
-import SlideButton from "@/components/SlideButton";
 export default {
   name: "Home",
   components: {
-    SlideButton,
     Enterprise,
     Logo,
     Section4,
