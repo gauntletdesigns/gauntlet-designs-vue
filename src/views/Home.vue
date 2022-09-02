@@ -8,7 +8,6 @@
         <Section3 />
       </div>
       <div class="logo d-flex flex-column align-self-center">
-        <!--        <Logo large text />-->
         <div class="pt-4 d-flex align-self-center"></div>
       </div>
     </div>

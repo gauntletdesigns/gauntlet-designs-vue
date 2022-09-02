@@ -1,4 +1,6 @@
 <template>
+  <!--  To Do: Footer isn't centered properly.-->
+
   <div class="container-background w-100 h-100">
     <b-container>
       <div class="footer d-flex flex-wrap justify-content-between">
