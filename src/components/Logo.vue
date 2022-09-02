@@ -32,7 +32,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .large {
-  width: 500px;
+  width: 450px;
   max-width: 80%;
 }
 
