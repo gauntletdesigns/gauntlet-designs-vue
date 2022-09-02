@@ -13,7 +13,7 @@
     <div
       class="my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
-      <b-icon-trash class="icon-circle" />
+      <b-icon-code class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Development</h3>
       <div class="triplet-text">
         With over 10 years of professional development experience our dev team
@@ -23,11 +23,11 @@
     <div
       class="my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
-      <b-icon-person class="icon-circle" />
+      <b-icon-cloud class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Hosting</h3>
       <div class="triplet-text">
-        Want us to run your site for you? We will host your website in the cloud
-        for the best possible uptime/reliability.
+        Want us to run your site for you? We will host your website using Google
+        cloud, for the best possible uptime/reliability.
       </div>
     </div>
   </div>
