@@ -20,8 +20,8 @@
 
       <DescriptionInput :form="form" />
       <div class="d-flex">
-        <b-btn type="reset" class="clear"> Clear </b-btn>
-        <b-btn type="submit" class="submit ml-3"> Submit </b-btn>
+        <b-btn type="reset" variant="danger"> Clear </b-btn>
+        <b-btn type="submit" variant="success" class="ml-3"> Submit </b-btn>
       </div>
     </b-form>
   </div>
@@ -90,16 +90,6 @@ export default {
 <style scoped lang="scss">
 .form-container {
   max-width: 700px;
-}
-
-.submit {
-  background-color: #28a745;
-  color: white;
-}
-
-.clear {
-  background-color: grey;
-  color: white;
 }
 
 .name {

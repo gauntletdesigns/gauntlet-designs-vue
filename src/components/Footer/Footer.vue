@@ -65,7 +65,13 @@ export default {
 }
 
 .email {
-  color: #adc3f3;
+  color: #ffffff;
+  border-bottom: 1px solid #d1e2ee;
+  text-decoration: unset;
+}
+
+.email:hover {
+  color: #bed2e0;
 }
 
 .color-background {

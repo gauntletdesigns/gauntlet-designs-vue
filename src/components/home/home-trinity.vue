@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-wrap justify-content-around">
     <div
-      class="my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
+      class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
       <b-icon-pencil class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Design</h3>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div
-      class="my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
+      class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
       <b-icon-code class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Development</h3>
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div
-      class="my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
+      class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
       <b-icon-cloud class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Hosting</h3>
@@ -40,10 +40,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.triplet-section {
+  color: $dark-text;
+}
+
 .triplet {
   width: 300px;
   text-align: center;
-  color: $dark-text;
   font-family: "Montserrat", sans-serif;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -52,11 +55,9 @@ export default {
 .icon-circle {
   width: 40px;
   height: 40px;
-  color: $primary;
 }
 
 .triplet-title {
-  color: $dark-text;
   text-align: left;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
@@ -65,7 +66,6 @@ export default {
 }
 
 .triplet-text {
-  color: $dark-text;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }

@@ -32,6 +32,13 @@ export default {
 
 <style scoped lang="scss">
 .email {
-  color: $secondary-dark;
+  color: #424242;
+  border-bottom: 1px solid #424242;
+  text-decoration: unset;
+}
+
+.email:hover {
+  color: #045c8c;
+  border-bottom: 1px solid #045c8c;
 }
 </style>
