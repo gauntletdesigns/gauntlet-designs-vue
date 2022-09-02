@@ -60,7 +60,7 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  background-color: $secondary-transparent;
+  background-color: $primary;
   color: $light-text;
   padding-top: 20px;
   // 0 px margin to fix default row spacing causing horizontal scroll bar
@@ -69,7 +69,7 @@ export default {
 }
 
 .footer-container {
-  background-color: $secondary-transparent;
+  background-color: $primary;
 }
 
 .copyright-text {

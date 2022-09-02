@@ -28,7 +28,7 @@ export default {
 
 <style scoped lang="scss">
 .background {
-  background-image: url("../../assets/blue.webp");
+  background-image: url("../../assets/gauntlet-designs-logo.webp");
   background-size: contain;
   background-color: #111315;
   min-height: 400px;

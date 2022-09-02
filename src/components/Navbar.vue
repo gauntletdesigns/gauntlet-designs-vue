@@ -71,7 +71,7 @@ h1 {
 }
 
 .navbar {
-  background-color: $secondary-transparent;
+  background-color: $primary;
   color: $light-text;
 }
 
