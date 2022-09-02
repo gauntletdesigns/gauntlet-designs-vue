@@ -29,12 +29,12 @@ export default {
 <style scoped lang="scss">
 .background {
   background-image: url("../../assets/gauntlet-designs-logo.webp");
-  background-size: cover;
+  background-size: contain;
   background-color: #111315;
   min-height: 400px;
   height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
