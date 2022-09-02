@@ -30,7 +30,6 @@ export default {
   },
 };
 </script>
-
 <style scoped lang="scss">
 .large {
   width: 500px;
@@ -39,5 +38,9 @@ export default {
 
 .small {
   max-width: 75px;
+}
+
+small:hover {
+  //  find a way to change the logo to accent color on hover. Maybe change to SVG?
 }
 </style>

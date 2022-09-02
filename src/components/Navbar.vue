@@ -7,11 +7,12 @@
       <b-navbar-brand :to="{ name: 'home' }"
         ><h1><logo /></h1
       ></b-navbar-brand>
-      <ConsultButton
+      <SlideButton
         text="Contact Us"
         linkName="contact"
         class="mr-4 ml-auto my-auto d-lg-none small-btn"
       />
+
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="mr-auto">
@@ -27,10 +28,10 @@
           >
         </b-navbar-nav>
       </b-collapse>
-      <ConsultButton
-        class="mr-2 ml-auto my-auto d-none d-lg-block"
+      <SlideButton
         text="Contact Us"
         linkName="contact"
+        class="mr-2 ml-auto my-auto d-none d-lg-block"
       />
     </b-navbar>
   </div>
@@ -38,10 +39,10 @@
 
 <script>
 import Logo from "./Logo";
-import ConsultButton from "@/components/ConsultButton";
+import SlideButton from "@/components/SlideButton";
 export default {
   name: "Navbar",
-  components: { ConsultButton, Logo },
+  components: { SlideButton, Logo },
 };
 </script>
 <style scoped lang="scss">
