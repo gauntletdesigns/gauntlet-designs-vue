@@ -10,7 +10,6 @@
         clean, light, responsive and fully customizable to meet your business
         needs.
       </p>
-      <div></div>
     </b-container>
   </div>
 </template>
