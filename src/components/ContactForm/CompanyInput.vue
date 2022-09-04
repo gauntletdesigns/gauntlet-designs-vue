@@ -1,9 +1,5 @@
 <template>
-  <b-form-group
-    id="input-company"
-    label="Company Name"
-    label-for="input-company"
-  >
+  <b-form-group label="Company Name" label-for="input-company">
     <b-form-input
       id="input-company"
       v-model="form.company"
@@ -11,7 +7,6 @@
     ></b-form-input>
   </b-form-group>
 </template>
-
 <script>
 export default {
   name: "CompanyInput",

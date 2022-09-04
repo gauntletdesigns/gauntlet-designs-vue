@@ -1,12 +1,6 @@
 <template>
-  <b-form-group
-    id="input-email"
-    label="Email*"
-    label-for="input-email"
-    description="We'll never share your email address."
-  >
+  <b-form-group id="input-email" label="Email*" label-for="input-email">
     <b-form-input
-      id="input-email"
       v-model="form.email"
       type="email"
       required

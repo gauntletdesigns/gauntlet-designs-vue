@@ -1,7 +1,6 @@
 <template>
   <b-form-group id="input-user-name" label="Your Name*" label-for="input-name">
     <b-form-input
-      id="input-name"
       v-model="form.name"
       placeholder="Name"
       required
