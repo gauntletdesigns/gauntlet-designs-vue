@@ -13,7 +13,7 @@
     <div
       class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center"
     >
-      <b-icon-code class="icon-circle" />
+      <b-icon-code-slash class="icon-circle" />
       <h3 class="triplet-title pt-3 pb-2">Development</h3>
       <div class="triplet-text">
         With over 10 years of professional development experience our dev team
