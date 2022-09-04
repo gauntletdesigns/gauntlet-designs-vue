@@ -29,7 +29,7 @@
       </div>
       <div class="d-flex justify-content-center">
         <p class="copyright-text pt-3">
-          &copy; Copyright Gauntlet Designs {{ new Date().getFullYear() }}
+          &copy;Copyright Gauntlet Designs {{ new Date().getFullYear() }}
         </p>
       </div>
     </b-container>
@@ -49,7 +49,7 @@ export default {
 <style scoped lang="scss">
 .footer {
   background-color: $primary;
-  color: $light-text;
+  color: #e8e8f1;
   padding-top: 20px;
 }
 
@@ -62,7 +62,7 @@ export default {
 }
 
 .copyright-text {
-  color: #aeaeb0;
+  color: #e2e2e8;
   font-size: 12px;
 }
 
