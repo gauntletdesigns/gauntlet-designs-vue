@@ -16,38 +16,36 @@ import {
   BImg,
   BButton,
 
-    // Form
-    BForm,
-    BFormGroup,
-    BFormInput,
-    BFormTextarea,
+  // Form
+  BForm,
+  BFormGroup,
+  BFormInput,
+  BFormTextarea,
 
-    // Icons
-    BIconTrash,
-    BIconPencil,
-    BIconPerson,
+  // Icons
+  BIconCodeSlash,
+  BIconPencil,
+  BIconCloud,
+} from "bootstrap-vue";
+import "../custom-vars.scss";
 
-} from 'bootstrap-vue'
-import "../custom-vars.scss"
+Vue.component("b-container", BContainer);
+Vue.component("b-navbar", BNavbar);
+Vue.component("b-navbar-brand", BNavbarBrand);
+Vue.component("b-navbar-toggle", BNavbarToggle);
+Vue.component("b-navbar-nav", BNavbarNav);
+Vue.component("b-nav-item", BNavItem);
+Vue.component("b-img", BImg);
+Vue.component("b-btn", BButton);
+Vue.component("b-button", BButton);
+Vue.component("b-collapse", BCollapse);
+Vue.component("b-row", BRow);
+Vue.component("b-col", BCol);
+Vue.component("b-form", BForm);
+Vue.component("b-form-group", BFormGroup);
+Vue.component("b-form-input", BFormInput);
+Vue.component("b-form-textarea", BFormTextarea);
 
-
-Vue.component('b-container', BContainer);
-Vue.component( 'b-navbar', BNavbar);
-Vue.component( 'b-navbar-brand', BNavbarBrand);
-Vue.component( 'b-navbar-toggle', BNavbarToggle);
-Vue.component( 'b-navbar-nav' , BNavbarNav);
-Vue.component('b-nav-item', BNavItem);
-Vue.component('b-img', BImg);
-Vue.component('b-btn', BButton);
-Vue.component('b-button', BButton);
-Vue.component('b-collapse', BCollapse);
-Vue.component('b-row', BRow);
-Vue.component('b-col', BCol);
-Vue.component('b-form', BForm);
-Vue.component('b-form-group', BFormGroup);
-Vue.component('b-form-input', BFormInput);
-Vue.component('b-form-textarea', BFormTextarea);
-
-Vue.component('b-icon-trash', BIconTrash);
-Vue.component('b-icon-pencil', BIconPencil);
-Vue.component('b-icon-person', BIconPerson);
+Vue.component("b-icon-code-slash", BIconCodeSlash);
+Vue.component("b-icon-pencil", BIconPencil);
+Vue.component("b-icon-cloud", BIconCloud);
