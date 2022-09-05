@@ -1,6 +1,7 @@
 <template>
-  <b-form-group id="input-email" label="Email*" label-for="input-email">
+  <b-form-group  label="Email*" label-for="input-email">
     <b-form-input
+      id="input-email"
       v-model="form.email"
       type="email"
       required
