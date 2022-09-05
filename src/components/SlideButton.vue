@@ -1,5 +1,5 @@
 <template>
-  <b-btn class="mr-2 service-consult" :to="{ name: linkName, query }"
+  <b-btn class="mr-2 service-consult" :to="{ name: linkName, query }" :class="{small}"
     ><span>{{ text }}</span>
   </b-btn>
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "SlideButton",
-  props: ["text", "linkName", "query"],
+  props: {"text": {}, "linkName": {} , "query": {}, small: {type: Boolean}},
 };
 </script>
 
@@ -26,6 +26,9 @@ export default {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+}
+.small {
+  min-width: unset;
 }
 
 .service-consult span {

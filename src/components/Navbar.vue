@@ -11,6 +11,7 @@
         text="Contact Us"
         linkName="contact"
         class="mr-4 ml-auto my-auto d-lg-none small-btn"
+        small
       />
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -31,7 +32,7 @@
       <SlideButton
         text="Contact Us"
         linkName="contact"
-        class="mr-2 ml-auto my-auto d-none d-lg-block"
+        class="mr-2 ml-auto my-auto d-none d-lg-block "
       />
     </b-navbar>
   </div>
