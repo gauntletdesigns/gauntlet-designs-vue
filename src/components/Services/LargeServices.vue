@@ -27,12 +27,12 @@
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
+        <SlideButton text="Schedule a free consultation" linkName="contact" />
       </div>
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
         <CloudLogo class="d-flex justify-content-center" />
       </div>
     </b-col>
-    <SlideButton text="Schedule a free consultation" linkName="contact" />
   </b-row>
 </template>
 
@@ -112,7 +112,7 @@ export default {
     transition: 0.4s;
   }
   &:hover,
-  &:focus {
+  &:focus, &.active {
     &::before {
       width: 100%;
     }
@@ -122,15 +122,5 @@ export default {
 .btn-link:focus {
   outline: none !important;
   box-shadow: unset !important;
-  &::before {
-    content: "";
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    background: $accent-light;
-    transition: 0.4s;
-  }
 }
 </style>
