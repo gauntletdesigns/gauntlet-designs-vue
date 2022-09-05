@@ -19,6 +19,7 @@
         text="Learn more about enterprise apps"
         linkName="services"
         :query="{ active: 'Enterprise Tools' }"
+        class="ml-auto"
       />
     </b-container>
   </div>

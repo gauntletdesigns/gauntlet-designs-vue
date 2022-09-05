@@ -27,7 +27,7 @@
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
-        <SlideButton text="Schedule a free consultation" linkName="contact" />
+        <SlideButton text="Schedule a free consultation" linkName="contact" class="ml-auto"/>
       </div>
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
         <CloudLogo class="d-flex justify-content-center" />

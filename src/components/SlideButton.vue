@@ -1,5 +1,5 @@
 <template>
-  <b-btn class="ml-auto mr-2 service-consult" :to="{ name: linkName, query }"
+  <b-btn class="mr-2 service-consult" :to="{ name: linkName, query }"
     ><span>{{ text }}</span>
   </b-btn>
 </template>
