@@ -5,9 +5,9 @@
       class="pb-4 d-flex flex-column align-items-end justify-content-center selection"
     >
       <b-btn
-        variant="link"
         v-for="service in services"
-        class="service-btn my-1 pb-2"
+        class="service-btn"
+        variant="link"
         :class="{ active: service.name === active }"
         @click="
           () => {
@@ -72,28 +72,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.service-btn {
-  display: block;
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.14);
-}
-
-.service-btn:focus {
-  box-shadow: unset !important;
-  text-decoration: unset;
-}
-
-.service-btn:hover {
-  box-shadow: unset !important;
-  text-decoration: unset;
-  border-bottom: 3px solid $accent-light;
-}
-
-.active {
-  border-bottom: 3px solid $accent-light;
-}
-
 .description-section {
   padding: 20px;
   color: $dark-text;
@@ -106,5 +84,53 @@ export default {
 .contact {
   color: $accent;
   font-weight: 600;
+}
+
+//button effect
+.service-btn {
+  text-decoration: unset;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 5px;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $dark-text;
+  transition: 0.2s;
+  &::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: $accent-light;
+    transition: 0.4s;
+  }
+  &:hover,
+  &:focus {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.btn-link:focus {
+  outline: none !important;
+  box-shadow: unset !important;
+  &::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: $accent-light;
+    transition: 0.4s;
+  }
 }
 </style>
