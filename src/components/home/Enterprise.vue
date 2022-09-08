@@ -11,7 +11,7 @@
         <ul>
           <li>Built with mobile responsive design from the start</li>
           <li>Built with accessibility and usability from the start</li>
-          <li>Scales to your business needs, as your business scales</li>
+          <li>Scales to your business needs</li>
           <li>Custom permission and user management to meet your needs</li>
         </ul>
       </div>

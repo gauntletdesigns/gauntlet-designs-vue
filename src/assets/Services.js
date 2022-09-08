@@ -48,9 +48,9 @@ export default [
     paragraphs: [
       "We optimize the content, structure, and layout of our websites to achieve the best ranking results in search" +
         " engines.",
-      "Our websites are Section 508 Compliant, meaning they are fully accessible for all users. Our" +
-        " website feature text alternatives, fonts with increased readability, closed captioning in video posts," +
-        " scripting workarounds to accommodate some assistive technologies and color alternatives",
+      "Our websites are Section 508 Compliant, meaning they are fully accessible for all users. " +
+      "All of our websites are run through in house testing to ensure that, regardless of any physical limitations, " +
+      " your users will have the best possible experience using your site.",
     ],
   },
   {
@@ -65,7 +65,9 @@ export default [
   {
     name: "Consulting",
     paragraphs: [
-      "Already have an existing application, but need some surge support to meet a deadline? Let us help. Our experienced team of developers and designers can help you solve the unique problems your business is tackling.",
+      "Already have an existing application, but need some surge support to meet a deadline? Let us help." +
+      "Our development and design teams have experience working for major corporations such as Booz Allen Hamilton, " +
+      "Microsoft, Boeing, and more",
       "We can provide support for the full stack of web development, for any of the three major clouds (Google, Azure, AWS).",
     ],
   },

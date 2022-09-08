@@ -4,7 +4,7 @@
       <h2 class="sub-title">Consulting</h2>
       <div class="text">
         Don't need a website, but instead looking for expertise and assistance
-        for your existing web infrastructure? We can help with that to. We have
+        for your existing web infrastructure? We can help with that too. We have
         professional work experience with AWS, Google Cloud, and Azure. Along
         with modern Javascript frameworks, and web application backends.
       </div>
