@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="d-flex flex-column layout">
-    <Section1 v-if="$route.name === 'home'"/>
+    <Navbar />
+    <Section1 v-if="$route.name === 'home'" />
     <notifications group="main" />
-    <Navbar/>
     <div class="app-container h-100">
       <router-view />
     </div>
@@ -31,6 +31,6 @@ import Footer from "./components/Footer/Footer";
 import Section1 from "@/components/home/Section1";
 
 export default {
-  components: {Section1, Footer, Navbar },
+  components: { Section1, Footer, Navbar },
 };
 </script>
