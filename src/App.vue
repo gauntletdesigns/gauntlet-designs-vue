@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="d-flex flex-column layout">
-    <Navbar />
-    <Section1 v-if="$route.name === 'home'" />
-    <notifications group="main" />
     <div class="app-container h-100">
+      <Navbar />
+      <Section1 v-if="$route.name === 'home'" />
+      <notifications group="main" />
       <router-view />
     </div>
     <Footer class="mt-auto" />
