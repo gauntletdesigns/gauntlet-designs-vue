@@ -2,7 +2,7 @@
   <b-container>
     <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
       <div class="sections">
-        <section4 />
+        <section4 id="trigger-right" />
         <Section2 />
         <Enterprise />
         <Section3 />
@@ -12,6 +12,7 @@
       </div>
     </div>
     <home-trinity class="trinity" />
+    <FadeButton text="Contact Us" linkName="contact" />
   </b-container>
 </template>
 
@@ -23,9 +24,12 @@ import HomeTrinity from "@/components/home/home-trinity";
 import Section4 from "@/components/home/Section4";
 import Logo from "@/components/Logo";
 import Enterprise from "@/components/home/Enterprise";
+import FadeButton from "@/components/FadeButton";
+
 export default {
   name: "Home",
   components: {
+    FadeButton,
     Enterprise,
     Logo,
     Section4,

@@ -5,13 +5,13 @@
     >
       <div class="intro">
         <h2 class="headline">Gauntlet Designs</h2>
-        <p class="subtext">AND DEVELOPMENT</p>
         <p class="animation">
-          CUSTOM
-          <span class="hover-btn" id="style-2" data-replace="BUILD link"
-            ><span>DESIGN</span></span
+          CUSTOM BUILT
+          <span class="hover-btn" id="style-2" data-replace="DESIGNS link"
+            ><span>WEBSITES</span></span
           >
         </p>
+        <SlideButton text="Learn More" linkName="services" />
       </div>
     </b-container>
   </div>
@@ -19,20 +19,21 @@
 
 <script>
 import Navbar from "@/components/Navbar";
+import SlideButton from "@/components/SlideButton";
 
 export default {
   name: "Section1",
-  components: { Navbar },
+  components: { SlideButton, Navbar },
 };
 </script>
 
 <style scoped lang="scss">
 .background {
-  background-image: url("../../assets/gauntlet-designs-logo.webp");
+  //background-image: url("../../assets/gauntlet-designs-logo.webp");
   background-size: contain;
   background-color: #111315;
   min-height: 400px;
-  height: 60vh;
+  height: 50vh;
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
@@ -46,7 +47,7 @@ export default {
 }
 
 .header-container {
-  padding-top: 50px;
+  padding-top: 125px;
 }
 
 .headline {
@@ -58,7 +59,7 @@ export default {
 .tagline {
   font-size: 20px;
   padding-bottom: 40px;
-  color: $accent-light;
+  color: $button-background;
   font-weight: bold;
 }
 
@@ -84,7 +85,7 @@ export default {
   left: 0;
 }
 .hover-btn::before {
-  background-color: $accent-light;
+  background-color: $button-background;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -98,7 +99,7 @@ export default {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: $accent-light;
+  color: $button-background;
 }
 
 .hover-btn:hover::before {

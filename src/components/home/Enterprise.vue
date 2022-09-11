@@ -15,12 +15,15 @@
           <li>Custom permission and user management to meet your needs</li>
         </ul>
       </div>
-      <SlideButton
-        text="Learn more about enterprise apps"
+      <b-btn
+        variant="link"
+        class="ml-auto learn-more"
         linkName="services"
         :query="{ active: 'Enterprise Tools' }"
-        class="ml-auto"
-      />
+      >
+        Learn more
+        <b-icon-chevron-double-right />
+      </b-btn>
     </b-container>
   </div>
 </template>
@@ -37,5 +40,7 @@ export default {
 .learn-more {
   color: $accent;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
 }
 </style>

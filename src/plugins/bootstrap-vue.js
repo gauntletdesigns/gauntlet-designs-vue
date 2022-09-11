@@ -26,6 +26,7 @@ import {
   BIconCodeSlash,
   BIconPencil,
   BIconCloud,
+  BIconChevronDoubleRight,
 } from "bootstrap-vue";
 import "../custom-vars.scss";
 
@@ -49,3 +50,4 @@ Vue.component("b-form-textarea", BFormTextarea);
 Vue.component("b-icon-code-slash", BIconCodeSlash);
 Vue.component("b-icon-pencil", BIconPencil);
 Vue.component("b-icon-cloud", BIconCloud);
+Vue.component("b-icon-chevron-double-right", BIconChevronDoubleRight);

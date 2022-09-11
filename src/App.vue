@@ -10,6 +10,16 @@
   </div>
 </template>
 
+<script>
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
+import Section1 from "@/components/home/Section1";
+
+export default {
+  components: { Section1, Footer, Navbar },
+};
+</script>
+
 <style lang="scss">
 .layout {
   min-height: 100vh;
@@ -25,12 +35,3 @@
   padding: 60px 0px 30px 0px;
 }
 </style>
-<script>
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer/Footer";
-import Section1 from "@/components/home/Section1";
-
-export default {
-  components: { Section1, Footer, Navbar },
-};
-</script>
