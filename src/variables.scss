@@ -5,10 +5,10 @@ $secondary-dark: #ce4d23;
 $accent: #1249be;
 $accent-dark: #223049;
 $accent-light: #5b84de;
-$button-background: #87AAF9;
+$button-background: #87aaf9;
 
 // background-colors
-$background: #F2F4F7;
+$background: #f2f4f7;
 $background-light: #ffffff;
 $background-accent: #141517;
 $background-accent: #141517;
@@ -20,13 +20,12 @@ $button-text: #121212;
 
 //Bootstrap Mods
 $info: $secondary-light;
-$success: #87AAF9;
-
+$success: #87aaf9;
 
 //Fonts
 
 .sub-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
   color: $dark-text;
 }
@@ -34,7 +33,7 @@ $success: #87AAF9;
 .text {
   color: $dark-text;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title {

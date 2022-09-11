@@ -4,25 +4,24 @@
   <div class="container-background w-100 h-100">
     <b-container>
       <b-row>
+        <AddressInfo />
+        <Footer-Logo />
 
-        <AddressInfo/>
-        <Footer-Logo/>
-
-        <Footer-Contact/>
-        <Copyright/>
+        <Footer-Contact />
+        <Copyright />
       </b-row>
     </b-container>
   </div>
 </template>
 
 <script>
-import AddressInfo from "@/components/Footer/AddressInfo";
-import FooterLogo from "@/components/Footer/FooterLogo";
-import FooterContact from "@/components/Footer/FooterContact";
-import Copyright from "@/components/Footer/Copyright";
+import AddressInfo from '@/components/Footer/AddressInfo';
+import FooterLogo from '@/components/Footer/FooterLogo';
+import FooterContact from '@/components/Footer/FooterContact';
+import Copyright from '@/components/Footer/Copyright';
 
 export default {
-  name: "Footer",
+  name: 'Footer',
   components: {Copyright, FooterContact, FooterLogo, AddressInfo},
 };
 </script>
@@ -45,5 +44,4 @@ export default {
 .color-background {
   background-color: $background-accent !important;
 }
-
 </style>

@@ -17,14 +17,14 @@
   </b-container>
 </template>
 <script>
-import ContactForm from "@/components/ContactForm/ContactForm";
+import ContactForm from '@/components/ContactForm/ContactForm';
 export default {
-  name: "Contact",
-  components: { ContactForm },
+  name: 'Contact',
+  components: {ContactForm},
   data() {
     return {
-      phone: "703-296-4019",
-      email: "contact@gauntletdesigns.com",
+      phone: '703-296-4019',
+      email: 'contact@gauntletdesigns.com',
     };
   },
 };

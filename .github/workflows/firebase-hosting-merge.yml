@@ -32,7 +32,6 @@ jobs:
           FIREBASE_CONFIG: ${{secrets.FIREBASE_CONF}}
         run: npm run setupFirebaseConf
 
-
       - name: Build for production
         run: npm run build
 

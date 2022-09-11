@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: "DescriptionInput",
+  name: 'DescriptionInput',
   props: {
     form: {},
   },

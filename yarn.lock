@@ -5012,9 +5012,19 @@ postcss@^8.2.6, postcss@^8.3.5, postcss@^8.4.7:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+prettier-airbnb-config@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-airbnb-config/-/prettier-airbnb-config-1.0.0.tgz#a070740d421b3a59ad31f032d467cfbb6fafc5d1"
+  integrity sha512-FsEe38fJftYi19AskzuOWbw8zBnXDcZwv2Uw8BI65ROyK4hE6+iojXVFu+FiYNfrRBL+UZJbl2XGk56Ur2QGsA==
+
 "prettier@^1.18.2 || ^2.0.0":
   version "2.7.1"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
+
+prettier@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
 
 pretty-error@^4.0.0:

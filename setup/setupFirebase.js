@@ -3,5 +3,5 @@ console.log(conf);
 
 const fs = require('fs');
 fs.writeFile('./.firebase.conf.json', JSON.stringify(conf), 'utf8', () => {
-    console.log('wrote ', conf, ' to file')
-})
+  console.log('wrote ', conf, ' to file');
+});

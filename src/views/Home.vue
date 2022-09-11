@@ -17,17 +17,17 @@
 </template>
 
 <script>
-import Section1 from "../components/home/Section1";
-import Section2 from "../components/home/Section2";
-import Section3 from "../components/home/Section3";
-import HomeTrinity from "@/components/home/home-trinity";
-import Section4 from "@/components/home/Section4";
-import Logo from "@/components/Logo";
-import Enterprise from "@/components/home/Enterprise";
-import FadeButton from "@/components/FadeButton";
+import Section1 from '../components/home/Section1';
+import Section2 from '../components/home/Section2';
+import Section3 from '../components/home/Section3';
+import HomeTrinity from '@/components/home/home-trinity';
+import Section4 from '@/components/home/Section4';
+import Logo from '@/components/Logo';
+import Enterprise from '@/components/home/Enterprise';
+import FadeButton from '@/components/FadeButton';
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     FadeButton,
     Enterprise,
@@ -43,7 +43,7 @@ export default {
 
 <style scoped lang="scss">
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sections {

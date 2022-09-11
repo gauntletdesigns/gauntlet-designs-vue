@@ -2,7 +2,7 @@
   <div class="d-flex justify-content-center">
     <b-img
       :src="require(`@/assets/${this.fileName}`)"
-      :class="{ large, small: !large }"
+      :class="{large, small: !large}"
       alt="Gauntlet Designs Logo"
     />
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Logo",
+  name: 'Logo',
   props: {
     large: {
       type: Boolean,
@@ -23,9 +23,9 @@ export default {
   computed: {
     fileName() {
       if (this.text) {
-        return "gauntlet-designs-logo.webp";
+        return 'gauntlet-designs-logo.webp';
       }
-      return "gauntlet-designs-logo-no-text-small.webp";
+      return 'gauntlet-designs-logo-no-text-small.webp';
     },
   },
 };

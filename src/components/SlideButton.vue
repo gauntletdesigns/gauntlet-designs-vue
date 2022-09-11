@@ -1,13 +1,13 @@
 <template>
-  <b-btn class="mr-2 service-consult" :to="{ name: linkName, query }" :class="{small}"
+  <b-btn class="mr-2 service-consult" :to="{name: linkName, query}" :class="{small}"
     ><span>{{ text }}</span>
   </b-btn>
 </template>
 
 <script>
 export default {
-  name: "SlideButton",
-  props: {"text": {}, "linkName": {} , "query": {}, small: {type: Boolean}},
+  name: 'SlideButton',
+  props: {text: {}, linkName: {}, query: {}, small: {type: Boolean}},
 };
 </script>
 
@@ -19,7 +19,7 @@ export default {
   border: none;
   color: $button-text;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   padding: 15px;
@@ -39,7 +39,7 @@ export default {
 }
 
 .service-consult span:after {
-  content: "\00bb";
+  content: '\00bb';
   position: absolute;
   opacity: 0;
   top: 0;

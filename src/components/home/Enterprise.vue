@@ -4,9 +4,8 @@
       <h2 class="sub-title">Enterprise Scale Applications</h2>
       <div class="text">
         <p>
-          Let us help you solve your businesses most time consuming problems. We
-          create enterprise-grade applications that are designed to scale with
-          your business.
+          Let us help you solve your businesses most time consuming problems. We create
+          enterprise-grade applications that are designed to scale with your business.
         </p>
         <ul>
           <li>Built with mobile responsive design from the start</li>
@@ -19,7 +18,7 @@
         variant="link"
         class="ml-auto learn-more"
         linkName="services"
-        :query="{ active: 'Enterprise Tools' }"
+        :query="{active: 'Enterprise Tools'}"
       >
         Learn more
         <b-icon-chevron-double-right />
@@ -29,10 +28,10 @@
 </template>
 
 <script>
-import SlideButton from "@/components/SlideButton";
+import SlideButton from '@/components/SlideButton';
 export default {
-  name: "Enterprise",
-  components: { SlideButton },
+  name: 'Enterprise',
+  components: {SlideButton},
 };
 </script>
 
@@ -40,7 +39,7 @@ export default {
 .learn-more {
   color: $accent;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
 }
 </style>

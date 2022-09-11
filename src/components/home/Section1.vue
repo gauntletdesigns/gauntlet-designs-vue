@@ -1,8 +1,6 @@
 <template>
   <div class="background d-flex flex-column">
-    <b-container
-      class="header-container d-flex flex-column align-items-left mb-auto"
-    >
+    <b-container class="header-container d-flex flex-column align-items-left mb-auto">
       <div class="intro">
         <h2 class="headline">Gauntlet Designs</h2>
         <p class="animation">
@@ -18,12 +16,12 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar";
-import SlideButton from "@/components/SlideButton";
+import Navbar from '@/components/Navbar';
+import SlideButton from '@/components/SlideButton';
 
 export default {
-  name: "Section1",
-  components: { SlideButton, Navbar },
+  name: 'Section1',
+  components: {SlideButton, Navbar},
 };
 </script>
 
@@ -65,7 +63,7 @@ export default {
 
 .intro {
   color: $light-text;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 //animated text
@@ -79,7 +77,7 @@ export default {
 
 .hover-btn::before,
 .hover-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   left: 0;

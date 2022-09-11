@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: "SmallServices",
-  props: ["services"],
+  name: 'SmallServices',
+  props: ['services'],
 };
 </script>
 

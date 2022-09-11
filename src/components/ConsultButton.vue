@@ -1,13 +1,13 @@
 <template>
-  <b-btn class="consult-btn consult" :to="{ name: linkName }">
+  <b-btn class="consult-btn consult" :to="{name: linkName}">
     {{ text }}
   </b-btn>
 </template>
 
 <script>
 export default {
-  name: "ConsultButton",
-  props: ["text", "linkName"],
+  name: 'ConsultButton',
+  props: ['text', 'linkName'],
 };
 </script>
 
@@ -17,7 +17,7 @@ export default {
   position: relative;
   display: block;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ export default {
 
 .consult-btn::before {
   background: $accent-light;
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,6 +1,6 @@
 <template>
   <b-btn
-    :to="{ name: linkName, query }"
+    :to="{name: linkName, query}"
     class="item item--primary"
     data-aos="fade-left"
     data-aos-anchor="#trigger-right"
@@ -11,16 +11,16 @@
 </template>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 AOS.init({
   duration: 1200,
-  easing: "ease-in-out-back",
+  easing: 'ease-in-out-back',
 });
 
 export default {
-  name: "FadeButton",
-  props: { text: {}, linkName: {}, query: {}, small: { type: Boolean } },
+  name: 'FadeButton',
+  props: {text: {}, linkName: {}, query: {}, small: {type: Boolean}},
 };
 </script>
 
@@ -44,7 +44,7 @@ export default {
   border: none;
   color: $button-text;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   padding: 15px;

@@ -20,14 +20,8 @@
 
       <DescriptionInput :form="form" />
       <div class="d-flex">
-        <b-btn type="reset" variant="danger" class="form-buttons">
-          Clear
-        </b-btn>
-        <b-btn
-          type="submit"
-          variant="success"
-          class="form-buttons submit-button ml-3"
-        >
+        <b-btn type="reset" variant="danger" class="form-buttons"> Clear </b-btn>
+        <b-btn type="submit" variant="success" class="form-buttons submit-button ml-3">
           Submit
         </b-btn>
       </div>
@@ -36,16 +30,16 @@
 </template>
 
 <script>
-import NameInput from "@/components/ContactForm/NameInput";
-import EmailInput from "@/components/ContactForm/EmailInput";
-import DescriptionInput from "@/components/ContactForm/DescriptionInput";
-import PhoneInput from "@/components/ContactForm/PhoneInput";
-import CompanyInput from "@/components/ContactForm/CompanyInput";
+import NameInput from '@/components/ContactForm/NameInput';
+import EmailInput from '@/components/ContactForm/EmailInput';
+import DescriptionInput from '@/components/ContactForm/DescriptionInput';
+import PhoneInput from '@/components/ContactForm/PhoneInput';
+import CompanyInput from '@/components/ContactForm/CompanyInput';
 
-import { collection, doc, setDoc, getFirestore } from "firebase/firestore/lite";
+import {collection, doc, setDoc, getFirestore} from 'firebase/firestore/lite';
 
 export default {
-  name: "ContactForm",
+  name: 'ContactForm',
   components: {
     CompanyInput,
     PhoneInput,
@@ -61,10 +55,10 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      const newEmailRef = doc(collection(getFirestore(), "mail"));
+      const newEmailRef = doc(collection(getFirestore(), 'mail'));
       let form = this.form;
       setDoc(newEmailRef, {
-        to: ["contact@gauntletdesigns.com"],
+        to: ['contact@gauntletdesigns.com'],
         message: {
           subject: `New Contact Us Submission from ${form.name}`,
           html: `<h1>Submission From ${form.name}</h1><p>${form.company}</p><p>${form.email}</p><p>${form.phone}</p><p>${form.description}</p> `,
@@ -72,18 +66,18 @@ export default {
       })
         .then(() => {
           this.$notify({
-            group: "main",
-            title: "Submitted",
+            group: 'main',
+            title: 'Submitted',
             text: "Thank you, we'll be in touch shortly",
-            type: "success",
+            type: 'success',
           });
           this.onReset({});
         })
-        .catch((e) => {
+        .catch(e => {
           this.$notify({
-            group: "main",
-            type: "error",
-            title: "Error Submitting,",
+            group: 'main',
+            type: 'error',
+            title: 'Error Submitting,',
             text: "That's embarassing, something went wrong, please try again later.",
           });
         });
@@ -113,7 +107,7 @@ export default {
 }
 
 .form-buttons {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
 }

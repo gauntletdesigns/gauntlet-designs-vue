@@ -7,14 +7,12 @@
 </template>
 <script>
 export default {
-  name: 'Copyright'
-}
+  name: 'Copyright',
+};
 </script>
 <style scoped lang="scss">
-
 .copyright-text {
   color: #e2e2e8;
   font-size: 12px;
 }
-
 </style>

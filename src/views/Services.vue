@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import services from "@/assets/Services";
-import LargeServices from "@/components/Services/LargeServices";
-import SmallServices from "@/components/Services/SmallServices";
+import services from '@/assets/Services';
+import LargeServices from '@/components/Services/LargeServices';
+import SmallServices from '@/components/Services/SmallServices';
 export default {
-  name: "Services",
-  components: { SmallServices, LargeServices },
+  name: 'Services',
+  components: {SmallServices, LargeServices},
   computed: {
     services() {
       return services;

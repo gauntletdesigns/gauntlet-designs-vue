@@ -8,7 +8,7 @@
         v-for="service in services"
         class="service-btn"
         variant="link"
-        :class="{ active: service.name === active }"
+        :class="{active: service.name === active}"
         @click="
           () => {
             selectService(service);
@@ -18,16 +18,13 @@
         {{ service.name }}
       </b-btn>
     </b-col>
-    <b-col
-      cols="8"
-      class="d-flex justify-content-start h-100 flex-column selection"
-    >
+    <b-col cols="8" class="d-flex justify-content-start h-100 flex-column selection">
       <div class="description-section d-flex flex-column" aria-live="polite">
         <h3 class="title pb-3">{{ active }}</h3>
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
-        <SlideButton text="Schedule a free consultation" linkName="contact" class="ml-auto"/>
+        <SlideButton text="Schedule a free consultation" linkName="contact" class="ml-auto" />
       </div>
       <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
         <CloudLogo class="d-flex justify-content-center" />
@@ -37,13 +34,13 @@
 </template>
 
 <script>
-import CloudLogo from "@/components/CloudLogo";
-import SlideButton from "@/components/SlideButton";
+import CloudLogo from '@/components/CloudLogo';
+import SlideButton from '@/components/SlideButton';
 
 export default {
-  name: "LargeServices",
-  components: { SlideButton, CloudLogo },
-  props: ["services"],
+  name: 'LargeServices',
+  components: {SlideButton, CloudLogo},
+  props: ['services'],
   data() {
     return {
       showCollapse: true,
@@ -54,8 +51,7 @@ export default {
       return this.$route.query?.active || this.services[0]?.name;
     },
     paragraphs() {
-      return this.services.find((service) => service.name === this.active)
-        .paragraphs;
+      return this.services.find(service => service.name === this.active).paragraphs;
     },
   },
   methods: {
@@ -89,7 +85,7 @@ export default {
 //button effect
 .service-btn {
   text-decoration: unset;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   margin: 10px;
   position: relative;
@@ -102,7 +98,7 @@ export default {
   color: $dark-text;
   transition: 0.2s;
   &::before {
-    content: "";
+    content: '';
     height: 3px;
     width: 0;
     left: 0;
@@ -112,7 +108,8 @@ export default {
     transition: 0.4s;
   }
   &:hover,
-  &:focus, &.active {
+  &:focus,
+  &.active {
     &::before {
       width: 100%;
     }

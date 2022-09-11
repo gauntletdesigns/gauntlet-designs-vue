@@ -3,20 +3,20 @@
     <b-img
       :src="require(`@/assets/${this.fileName}`)"
       class="cloud"
-      :class="{ large, small: !large }"
+      :class="{large, small: !large}"
       alt="Gauntlet Designs Logo"
     />
     <div class="google-text mt-auto ml-3">
-      Build a carbon-free future on the cleanest cloud in the industry. Google
-      Cloud is the only major cloud provider to purchase enough renewable energy
-      to cover our operations, including your workloads.
+      Build a carbon-free future on the cleanest cloud in the industry. Google Cloud is the only
+      major cloud provider to purchase enough renewable energy to cover our operations, including
+      your workloads.
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CloudLogo",
+  name: 'CloudLogo',
   props: {
     large: {
       type: Boolean,
@@ -29,9 +29,9 @@ export default {
   computed: {
     fileName() {
       if (this.text) {
-        return "supercloud.svg";
+        return 'supercloud.svg';
       }
-      return "supercloud.svg";
+      return 'supercloud.svg';
     },
   },
 };
