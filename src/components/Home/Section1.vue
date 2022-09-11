@@ -17,7 +17,7 @@
 
 <script>
 import Navbar from '@/components/Navbar';
-import SlideButton from '@/components/SlideButton';
+import SlideButton from '@/components/Buttons/SlideButton';
 
 export default {
   name: 'Section1',

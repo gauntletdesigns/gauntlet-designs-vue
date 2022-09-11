@@ -14,24 +14,14 @@
           <li>Custom permission and user management to meet your needs</li>
         </ul>
       </div>
-      <b-btn
-        variant="link"
-        class="ml-auto learn-more"
-        linkName="services"
-        :query="{active: 'Enterprise Tools'}"
-      >
-        Learn more
-        <b-icon-chevron-double-right />
-      </b-btn>
     </b-container>
   </div>
 </template>
 
 <script>
-import SlideButton from '@/components/SlideButton';
 export default {
   name: 'Enterprise',
-  components: {SlideButton},
+  components: {},
 };
 </script>
 

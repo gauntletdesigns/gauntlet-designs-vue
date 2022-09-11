@@ -1,6 +1,6 @@
 <template>
-  <b-navbar class="py-1 navbar" sticky variant="dark" type="dark" toggleable="lg">
-    <b-navbar-brand :to="{name: 'home'}" class="d-flex nav-logo flex-row align-items-center">
+  <b-navbar class="py-2" sticky variant="dark" type="dark" toggleable="lg">
+    <b-navbar-brand :to="{name: 'home'}" class="logo-nav d-flex flex-row align-items-center">
       <span class="logo-bracket">{{&nbsp;</span>
       <span class="logo-title">GAUNTLET DESIGNS</span>
       <span class="logo-bracket">&nbsp;}}</span>
@@ -25,7 +25,7 @@
 
 <script>
 import Logo from './Logo';
-import SlideButton from '@/components/SlideButton';
+import SlideButton from '@/components/Buttons/SlideButton';
 
 export default {
   name: 'Navbar',
@@ -33,10 +33,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.navbar {
-  background-color: transparent;
-}
-
 .nav-item:hover,
 .nav-item:active {
   border-bottom: 3px solid $accent-light;
@@ -50,15 +46,19 @@ export default {
   letter-spacing: 8px;
 }
 
-.nav-logo {
-  border: solid 1px white;
+.logo-nav {
+  border: 1px solid white;
   color: white;
-  margin: 15px;
-  padding: 10px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
   font-size: 14px;
   text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.logo-nav:hover {
+  border: 1px solid $button-background;
 }
 
 .logo-title {
@@ -69,11 +69,6 @@ export default {
 .logo-bracket {
   font-size: 18px;
   font-family: 'Roboto Mono', monospace;
-}
-
-.nav-logo:hover {
-  color: white;
-  border: solid 1px $button-background;
 }
 
 .small-btn {

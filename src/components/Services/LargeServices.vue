@@ -35,7 +35,7 @@
 
 <script>
 import CloudLogo from '@/components/CloudLogo';
-import SlideButton from '@/components/SlideButton';
+import SlideButton from '@/components/Buttons/SlideButton';
 
 export default {
   name: 'LargeServices',

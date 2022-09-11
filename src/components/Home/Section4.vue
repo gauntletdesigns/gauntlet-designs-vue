@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import SlideButton from '@/components/SlideButton';
+import SlideButton from '@/components/Buttons/SlideButton';
 export default {
   name: 'Section4',
   components: {SlideButton},

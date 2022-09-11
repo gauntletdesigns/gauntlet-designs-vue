@@ -13,7 +13,7 @@
 <script>
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
-import Section1 from '@/components/home/Section1';
+import Section1 from '@/components/Home/Section1';
 
 export default {
   components: {Section1, Footer, Navbar},
