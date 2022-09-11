@@ -2,9 +2,10 @@
   <b-btn
     :to="{name: linkName, query}"
     class="item item--primary"
-    data-aos="fade-left"
-    data-aos-anchor="#trigger-right"
+    data-aos="fade-down"
+    data-aos-anchor="#trigger-btn"
     data-aos-anchor-placement="top-center"
+    disable: mobile
   >
     <span>{{ text }}</span>
   </b-btn>
@@ -30,10 +31,6 @@ export default {
   top: 0;
   bottom: 0;
   margin: auto;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .item {

@@ -2,8 +2,8 @@
   <b-container>
     <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
       <div class="sections">
-        <section4 id="trigger-right" />
-        <Section2 />
+        <section4 />
+        <Section2 id="trigger-btn" />
         <Enterprise />
         <Section3 />
       </div>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <home-trinity class="trinity" />
-    <FadeButton text="Contact Us" linkName="contact" />
+    <FadeButton text="Learn More" linkName="services" />
   </b-container>
 </template>
 
