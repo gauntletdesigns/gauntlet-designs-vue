@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="d-flex flex-column">
+  <div id="app" class="d-flex flex-column layout">
     <div class="app-container h-100">
-      <Navbar v-if="$route.name !== 'home'" />
+      <Navbar />
       <Section1 v-if="$route.name === 'home'" />
       <notifications group="main" />
       <router-view />

@@ -1,6 +1,5 @@
 <template>
   <div class="section-container">
-    <Navbar />
     <b-container>
       <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
         <div class="sections">
