@@ -7,7 +7,7 @@
         Contact us today to schedule a free consultation.
       </p>
       <div class="d-flex flex-row pb-2">
-        <a :href="`tel:${phone}`">{{ phone }}</a>
+        <a class="text" :href="`tel:${phone}`">{{ phone }}</a>
       </div>
       <div class="d-flex flex-row">
         <a class="email" :href="`mailto:${email}`">{{ email }}</a>
@@ -32,13 +32,13 @@ export default {
 
 <style scoped lang="scss">
 .email {
-  color: #424242;
-  border-bottom: 1px solid #424242;
+  color: white;
+  border-bottom: 1px solid white;
   text-decoration: unset;
 }
 
 .email:hover {
-  color: #045c8c;
-  border-bottom: 1px solid #045c8c;
+  color: $accent-light;
+  border-bottom: 1px solid $accent-light;
 }
 </style>

@@ -35,7 +35,7 @@ export default {
 
 <style scoped lang="scss">
 .triplet-section {
-  color: $dark-text;
+  color: $light-text;
 }
 
 .triplet {

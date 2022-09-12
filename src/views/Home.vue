@@ -1,19 +1,23 @@
 <template>
-  <b-container>
-    <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
-      <div class="sections">
-        <section4 />
-        <Section2 id="trigger-btn" />
-        <Enterprise />
-        <Section3 />
+  <div class="section-container">
+    <Navbar />
+    <b-container>
+      <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
+        <div class="sections">
+          <section4 data-aos-once="true" data-aos="fade-left" class="py-5" />
+          <Section2 data-aos-once="true" data-aos="fade-right" class="py-5" />
+          <Enterprise data-aos-once="true" data-aos="fade-left" class="py-5" />
+          <Section3 data-aos-once="true" data-aos="fade-right" class="py-5" />
+        </div>
+        <div data-aos="fade-in" class="logo d-flex flex-column align-self-center py-5">
+          <div class="pt-4 d-flex align-self-center"></div>
+        </div>
       </div>
-      <div class="logo d-flex flex-column align-self-center">
-        <div class="pt-4 d-flex align-self-center"></div>
-      </div>
-    </div>
-    <home-trinity class="trinity" />
-    <FadeButton text="Learn More" linkName="services" />
-  </b-container>
+      <home-trinity class="trinity py-5" />
+      <!--    <FadeButton text="Learn More" linkName="services" />-->
+      <Footer />
+    </b-container>
+  </div>
 </template>
 
 <script>
@@ -25,10 +29,14 @@ import Section4 from '@/components/Home/Section4';
 import Logo from '@/components/Logo';
 import Enterprise from '@/components/Home/Enterprise';
 import FadeButton from '@/components/Buttons/FadeButton';
+import Footer from '@/components/Footer/Footer';
+import Navbar from '@/components/Navbar';
 
 export default {
   name: 'Home',
   components: {
+    Navbar,
+    Footer,
     FadeButton,
     Enterprise,
     Logo,
@@ -46,8 +54,13 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+.section-container {
+  background: linear-gradient(#24242a, #62626c);
+}
+
 .sections {
-  width: 700px;
+  width: 750px;
+  margin: auto;
 }
 
 .logo {

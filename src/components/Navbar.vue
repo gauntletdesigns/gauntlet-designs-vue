@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="py-2" sticky variant="dark" type="dark" toggleable="lg">
+  <b-navbar class="py-2 navbar" sticky toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}" class="logo-nav d-flex flex-row align-items-center">
       <span class="logo-bracket">{{&nbsp;</span>
       <span class="logo-title">GAUNTLET DESIGNS</span>
@@ -33,6 +33,11 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.navbar {
+  background-color: #24242a;
+  color: $light-text;
+}
+
 .nav-item:hover,
 .nav-item:active {
   border-bottom: 3px solid $accent-light;
@@ -59,6 +64,7 @@ export default {
 
 .logo-nav:hover {
   border: 1px solid $button-background;
+  color: white;
 }
 
 .logo-title {

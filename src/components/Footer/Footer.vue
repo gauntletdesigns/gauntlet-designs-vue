@@ -1,17 +1,12 @@
 <template>
-  <!--  To Do: Footer isn't centered properly.-->
-
-  <div class="container-background w-100 h-100">
-    <b-container>
-      <b-row>
-        <AddressInfo />
-        <Footer-Logo />
-
-        <Footer-Contact />
-        <Copyright />
-      </b-row>
-    </b-container>
-  </div>
+  <b-container class="pt-3">
+    <b-row>
+      <AddressInfo />
+      <Footer-Logo />
+      <Footer-Contact />
+      <Copyright />
+    </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -26,22 +21,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.footer {
-  background-color: $primary;
-  color: #e8e8f1;
-  padding-top: 20px;
-}
-
-.container-background {
-  background-color: $primary;
-}
-
-.footer-container {
-  background-color: $primary;
-}
-
-.color-background {
-  background-color: $background-accent !important;
-}
-</style>
+<style scoped lang="scss"></style>

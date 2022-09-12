@@ -1,12 +1,12 @@
 <template>
-  <div id="app" class="d-flex flex-column layout">
+  <div id="app" class="d-flex flex-column">
     <div class="app-container h-100">
-      <Navbar />
+      <Navbar v-if="$route.name !== 'home'" />
       <Section1 v-if="$route.name === 'home'" />
       <notifications group="main" />
       <router-view />
+      <Footer v-if="$route.name !== 'home'" />
     </div>
-    <Footer class="mt-auto" />
   </div>
 </template>
 
@@ -26,12 +26,7 @@ export default {
 }
 
 .app-container {
-  background-color: $background;
   flex: 1;
-}
-
-.outer {
-  background-color: $background;
-  padding: 60px 0px 30px 0px;
+  background: linear-gradient(#24242a, #62626c);
 }
 </style>

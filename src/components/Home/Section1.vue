@@ -1,6 +1,6 @@
 <template>
-  <div class="background d-flex flex-column">
-    <b-container class="header-container d-flex flex-column align-items-left mb-auto">
+  <div class="d-flex flex-column background">
+    <b-container class="header-container d-flex flex-column align-items-left">
       <div class="intro">
         <h2 class="headline">Gauntlet Designs</h2>
         <p class="animation">
@@ -27,25 +27,19 @@ export default {
 
 <style scoped lang="scss">
 .background {
-  //background-image: url("../../assets/gauntlet-designs-logo.webp");
+  //background-image: url('../../assets/gauntlet-designs-logo.webp');
   background-size: contain;
   background-color: #111315;
-  min-height: 400px;
+  min-height: 500px;
   height: 50vh;
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 600px) {
-  .background {
-    min-height: 300px;
-    height: 50vh;
-  }
-}
-
 .header-container {
-  padding-top: 125px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .headline {

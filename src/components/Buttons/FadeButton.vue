@@ -15,8 +15,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-  duration: 1200,
-  easing: 'ease-in-out-back',
+  duration: 2000,
+  easing: 'ease-in',
 });
 
 export default {
