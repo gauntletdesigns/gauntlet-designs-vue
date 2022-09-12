@@ -1,23 +1,37 @@
 <template>
-  <div class="d-flex flex-wrap justify-content-around">
-    <div class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center">
-      <b-icon-pencil class="icon-circle" />
+  <div class="container d-flex flex-column justify-content-center">
+    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+      <b-img
+        src="@/assets/design.svg"
+        class="icon"
+        alt="Design icon showing pencils, pens and paper."
+      />
       <h3 class="triplet-title pt-3 pb-2">Design</h3>
       <div class="triplet-text">
         Our design team will work with you to come up with a design that fits your needs and
         companies branding.
       </div>
     </div>
-    <div class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center">
-      <b-icon-code-slash class="icon-circle" />
+
+    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+      <b-img
+        src="@/assets/code.svg"
+        class="icon"
+        alt="Icon showing computer and programming books."
+      />
       <h3 class="triplet-title pt-3 pb-2">Development</h3>
       <div class="triplet-text">
         With over 10 years of professional development experience our dev team will produce your
         custom website in a timely manner.
       </div>
     </div>
-    <div class="triplet-section my-2 px-3 my-lg-0 triplet d-flex flex-column align-items-center">
-      <b-icon-cloud class="icon-circle" />
+
+    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+      <b-img
+        src="@/assets/app.svg"
+        class="icon"
+        alt="Icon showing computer and phone with applications open."
+      />
       <h3 class="triplet-title pt-3 pb-2">Hosting</h3>
       <div class="triplet-text">
         Want us to run your site for you? We will host your website using Google cloud, for the best
@@ -34,21 +48,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.triplet-section {
-  color: $light-text;
+.container {
+  width: 600px;
+  margin: 0;
 }
-
 .triplet {
-  width: 300px;
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
   padding-top: 50px;
   padding-bottom: 30px;
-}
-
-.icon-circle {
-  width: 40px;
-  height: 40px;
+  margin: auto;
+  color: $light-text;
 }
 
 .triplet-title {
@@ -60,7 +70,11 @@ export default {
 }
 
 .triplet-text {
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  max-width: 300px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <b-container class="d-flex flex-column align-items-left">
+  <b-container class="container d-flex flex-column align-items-left">
     <h2 class="sub-title">Welcome</h2>
     <p class="text">
       Welcome to Gauntlet Designs. We design, build, and host custom websites and enterprise grade
@@ -22,5 +22,10 @@ export default {
 .learn-more {
   color: $accent;
   font-weight: 600;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0;
 }
 </style>

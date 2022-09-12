@@ -16,15 +16,15 @@ export default {
   color: white;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  padding: 10px;
 }
 
 .border {
   position: relative;
-  border: 1px solid $button-background;
+  border: 1px solid white;
   padding: 10px;
-  margin: 5px;
   background-color: unset;
 
   &::before,
@@ -37,17 +37,17 @@ export default {
   }
 
   &::before {
-    top: -5px;
-    left: -5px;
-    border-top: 1px solid $button-background;
-    border-left: 1px solid $button-background;
+    top: -10px;
+    left: -10px;
+    border-top: 1px solid $accent-light;
+    border-left: 1px solid $accent-light;
   }
 
   &::after {
-    right: -5px;
-    bottom: -5px;
-    border-bottom: 1px solid $button-background;
-    border-right: 1px solid $button-background;
+    right: -10px;
+    bottom: -10px;
+    border-bottom: 1px solid $accent-light;
+    border-right: 1px solid $accent-light;
   }
 
   &:hover::before,

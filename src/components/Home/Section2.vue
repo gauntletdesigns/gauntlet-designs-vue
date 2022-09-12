@@ -1,5 +1,5 @@
 <template>
-  <b-container class="d-flex flex-column align-items-left">
+  <b-container class="container d-flex flex-column align-items-left">
     <h2 class="sub-title">We Make It Simple</h2>
     <div class="text">
       Building a website is hard and time consuming. Let us take all the hard work off your hands.
@@ -8,6 +8,7 @@
     </div>
   </b-container>
 </template>
+s
 
 <script>
 export default {
@@ -15,4 +16,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container {
+  max-width: 600px;
+  margin: 0;
+}
+</style>

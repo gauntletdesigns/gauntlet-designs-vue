@@ -1,5 +1,5 @@
 <template>
-  <b-container class="d-flex flex-column align-items-left">
+  <b-container class="container d-flex flex-column align-items-left">
     <h2 class="sub-title">Enterprise Scale Applications</h2>
     <div class="text">
       <p>
@@ -30,4 +30,9 @@ export default {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
 }
+
+//.container {
+//  max-width: 600px;
+//  margin: 0;
+//}
 </style>

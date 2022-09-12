@@ -2,7 +2,6 @@
   <div id="app" class="d-flex flex-column layout">
     <div class="app-container h-100">
       <Navbar />
-      <Section1 v-if="$route.name === 'home'" />
       <notifications group="main" />
       <router-view />
       <Footer v-if="$route.name !== 'home'" />
@@ -27,6 +26,6 @@ export default {
 
 .app-container {
   flex: 1;
-  background: linear-gradient(#24242a, #62626c);
+  background: linear-gradient(#111315, #443470);
 }
 </style>

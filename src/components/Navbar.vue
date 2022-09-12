@@ -1,16 +1,12 @@
 <template>
   <b-navbar class="py-2 navbar" sticky toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}" class="logo-nav d-flex flex-row align-items-center">
-      <span class="logo-bracket">{{&nbsp;</span>
-      <span class="logo-title">GAUNTLET DESIGNS</span>
-      <span class="logo-bracket">&nbsp;}}</span>
+      <div class="d-flex flex-column logo-text">
+        <span>GAUNTLET</span>
+        <span>DESIGNS</span>
+      </div>
     </b-navbar-brand>
-    <SlideButton
-      text="Contact Us"
-      linkName="contact"
-      class="mr-4 ml-auto my-auto d-lg-none small-btn"
-      small
-    />
+
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
@@ -25,16 +21,18 @@
 
 <script>
 import Logo from './Logo';
-import SlideButton from '@/components/Buttons/SlideButton';
 
 export default {
   name: 'Navbar',
-  components: {SlideButton, Logo},
+  components: {Logo},
 };
 </script>
 <style scoped lang="scss">
+.navbar-toggler {
+  background-color: $button-background;
+}
 .navbar {
-  background-color: #24242a;
+  background-color: #111315;
   color: $light-text;
 }
 

@@ -1,17 +1,17 @@
-$primary: #444343;
-$secondary: #ff8b37;
-$secondary-light: #ef9066;
-$secondary-dark: #ce4d23;
-$accent: #1249be;
-$accent-dark: #223049;
-$accent-light: #5b84de;
-$button-background: #87aaf9;
+$primary: #232225;
+$secondary: #378eff;
+$secondary-light: #8ab0e3;
+$secondary-dark: #182c46;
+$accent: #5d0cd7;
+$accent-light: #a780e1;
+$accent-dark: #1e0e36;
+$button-background: #917fb6;
 
 // background-colors
 $background: #f2f4f7;
 $background-light: #ffffff;
-$background-accent: #141517;
-$background-accent: #141517;
+$background-dark: #141517;
+
 
 // Text colors
 $light-text: rgb(255, 255, 255);
@@ -20,7 +20,7 @@ $button-text: #121212;
 
 //Bootstrap Mods
 $info: $secondary-light;
-$success: #87aaf9;
+$success: $secondary-dark;
 
 //Fonts
 

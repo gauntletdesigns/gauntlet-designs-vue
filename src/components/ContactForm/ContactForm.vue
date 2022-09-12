@@ -20,10 +20,8 @@
 
       <DescriptionInput :form="form" />
       <div class="d-flex">
-        <b-btn type="reset" variant="danger" class="form-buttons"> Clear </b-btn>
-        <b-btn type="submit" variant="success" class="form-buttons submit-button ml-3">
-          Submit
-        </b-btn>
+        <b-btn type="reset" class="form-buttons"> Clear </b-btn>
+        <b-btn type="submit" class="form-buttons submit-button ml-3"> Submit </b-btn>
       </div>
     </b-form>
   </div>
@@ -111,5 +109,11 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
+  background-color: $button-background;
+  border: unset;
+}
+
+.form-buttons:hover {
+  background-color: $accent-light;
 }
 </style>

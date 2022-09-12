@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column background">
+  <div class="d-flex flex-column">
     <b-container class="header-container d-flex flex-column align-items-left">
       <div class="intro">
         <h2 class="headline">Gauntlet Designs</h2>
@@ -9,7 +9,7 @@
             ><span>WEBSITES</span></span
           >
         </p>
-        <SlideButton text="Learn More" linkName="services" />
+        <BorderButton class="mt-4" text="Learn More" linkName="services" />
       </div>
     </b-container>
   </div>
@@ -17,26 +17,15 @@
 
 <script>
 import Navbar from '@/components/Navbar';
-import SlideButton from '@/components/Buttons/SlideButton';
+import BorderButton from '@/components/Buttons/BorderButton';
 
 export default {
   name: 'Section1',
-  components: {SlideButton, Navbar},
+  components: {BorderButton, Navbar},
 };
 </script>
 
 <style scoped lang="scss">
-.background {
-  background-image: url('../../assets/support.svg');
-  background-size: contain;
-  background-color: #111315;
-  min-height: 500px;
-  height: 50vh;
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
 .header-container {
   padding-top: 55px;
   padding-bottom: 55px;

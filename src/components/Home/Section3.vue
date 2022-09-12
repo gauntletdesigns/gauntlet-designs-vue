@@ -1,5 +1,5 @@
 <template>
-  <b-container class="d-flex flex-column align-items-left">
+  <b-container class="container d-flex flex-column align-items-left">
     <h2 class="sub-title">Consulting</h2>
     <div class="text">
       Don't need a website, but instead looking for expertise and assistance for your existing web
@@ -18,4 +18,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container {
+  max-width: 600px;
+  margin: 0;
+}
+</style>
