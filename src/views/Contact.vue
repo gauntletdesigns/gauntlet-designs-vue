@@ -17,7 +17,7 @@
       <b-col lg="4" offset-lg="2">
         <img
           class="illustration pt-3"
-          src="../assets/mobile-user.svg"
+          src="../assets/ux.svg"
           alt="Illustration of a woman on a mobile phone with a purple background."
         />
       </b-col>

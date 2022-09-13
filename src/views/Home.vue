@@ -10,10 +10,14 @@
             data-aos="fade-left"
             data-aos-offset="50"
             data-aos-anchor="#trigger-development"
-            class="d-flex flex-row py-5"
+            class="d-flex flex-row py-5 justify-content-around"
           >
             <section4 id="trigger-development" />
-            <img class="background" src="../assets/development.svg" alt="logo-home.svg" />
+            <img
+              class="background"
+              src="../assets/monitor.svg"
+              alt="Illustration of a computer monitor with a settings gear icon within."
+            />
           </div>
 
           <div
@@ -21,10 +25,14 @@
             data-aos="fade-right"
             data-aos-offset="50"
             data-aos-anchor="#trigger-support"
-            class="d-flex flex-row-reverse py-5"
+            class="d-flex flex-row-reverse py-5 justify-content-around"
           >
             <Section2 id="trigger-support" />
-            <img class="background" src="../assets/support.svg" alt="logo-home.svg" />
+            <img
+              class="background"
+              src="../assets/mobile.svg"
+              alt="Illustration of a mobile phone with a settings gear icon within."
+            />
           </div>
 
           <div
@@ -32,10 +40,10 @@
             data-aos="fade-left"
             data-aos-offset="50"
             data-aos-anchor="#trigger-dev"
-            class="py-5 d-flex flex-row"
+            class="py-5 d-flex flex-row justify-content-around"
           >
             <Enterprise id="trigger-dev" />
-            <img class="background" src="../assets/web-developer.svg" alt="logo-home.svg" />
+            <img class="background" src="../assets/server.svg" alt="logo-home.svg" />
           </div>
 
           <div
@@ -43,10 +51,10 @@
             data-aos="fade-right"
             data-aos-offset="50"
             data-aos-anchor="#trigger-social"
-            class="py-5 consulting d-flex flex-row-reverse"
+            class="py-5 consulting d-flex flex-row-reverse justify-content-around"
           >
             <Section3 id="trigger-social" class="py-5" />
-            <img class="background" src="../assets/social.svg" alt="logo-home.svg" />
+            <img class="background" src="../assets/search.svg" alt="logo-home.svg" />
           </div>
         </div>
       </div>
@@ -104,7 +112,7 @@ p {
 //}
 
 .background {
-  max-height: 400px;
+  max-height: 200px;
   width: auto;
 }
 
