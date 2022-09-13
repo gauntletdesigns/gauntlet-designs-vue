@@ -89,7 +89,6 @@ export default {
 
 <style scoped lang="scss">
 .form-container {
-  max-width: 700px;
   color: $light-text;
 }
 

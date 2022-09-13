@@ -1,16 +1,55 @@
 <template>
-  <div class="background">
+  <div class="">
     <b-container>
-      <div class="d-flex flex-row justify-content-around flex-wrap-reverse">
+      <div class="d-flex flex-row justify-content-around">
         <div>
           <Section1 class="py-5" />
-          <section4 class="py-5" />
-          <Section2 class="py-5" />
-          <Enterprise class="py-5" />
-          <Section3 class="py-5" />
+
+          <div
+            data-aos-once="true"
+            data-aos="fade-left"
+            data-aos-offset="50"
+            data-aos-anchor="#trigger-development"
+            class="d-flex flex-row py-5"
+          >
+            <section4 id="trigger-development" />
+            <img class="background" src="../assets/development.svg" alt="logo-home.svg" />
+          </div>
+
+          <div
+            data-aos-once="true"
+            data-aos="fade-right"
+            data-aos-offset="50"
+            data-aos-anchor="#trigger-support"
+            class="d-flex flex-row-reverse py-5"
+          >
+            <Section2 id="trigger-support" />
+            <img class="background" src="../assets/support.svg" alt="logo-home.svg" />
+          </div>
+
+          <div
+            data-aos-once="true"
+            data-aos="fade-left"
+            data-aos-offset="50"
+            data-aos-anchor="#trigger-dev"
+            class="py-5 d-flex flex-row"
+          >
+            <Enterprise id="trigger-dev" />
+            <img class="background" src="../assets/web-developer.svg" alt="logo-home.svg" />
+          </div>
+
+          <div
+            data-aos-once="true"
+            data-aos="fade-right"
+            data-aos-offset="50"
+            data-aos-anchor="#trigger-social"
+            class="py-5 consulting d-flex flex-row-reverse"
+          >
+            <Section3 id="trigger-social" class="py-5" />
+            <img class="background" src="../assets/social.svg" alt="logo-home.svg" />
+          </div>
         </div>
       </div>
-      <home-trinity class="trinity py-5" />
       <Footer />
     </b-container>
   </div>
@@ -27,9 +66,12 @@ import Enterprise from '@/components/Home/Enterprise';
 import FadeButton from '@/components/Buttons/FadeButton';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar';
-// AOS.init({
-//   duration: 1200,
-// });
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  duration: 700,
+  easing: 'ease-in',
+});
 
 export default {
   name: 'Home',
@@ -53,20 +95,24 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+//.background {
+//  background-image: url('../assets/web-developer.svg');
+//  background-size: 500px;
+//  background-attachment: fixed;
+//  background-position: right;
+//  background-repeat: no-repeat;
+//}
+
 .background {
-  background-image: url('../assets/support.svg');
-  background-size: 500px;
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
+  max-height: 400px;
+  width: auto;
 }
 
 .logo {
   padding-top: 30px;
 }
 
-.trinity {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.consulting {
+  padding-bottom: 50px;
 }
 </style>

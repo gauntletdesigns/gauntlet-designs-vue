@@ -27,8 +27,8 @@ export default {
 
 <style scoped lang="scss">
 .header-container {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 50px;
+  padding-bottom: 30vh;
 }
 
 .headline {

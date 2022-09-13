@@ -20,26 +20,23 @@
     </b-col>
     <b-col cols="8" class="d-flex justify-content-start h-100 flex-column selection">
       <div class="description-section d-flex flex-column" aria-live="polite">
-        <h3 class="title pb-3">{{ active }}</h3>
+        <h3 class="title">{{ active }}</h3>
+        <BorderButton text="Schedule a free consultation" linkName="contact" class="my-4 mr-auto" />
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
-        <SlideButton text="Schedule a free consultation" linkName="contact" class="ml-auto" />
-      </div>
-      <div v-if="active === 'Hosting'" class="d-flex justify-content-center">
-        <CloudLogo class="d-flex justify-content-center" />
       </div>
     </b-col>
   </b-row>
 </template>
 
 <script>
-import CloudLogo from '@/components/CloudLogo';
 import SlideButton from '@/components/Buttons/SlideButton';
+import BorderButton from '@/components/Buttons/BorderButton';
 
 export default {
   name: 'LargeServices',
-  components: {SlideButton, CloudLogo},
+  components: {BorderButton, SlideButton},
   props: ['services'],
   data() {
     return {

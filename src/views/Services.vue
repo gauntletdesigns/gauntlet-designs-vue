@@ -7,6 +7,7 @@
     <div class="d-block d-lg-none pb-5">
       <SmallServices :services="services" />
     </div>
+    <HomeTrinity class="pb-5" />
   </b-container>
 </template>
 
@@ -14,9 +15,10 @@
 import services from '@/assets/Services';
 import LargeServices from '@/components/Services/LargeServices';
 import SmallServices from '@/components/Services/SmallServices';
+import HomeTrinity from '@/components/Home/home-trinity';
 export default {
   name: 'Services',
-  components: {SmallServices, LargeServices},
+  components: {HomeTrinity, SmallServices, LargeServices},
   computed: {
     services() {
       return services;

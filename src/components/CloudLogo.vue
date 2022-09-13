@@ -4,7 +4,7 @@
       :src="require(`@/assets/${this.fileName}`)"
       class="cloud"
       :class="{large, small: !large}"
-      alt="Gauntlet Designs Logo"
+      alt="Google cloud logo"
     />
     <div class="google-text mt-auto ml-3">
       Build a carbon-free future on the cleanest cloud in the industry. Google Cloud is the only
@@ -39,12 +39,12 @@ export default {
 
 <style scoped lang="scss">
 .cloud {
-  width: 100px;
+  width: 50px;
 }
 
 .google-text {
   font-size: 12px;
-  color: #888080;
+  color: $light-text;
   max-width: 500px;
 }
 </style>

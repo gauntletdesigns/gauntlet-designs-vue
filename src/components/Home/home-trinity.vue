@@ -1,6 +1,11 @@
 <template>
-  <div class="container d-flex flex-column justify-content-center">
-    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+  <div
+    class="d-flex flex-row justify-content-around"
+    data-aos-easing="ease-in"
+    data-aos-once="true"
+    data-aos="fade"
+  >
+    <div class="my-2 px-3 my-lg-0 triplet">
       <b-img
         src="@/assets/design.svg"
         class="icon"
@@ -13,7 +18,7 @@
       </div>
     </div>
 
-    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+    <div class="my-2 px-3 my-lg-0 triplet">
       <b-img
         src="@/assets/code.svg"
         class="icon"
@@ -26,7 +31,7 @@
       </div>
     </div>
 
-    <div data-aos-once="true" data-aos="fade-left" class="my-2 px-3 my-lg-0 triplet">
+    <div class="my-2 px-3 my-lg-0 triplet">
       <b-img
         src="@/assets/app.svg"
         class="icon"
@@ -48,12 +53,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
-  width: 600px;
-  margin: 0;
-}
 .triplet {
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -62,7 +63,7 @@ export default {
 }
 
 .triplet-title {
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -70,11 +71,11 @@ export default {
 }
 
 .triplet-text {
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 .icon {
-  max-width: 300px;
+  max-width: 225px;
 }
 </style>
