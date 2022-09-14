@@ -1,13 +1,13 @@
 <template>
   <div
-    class="d-flex flex-row justify-content-around"
+    class="d-flex flex-wrap justify-content-around"
     data-aos-easing="ease-in"
     data-aos-once="true"
     data-aos="fade"
   >
-    <div class="my-2 px-3 my-lg-0 triplet">
+    <div class="triplet">
       <b-img
-        src="@/assets/design.svg"
+        src="@/assets/ux.svg"
         class="icon"
         alt="Design icon showing pencils, pens and paper."
       />
@@ -18,9 +18,9 @@
       </div>
     </div>
 
-    <div class="my-2 px-3 my-lg-0 triplet">
+    <div class="triplet">
       <b-img
-        src="@/assets/code.svg"
+        src="@/assets/world.svg"
         class="icon"
         alt="Icon showing computer and programming books."
       />
@@ -31,9 +31,9 @@
       </div>
     </div>
 
-    <div class="my-2 px-3 my-lg-0 triplet">
+    <div class="triplet">
       <b-img
-        src="@/assets/app.svg"
+        src="@/assets/single-server.svg"
         class="icon"
         alt="Icon showing computer and phone with applications open."
       />
@@ -58,7 +58,6 @@ export default {
   font-family: 'Montserrat', sans-serif;
   padding-top: 50px;
   padding-bottom: 30px;
-  margin: auto;
   color: $light-text;
 }
 
@@ -76,6 +75,6 @@ export default {
 }
 
 .icon {
-  max-width: 225px;
+  max-height: 100px;
 }
 </style>

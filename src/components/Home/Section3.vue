@@ -11,10 +11,9 @@
 </template>
 
 <script>
-import SlideButton from '@/components/Buttons/SlideButton';
 export default {
   name: 'Section3',
-  components: {SlideButton},
+  components: {},
 };
 </script>
 

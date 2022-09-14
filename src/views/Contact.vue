@@ -4,8 +4,7 @@
       <b-col lg="4" offset-lg="1">
         <h2 class="title pb-3">Contact Us</h2>
         <p class="text pb-2">
-          Have questions or looking for a quote? <br />
-          Contact us today to schedule a free consultation.
+          Have questions or looking for a quote? Contact us today to schedule a free consultation.
         </p>
         <div class="d-flex flex-row pb-2">
           <a class="text" :href="`tel:${phone}`">{{ phone }}</a>
@@ -17,8 +16,8 @@
       <b-col lg="4" offset-lg="2">
         <img
           class="illustration pt-3"
-          src="../assets/ux.svg"
-          alt="Illustration of a woman on a mobile phone with a purple background."
+          src="../assets/search.svg"
+          alt="Illustration of a computer monitor with a magnifying glass search icon within."
         />
       </b-col>
       <b-col lg="10" offset-lg="1">
@@ -54,6 +53,6 @@ export default {
 }
 
 .illustration {
-  width: 100%;
+  max-width: 300px;
 }
 </style>

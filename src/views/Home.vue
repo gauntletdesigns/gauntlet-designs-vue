@@ -51,10 +51,14 @@
             data-aos="fade-right"
             data-aos-offset="50"
             data-aos-anchor="#trigger-social"
-            class="py-5 consulting d-flex flex-row-reverse justify-content-around"
+            class="py-5 d-flex flex-row-reverse justify-content-around"
           >
-            <Section3 id="trigger-social" class="py-5" />
-            <img class="background" src="../assets/search.svg" alt="logo-home.svg" />
+            <Section3 id="trigger-social" />
+            <img
+              class="background"
+              src="../assets/website.svg"
+              alt="Illustration of a computer monitor with a settings icon within."
+            />
           </div>
         </div>
       </div>
@@ -118,9 +122,5 @@ p {
 
 .logo {
   padding-top: 30px;
-}
-
-.consulting {
-  padding-bottom: 50px;
 }
 </style>
