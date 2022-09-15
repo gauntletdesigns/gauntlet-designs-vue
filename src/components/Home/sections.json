@@ -31,6 +31,6 @@
     "text": "Don't need a website, but instead looking for expertise and assistance for your existing web infrastructure? We can help with that too. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern Javascript frameworks, and web application backends.",
     "img": "website.svg",
     "alt": "Illustration of a computer monitor with a settings icon within.",
-    "trigger": "trigger-social"
+    "trigger": "#trigger-social"
   }
 ]
