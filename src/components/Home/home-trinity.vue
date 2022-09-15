@@ -59,6 +59,7 @@ export default {
   padding-top: 50px;
   padding-bottom: 30px;
   color: $light-text;
+  max-width: 300px;
 }
 
 .triplet-title {

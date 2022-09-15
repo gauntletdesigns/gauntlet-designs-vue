@@ -1,12 +1,13 @@
 <template>
   <b-navbar class="py-2 navbar" sticky toggleable="lg">
-    <b-navbar-brand :to="{name: 'home'}" class="logo-nav d-flex flex-row align-items-center">
-      <div class="d-flex flex-column logo-text">
-        <span>GAUNTLET</span>
-        <span>DESIGNS</span>
+    <b-navbar-brand :to="{name: 'home'}">
+      <div class="logo-nav d-flex flex-row align-items-center">
+        <div class="d-flex flex-column">
+          <span>GAUNTLET</span>
+          <span>DESIGNS</span>
+        </div>
       </div>
     </b-navbar-brand>
-
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
@@ -56,7 +57,7 @@ export default {
   letter-spacing: 5px;
   font-size: 14px;
   text-align: center;
-  margin: 5px;
+  margin: 18px 4px 5px 5px;
   padding: 10px;
 }
 
@@ -85,5 +86,9 @@ h1 {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+}
+
+.navbar-brand {
+  margin: unset;
 }
 </style>

@@ -13,7 +13,7 @@
           <a class="email" :href="`mailto:${email}`">{{ email }}</a>
         </div>
       </b-col>
-      <b-col lg="4" offset-lg="2">
+      <b-col lg="4" offset-lg="2" class="pt-5 d-flex justify-content-center">
         <img
           class="illustration pt-3"
           src="../assets/search.svg"
@@ -53,6 +53,6 @@ export default {
 }
 
 .illustration {
-  max-width: 300px;
+  max-width: 250px;
 }
 </style>
