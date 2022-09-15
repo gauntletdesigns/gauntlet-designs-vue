@@ -15,7 +15,7 @@
       </b-col>
       <b-col lg="4" offset-lg="2" class="pt-5 d-flex justify-content-center">
         <img
-          class="illustration pt-3"
+          class="illustration"
           src="../assets/search.svg"
           alt="Illustration of a computer monitor with a magnifying glass search icon within."
         />
@@ -53,6 +53,6 @@ export default {
 }
 
 .illustration {
-  max-width: 250px;
+  max-width: 300px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="py-2 navbar" sticky toggleable="lg">
+  <b-navbar class="py-2 navbar" toggleable="lg">
     <b-navbar-brand :to="{name: 'home'}">
       <div class="logo-nav d-flex flex-row align-items-center">
         <div class="d-flex flex-column">
@@ -30,16 +30,16 @@ export default {
 </script>
 <style scoped lang="scss">
 .navbar-toggler {
-  background-color: $button-background;
+  background-color: $light-text;
 }
 .navbar {
-  background-color: #111315;
+  background-color: $background-darker;
   color: $light-text;
 }
 
 .nav-item:hover,
 .nav-item:active {
-  border-bottom: 3px solid $accent-light;
+  border-bottom: 3px solid $secondary-light;
 }
 
 .nav-item {
@@ -62,7 +62,7 @@ export default {
 }
 
 .logo-nav:hover {
-  border: 1px solid $button-background;
+  border: 1px solid $secondary-light;
   color: white;
 }
 

@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="d-flex flex-column layout">
     <div class="app-container h-100">
+      <Stars />
       <Navbar />
       <notifications group="main" />
       <router-view />
@@ -13,9 +14,10 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
 import Section1 from '@/components/Home/Section1';
+import Stars from '@/components/Holidays/Stars';
 
 export default {
-  components: {Section1, Footer, Navbar},
+  components: {Stars, Section1, Footer, Navbar},
 };
 </script>
 
@@ -26,6 +28,6 @@ export default {
 
 .app-container {
   flex: 1;
-  background: linear-gradient(#111315, #443470);
+  background: linear-gradient($background-darker, $background-dark);
 }
 </style>

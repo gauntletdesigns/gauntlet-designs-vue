@@ -39,15 +39,15 @@ export default {
   &::before {
     top: -10px;
     left: -10px;
-    border-top: 1px solid $accent-light;
-    border-left: 1px solid $accent-light;
+    border-top: 1px solid $secondary-light;
+    border-left: 1px solid $secondary-light;
   }
 
   &::after {
     right: -10px;
     bottom: -10px;
-    border-bottom: 1px solid $accent-light;
-    border-right: 1px solid $accent-light;
+    border-bottom: 1px solid $secondary-light;
+    border-right: 1px solid $secondary-light;
   }
 
   &:hover::before,
