@@ -13,7 +13,7 @@
           :alt="alt"
       />
     </b-col>
-    <b-col cols="12" md="7" id="trigger-development">
+    <b-col cols="12" md="7" :id="trigger.replace('#', '')">
       <h2 class="sub-title align-self-end">{{title}}</h2>
       <p class="text">
         {{text}}
@@ -45,7 +45,8 @@ export default {
     text: {},
     img: {},
     alt: {},
-    bullets: {}
+    bullets: {},
+    trigger: {}
   }
 }
 </script>
