@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="py-2 navbar" toggleable="lg">
+  <b-navbar class="py-2 navbar" toggleable="lg" sticky>
     <b-navbar-brand :to="{name: 'home'}">
       <div class="logo-nav d-flex flex-row align-items-center">
         <div class="d-flex flex-column">
