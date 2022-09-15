@@ -37,13 +37,6 @@ export default {
   letter-spacing: 10px;
 }
 
-.tagline {
-  font-size: 20px;
-  padding-bottom: 40px;
-  color: $button-background;
-  font-weight: bold;
-}
-
 .intro {
   color: $light-text;
   font-family: 'Montserrat', sans-serif;
@@ -66,7 +59,7 @@ export default {
   left: 0;
 }
 .hover-btn::before {
-  background-color: $button-background;
+  background-color: $secondary;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -80,7 +73,7 @@ export default {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: $button-background;
+  color: $secondary;
 }
 
 .hover-btn:hover::before {
