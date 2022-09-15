@@ -4,21 +4,7 @@
       <div class="d-flex flex-row justify-content-around">
         <div>
           <Section1 class="py-5" />
-
-          <div
-            data-aos-once="true"
-            data-aos="fade-left"
-            data-aos-offset="50"
-            data-aos-anchor="#trigger-development"
-            class="d-flex flex-row py-5 justify-content-around"
-          >
-            <section4 id="trigger-development" />
-            <img
-              class="background"
-              src="../assets/monitor.svg"
-              alt="Illustration of a computer monitor with a settings gear icon within."
-            />
-          </div>
+          <section4/>
 
           <div
             data-aos-once="true"
