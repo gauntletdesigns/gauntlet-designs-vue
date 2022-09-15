@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Welcome",
+    "text": "Welcome to Gauntlet Designs. We design, build, and host custom websites and enterprise grade applications to fit your needs. Be that a small family owned business, or a enterprise looking to expand. We are a female owned business located in the DC Metro Area. Our products are clean, light, responsive and fully customizable to meet your business needs.",
+    "img": "monitor.svg",
+    "alt": "Illustration of a computer monitor with a settings gear icon within.",
+    "trigger": "#trigger-development"
+  },
+  {
+    "title": "We Make It Simple",
+    "text": "Building a website is hard and time consuming. Let us take all the hard work off your hands. We work with you to make sure that you get the stunning website that you want, while still having time to do what matters most to you, running your business!",
+    "img": "mobile.svg",
+    "alt": "Illustration of a mobile phone with a settings gear icon within.",
+    "trigger": "#trigger-support"
+  },
+  {
+    "title": "Enterprise Scale Applications",
+    "text": "Let us help you solve your businesses most time consuming problems. We create enterprise-grade applications that are designed to scale with your business.",
+    "bullets": [
+      "Built with mobile responsive design from the start",
+      "Built with accessibility and usability from the start",
+      "Scales to your business needs",
+      "Custom permission and user management to meet your needs"
+    ],
+    "img": "server.svg",
+    "alt": "image of a server rack and the connections between computers",
+    "trigger": "#trigger-dev"
+  },
+  {
+    "title": "Consulting",
+    "text": "Don't need a website, but instead looking for expertise and assistance for your existing web infrastructure? We can help with that too. We have professional work experience with AWS, Google Cloud, and Azure. Along with modern Javascript frameworks, and web application backends.",
+    "img": "website.svg",
+    "alt": "Illustration of a computer monitor with a settings icon within.",
+    "trigger": "trigger-social"
+  }
+]
