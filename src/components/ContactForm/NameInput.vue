@@ -2,7 +2,6 @@
   <b-form-group label="Your Name*" label-for="input-name">
     <b-form-input
       id="input-name"
-      autofocus
       v-model="form.name"
       placeholder="Name"
       required
