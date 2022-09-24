@@ -95,7 +95,7 @@ export default {
 
 .hover-btn {
   text-decoration: none;
-  color: #18272f;
+  color: #232225;
   font-weight: 700;
   vertical-align: top;
   font-size: 25px;

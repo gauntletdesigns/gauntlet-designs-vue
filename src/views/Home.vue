@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <b-container>
+    <b-container fluid class="px-0">
       <div class="d-flex flex-row justify-content-around">
         <div>
-          <Section1 class="py-5" />
+          <Section1 class="py-5 hero" />
           <Section
             v-for="(section, ind) in sections"
             :key="section.title"
@@ -65,6 +65,13 @@ export default {
 <style scoped lang="scss">
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  background: rgb(2,0,36);
+  background: linear-gradient(231deg, #9208C7FF 0%, rgba(0,212,255,1) 100%);
+  min-height: 90vh;
+  clip-path: polygon(0% 100%, 20% 100%, 80% 50%, 100% 50%, 100% 0%, 0% 0%);
 }
 
 //.background {
