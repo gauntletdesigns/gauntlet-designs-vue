@@ -1,42 +1,34 @@
 <template>
   <b-row
-      data-aos-once="true"
-      :data-aos="left ? 'fade-right' : 'fade-left'"
-      data-aos-offset="50"
-      :data-aos-anchor="trigger"
-      class="py-5"
+    data-aos-once="true"
+    :data-aos="left ? 'fade-right' : 'fade-left'"
+    data-aos-offset="50"
+    :data-aos-anchor="trigger"
+    class="py-5"
   >
     <b-col v-if="left" cols="12" md="5" lg="3" offset-lg="1" class="d-none d-md-block">
-      <img
-          class="background"
-          :src="require('@/assets/' + img)"
-          :alt="alt"
-      />
+      <img class="svg-accent" :src="require('@/assets/' + img)" :alt="alt" />
     </b-col>
     <b-col cols="12" md="7" :id="trigger.replace('#', '')">
-      <h2 class="sub-title align-self-end">{{title}}</h2>
+      <h2 class="sub-title align-self-end">{{ title }}</h2>
       <p class="text">
-        {{text}}
+        {{ text }}
       </p>
       <ul v-if="bullets" class="text">
         <li v-for="bullet in bullets" :key="bullet">
-          {{bullet}}
+          {{ bullet }}
         </li>
       </ul>
     </b-col>
     <b-col v-if="!left" cols="12" md="5" lg="3" offset-lg="1" class="d-none d-md-block">
-      <img
-          class="background"
-          :src="require('@/assets/' + img)"
-          :alt="alt"
-      />
+      <img class="svg-accent" :src="require('@/assets/' + img)" :alt="alt" />
     </b-col>
   </b-row>
 </template>
 
 <script>
 export default {
-  name: "Section",
+  name: 'Section',
   props: {
     left: {
       type: Boolean,
@@ -46,11 +38,9 @@ export default {
     img: {},
     alt: {},
     bullets: {},
-    trigger: {}
-  }
-}
+    trigger: {},
+  },
+};
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

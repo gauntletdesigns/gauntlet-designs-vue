@@ -89,7 +89,7 @@ export default {
 
 <style scoped lang="scss">
 .form-container {
-  color: $light-text;
+  color: $dark-text;
 }
 
 .name {
@@ -101,7 +101,7 @@ export default {
 }
 
 .submit-button {
-  color: $light-text;
+  color: $dark-text;
 }
 
 .form-buttons {

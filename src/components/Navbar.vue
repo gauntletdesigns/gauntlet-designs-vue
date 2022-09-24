@@ -30,11 +30,11 @@ export default {
 </script>
 <style scoped lang="scss">
 .navbar-toggler {
-  background-color: $light-text;
+  background-color: $dark-text;
 }
 .navbar {
   background-color: $background-darker;
-  color: $light-text;
+  color: $dark-text;
 }
 
 .nav-item:hover,

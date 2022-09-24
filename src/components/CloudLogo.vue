@@ -44,7 +44,7 @@ export default {
 
 .google-text {
   font-size: 12px;
-  color: $light-text;
+  color: $dark-text;
   max-width: 500px;
 }
 </style>

@@ -67,7 +67,7 @@ export default {
 <style scoped lang="scss">
 .description-section {
   padding: 20px;
-  color: $light-text;
+  color: $dark-text;
 }
 
 .selection {
@@ -92,7 +92,7 @@ export default {
   background-color: transparent;
   border: none;
   outline: none;
-  color: $light-text;
+  color: $dark-text;
   transition: 0.2s;
   &::before {
     content: '';

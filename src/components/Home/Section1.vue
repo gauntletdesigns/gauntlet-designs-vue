@@ -38,7 +38,7 @@ export default {
 }
 
 .intro {
-  color: $light-text;
+  color: $dark-text;
   font-family: 'Montserrat', sans-serif;
 }
 

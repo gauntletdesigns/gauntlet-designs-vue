@@ -1,6 +1,6 @@
 $primary: #232225;
 $secondary: #378eff;
-$secondary-light: #8ab0e3;
+$secondary-light: #485f79;
 $secondary-dark: #182c46;
 $accent: #00cfff;
 $accent-light: #8ee4ff;
@@ -10,15 +10,15 @@ $button-background: #3ac9ff;
 // background-colors
 $background: #f2f4f7;
 $background-light: #ffffff;
-$background-dark: #2d289b;
-$background-darker: #0a064c;
+$background-dark: #5f5f60;
+$background-darker: #27272a;
 
 // svg-colors
-$svg-primary: #71748a;
-$svg-accent: yellow;
+$svg-primary: #23518d;
+$svg-accent: #4d5d8a;
 
 // text-colors
-$light-text: rgb(255, 255, 255);
+$main-text: rgb(23, 22, 22);
 $dark-text: #242728;
 $button-text: #121212;
 
@@ -31,11 +31,11 @@ $success: $secondary-dark;
 .sub-title {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
-  color: $light-text;
+  color: $main-text;
 }
 
 .text {
-  color: $light-text;
+  color: $main-text;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
 }
@@ -44,5 +44,5 @@ $success: $secondary-dark;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 600;
-  color: $light-text;
+  color: $main-text;
 }

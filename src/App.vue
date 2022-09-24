@@ -26,6 +26,17 @@ export default {
 
 .app-container {
   flex: 1;
-  background: linear-gradient($background-darker, $background-dark);
+  //background: linear-gradient($background-darker, $background-dark);
+  background: $background;
+}
+
+.svg-accent {
+  color: $svg-accent;
+  fill: $svg-accent;
+}
+
+.svg-primary {
+  color: $svg-primary;
+  fill: $svg-primary;
 }
 </style>

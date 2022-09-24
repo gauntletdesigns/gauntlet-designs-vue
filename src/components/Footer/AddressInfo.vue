@@ -20,7 +20,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .email {
-  border-bottom: 1px solid $light-text;
+  border-bottom: 1px solid $dark-text;
   padding-bottom: 3px;
   text-decoration: unset;
 }
