@@ -4,22 +4,38 @@
       <div class="d-flex flex-row justify-content-around">
         <div class="w-100">
           <div class="hero-background w-100">
-            <Section1 class="py-5 hero" />
+            <Section1 class="py-5 hero"/>
+          </div>
+          <div class="d-flex align-items-center justify-content-center ani-page">
+            <h2
+                data-aos="fade-up"
+                data-aos-offset="200"
+            >
+              Welcome!
+            </h2>
+          </div>
+          <div class="d-flex align-items-center justify-content-center ani-page" >
+            <div data-aos="fade-up"
+                 data-aos-offset="200">
+              <p
+              >Are you looking to grow your business with a new application or website. Let Gauntlet Designs help!</p>
+
+            </div>
           </div>
           <Section
-            v-for="(section, ind) in sections"
-            :key="section.title"
-            :title="section.title"
-            :text="section.text"
-            :alt="section.alt"
-            :img="section.img"
-            :trigger="section.trigger"
-            :bullets="section.bullets"
-            :left="ind % 2 !== 0"
+              v-for="(section, ind) in sections"
+              :key="section.title"
+              :title="section.title"
+              :text="section.text"
+              :alt="section.alt"
+              :img="section.img"
+              :trigger="section.trigger"
+              :bullets="section.bullets"
+              :left="ind % 2 !== 0"
           />
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </b-container>
   </div>
 </template>
@@ -35,6 +51,7 @@ import Sections from '@/components/Home/sections.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Section from "@/components/Home/Section";
+
 AOS.init({
   duration: 700,
   easing: 'ease-in',
@@ -52,13 +69,13 @@ export default {
     Section1,
   },
 
-  data(){
+  data() {
     return {
       sections: []
     }
   },
 
-  mounted(){
+  mounted() {
     this.sections = Sections;
   }
 };
@@ -71,13 +88,19 @@ p {
 
 .hero {
   //background: rgb(2,0,36);
-  background: linear-gradient(231deg, #9208C7FF 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(231deg, #9208C7FF 0%, rgba(0, 212, 255, 1) 100%);
   min-height: 90vh;
   clip-path: polygon(0% 100%, 40% 100%, 100% 50%, 100% 0%, 0% 0%);
 }
 
 .hero-background {
   background: $primary;
+}
+
+.ani-page {
+  min-height: 100vh;
+  background: linear-gradient(231deg, #9208C7FF 0%, rgba(0, 212, 255, 1) 100%);
+  background-color: $background;
 }
 
 //.background {
