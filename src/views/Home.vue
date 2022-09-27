@@ -2,8 +2,8 @@
   <div class="">
     <b-container fluid class="px-0">
       <div class="d-flex flex-row justify-content-around">
-        <div>
-          <div class="hero-background">
+        <div class="w-100">
+          <div class="hero-background w-100">
             <Section1 class="py-5 hero" />
           </div>
           <Section
