@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column justify-content-center">
     <b-container class="header-container d-flex flex-column align-items-left">
       <div class="intro">
         <h2 class="headline">Gauntlet Designs</h2>
