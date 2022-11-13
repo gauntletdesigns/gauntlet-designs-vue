@@ -20,8 +20,8 @@
 
       <DescriptionInput :form="form" />
       <div class="d-flex">
-        <b-btn type="reset" variant="danger"> Clear </b-btn>
-        <b-btn type="submit" class="ml-3"> Submit </b-btn>
+        <b-btn type="reset" variant="btn btn-outline-danger"> Clear </b-btn>
+        <b-btn type="submit" variant="btn btn-outline-success ml-3"> Submit </b-btn>
       </div>
     </b-form>
   </div>

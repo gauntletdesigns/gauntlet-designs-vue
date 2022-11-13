@@ -2,22 +2,12 @@
   <b-btn
     :to="{name: linkName, query}"
     class="item item--primary"
-    data-aos="fade-down"
-    data-aos-anchor="#trigger-btn"
-    data-aos-anchor-placement="top-center"
-    disable: mobile
   >
     <span>{{ text }}</span>
   </b-btn>
 </template>
 
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init({
-  duration: 2000,
-  easing: 'ease-in',
-});
 
 export default {
   name: 'FadeButton',

@@ -1,9 +1,6 @@
 <template>
   <div
     class="d-flex flex-wrap justify-content-around"
-    data-aos-easing="ease-in"
-    data-aos-once="true"
-    data-aos="fade"
   >
     <div class="triplet">
       <b-img

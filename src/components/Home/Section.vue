@@ -1,4 +1,5 @@
 <template>
+  <b-container>
   <b-row
       class="py-5"
       :class="left ? 'animate__animated animate__fadeInRight' : 'animate__animated animate__fadeInLeft'"
@@ -17,7 +18,7 @@
       </p>
       <ul v-if="bullets" class="text">
         <li v-for="bullet in bullets" :key="bullet">
-          {{bullet}}
+          {{ bullet }}
         </li>
       </ul>
     </b-col>
@@ -29,6 +30,7 @@
       />
     </b-col>
   </b-row>
+  </b-container>
 </template>
 
 <script>

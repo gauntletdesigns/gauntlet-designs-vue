@@ -1,11 +1,11 @@
 <template>
   <div>
-    <b-container fluid class="section1">
+    <b-container fluid>
           <Section1 />
     </b-container>
     <b-container>
       <div class="d-flex flex-row justify-content-around">
-        <div class="py-5">
+        <div class="pb-3">
           <Section
             v-for="(section, ind) in sections"
             :key="section.title"
@@ -31,13 +31,8 @@ import FadeButton from '@/components/Buttons/FadeButton';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar';
 import Sections from '@/components/Home/sections.json';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Section from "@/components/Home/Section";
-AOS.init({
-  duration: 700,
-  easing: 'ease-in',
-});
+
 
 export default {
   name: 'Home',
@@ -68,13 +63,8 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .container-fluid {
   padding: unset !important;
-}
-
-.section1 {
-  height: 100vh;
 }
 
 .background {

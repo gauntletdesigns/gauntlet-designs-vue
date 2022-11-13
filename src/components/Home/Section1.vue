@@ -1,6 +1,6 @@
 <template>
   <div class="intro d-flex justify-content-center">
-      <b-container class="header-container context justify-content-center">
+      <b-container class="header-container context">
         <div class="pb-5 d-flex flex-column align-items-center">
           <h1 class="header animate__animated animate__fadeIn animate__slower pb-3">Gauntlet Development & Design</h1>
           <h2 class="plug animate__animated animate__fadeIn animate__delay-1s animate__slower">Responsive, Scalable Web
@@ -45,13 +45,15 @@ export default {
 
 <style scoped lang="scss">
 .intro {
+  background: #161617;
   position: relative;
 }
 
 .header-container {
-  padding-bottom: 10vh;
-  padding-top: 100px;
+  padding-bottom: 15vh;
+  padding-top: 10vh;
   text-align: center;
+  z-index: 999;
 }
 
 .header-container .welcome {
@@ -81,7 +83,6 @@ export default {
 
 //animation
 .context {
-  position: absolute;
 }
 
 .contact-button {
@@ -92,7 +93,10 @@ export default {
   background: #161617;
   background: -webkit-linear-gradient(to left, #7da1b4, #4e5c7c);
   width: 100%;
-  min-height: calc(100vh - 113px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 .circles {
