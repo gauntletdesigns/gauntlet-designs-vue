@@ -1,7 +1,7 @@
 <template>
   <b-col cols="12" md="6" lg="4" class="justify-content-center align-items-center d-none d-lg-flex">
     <b-button class="logo-button" :to="{name: 'home'}">
-      <Logo class="logo" />
+      <Logo />
     </b-button>
   </b-col>
 </template>

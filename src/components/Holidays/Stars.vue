@@ -398,12 +398,12 @@ export default {
     1593px 1616px #fff;
 }
 
-//@keyframes animStar {
-//  from {
-//    transform: translateY(0px);
-//  }
-//  to {
-//    transform: translateY(-500px);
-//  }
-//}
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-500px);
+  }
+}
 </style>

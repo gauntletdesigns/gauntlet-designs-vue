@@ -20,8 +20,8 @@
 
       <DescriptionInput :form="form" />
       <div class="d-flex">
-        <b-btn type="reset" class="form-buttons"> Clear </b-btn>
-        <b-btn type="submit" class="form-buttons submit-button ml-3"> Submit </b-btn>
+        <b-btn type="reset" variant="danger"> Clear </b-btn>
+        <b-btn type="submit" class="ml-3"> Submit </b-btn>
       </div>
     </b-form>
   </div>
@@ -89,30 +89,11 @@ export default {
 
 <style scoped lang="scss">
 .form-container {
-  color: $light-text;
+  color: black;
 }
 
 .name {
   width: 100%;
 }
 
-.btn-secondary {
-  border-color: unset;
-}
-
-.submit-button {
-  color: $light-text;
-}
-
-.form-buttons {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  background-color: $button-background;
-  border: unset;
-}
-
-.form-buttons:hover {
-  background-color: $accent-light;
-}
 </style>

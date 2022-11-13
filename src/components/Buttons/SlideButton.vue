@@ -15,9 +15,9 @@ export default {
 .service-consult {
   min-width: 175px;
   border-radius: 0;
-  background-color: $button-background;
+  background-color: $background-dark;
   border: none;
-  color: $button-text;
+  color: $secondary-dark;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;

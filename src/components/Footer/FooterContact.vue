@@ -5,15 +5,14 @@
     lg="4"
     class="d-flex flex-column align-items-center justify-content-center mt-3 mt-md-0"
   >
-    <BorderButton text="Contact Us" linkName="contact" class="mx-center ml-lg-auto mr-lg-1" />
+    <SlideButton text="Contact Us" linkName="contact" class="mx-center ml-lg-auto mr-lg-1"/>
   </b-col>
 </template>
 <script>
 import SlideButton from '@/components/Buttons/SlideButton';
-import BorderButton from '@/components/Buttons/BorderButton';
 
 export default {
   name: 'Footer-Contact',
-  components: {BorderButton, SlideButton},
+  components: {SlideButton},
 };
 </script>

@@ -13,17 +13,19 @@ export default {
 
 <style scoped lang="scss">
 .border-btn {
-  color: white;
+  color: #36a3cb;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 5px;
-  font-size: 16px;
+  letter-spacing: 8px;
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .border {
   position: relative;
-  border: 1px solid white;
+  border: 1px solid white !important;
   padding: 10px;
   background-color: unset;
 
@@ -39,15 +41,15 @@ export default {
   &::before {
     top: -10px;
     left: -10px;
-    border-top: 1px solid $secondary-light;
-    border-left: 1px solid $secondary-light;
+    border-top: 1px solid #36a3cb;
+    border-left: 1px solid #36a3cb;
   }
 
   &::after {
     right: -10px;
     bottom: -10px;
-    border-bottom: 1px solid $secondary-light;
-    border-right: 1px solid $secondary-light;
+    border-bottom: 1px solid #36a3cb;
+    border-right: 1px solid #36a3cb;
   }
 
   &:hover::before,

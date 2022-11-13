@@ -21,7 +21,7 @@
     <b-col cols="8" class="d-flex justify-content-start h-100 flex-column selection">
       <div class="description-section d-flex flex-column" aria-live="polite">
         <h3 class="title">{{ active }}</h3>
-        <BorderButton text="Schedule a free consultation" linkName="contact" class="my-4 mr-auto" />
+        <SlideButton text="Schedule a free consultation" linkName="contact" class="my-4 mr-auto"/>
         <p class="text" v-for="paragraph in paragraphs">
           {{ paragraph }}
         </p>
@@ -32,11 +32,10 @@
 
 <script>
 import SlideButton from '@/components/Buttons/SlideButton';
-import BorderButton from '@/components/Buttons/BorderButton';
 
 export default {
   name: 'LargeServices',
-  components: {BorderButton, SlideButton},
+  components: {SlideButton},
   props: ['services'],
   data() {
     return {
@@ -67,7 +66,7 @@ export default {
 <style scoped lang="scss">
 .description-section {
   padding: 20px;
-  color: $light-text;
+  color: black;
 }
 
 .selection {
@@ -75,7 +74,7 @@ export default {
 }
 
 .contact {
-  color: $accent;
+  color: $secondary-dark;
   font-weight: 600;
 }
 
@@ -92,7 +91,7 @@ export default {
   background-color: transparent;
   border: none;
   outline: none;
-  color: $light-text;
+  color: black;
   transition: 0.2s;
   &::before {
     content: '';
@@ -101,7 +100,7 @@ export default {
     left: 0;
     bottom: 0;
     position: absolute;
-    background: $accent-light;
+    background: $secondary-dark;
     transition: 0.4s;
   }
   &:hover,

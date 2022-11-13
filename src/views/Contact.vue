@@ -42,14 +42,15 @@ export default {
 
 <style scoped lang="scss">
 .email {
-  color: white;
-  border-bottom: 1px solid white;
+  color: black;
+  border-bottom: 1px solid black;
   text-decoration: unset;
 }
 
 .email:hover {
-  color: $accent-light;
-  border-bottom: 1px solid $accent-light;
+  color: #232326 !important;
+  border-bottom: 1px solid #232326;
+  padding-bottom: 3px;
 }
 
 .illustration {

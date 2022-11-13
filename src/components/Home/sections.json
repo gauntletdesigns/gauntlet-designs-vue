@@ -1,12 +1,5 @@
 [
   {
-    "title": "Welcome",
-    "text": "Welcome to Gauntlet Designs. We design, build, and host custom websites and enterprise grade applications to fit your needs. Be that a small family owned business, or a enterprise looking to expand. We are a female owned business located in the DC Metro Area. Our products are clean, light, responsive and fully customizable to meet your business needs.",
-    "img": "monitor.svg",
-    "alt": "Illustration of a computer monitor with a settings gear icon within.",
-    "trigger": "#trigger-development"
-  },
-  {
     "title": "We Make It Simple",
     "text": "Building a website is hard and time consuming. Let us take all the hard work off your hands. We work with you to make sure that you get the stunning website that you want, while still having time to do what matters most to you, running your business!",
     "img": "mobile.svg",

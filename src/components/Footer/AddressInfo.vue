@@ -9,7 +9,7 @@
           >contact@gauntletdesigns.com</a
         >
       </div>
-      <span class="text">Herndon, VA</span>
+      <span class="text address">Herndon, VA</span>
     </div>
   </b-col>
 </template>
@@ -20,7 +20,8 @@ export default {
 </script>
 <style scoped lang="scss">
 .email {
-  border-bottom: 1px solid $light-text;
+  color: $background-dark;
+  border-bottom: 1px solid $background-dark;
   padding-bottom: 3px;
   text-decoration: unset;
 }
@@ -32,6 +33,7 @@ export default {
 }
 
 .phone {
+  color: $background-dark;
   padding-bottom: 3px;
   text-decoration: unset;
 }
@@ -39,5 +41,9 @@ export default {
 .phone:hover {
   color: $accent-light !important;
   padding-bottom: 3px;
+}
+
+.address {
+  color: $background-dark;
 }
 </style>

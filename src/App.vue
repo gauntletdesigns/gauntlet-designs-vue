@@ -4,7 +4,7 @@
       <Navbar />
       <notifications group="main" />
       <router-view />
-      <Footer v-if="$route.name !== 'home'" />
+      <Footer />
     </div>
   </div>
 </template>

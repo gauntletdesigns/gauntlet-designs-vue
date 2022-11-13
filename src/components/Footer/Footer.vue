@@ -1,5 +1,5 @@
 <template>
-  <b-container class="pt-3">
+  <b-container class="pt-3 footer">
     <b-row>
       <AddressInfo />
       <Footer-Logo />
@@ -21,4 +21,10 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.footer {
+  background-color: $secondary-dark;
+  width: 100%;
+  max-width: 100%;
+}
+</style>

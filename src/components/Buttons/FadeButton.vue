@@ -39,7 +39,7 @@ export default {
   border-radius: 0;
   background-color: $button-background;
   border: none;
-  color: $button-text;
+  color: black;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;

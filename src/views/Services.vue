@@ -27,4 +27,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.test {
+  color: #404672;
+  color: #4d80c2;
+}
+</style>

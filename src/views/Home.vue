@@ -1,9 +1,11 @@
 <template>
-  <div class="">
+  <div>
+    <b-container fluid>
+          <Section1 />
+    </b-container>
     <b-container>
       <div class="d-flex flex-row justify-content-around">
-        <div>
-          <Section1 class="py-5" />
+        <div class="py-5">
           <Section
             v-for="(section, ind) in sections"
             :key="section.title"
@@ -17,7 +19,6 @@
           />
         </div>
       </div>
-      <Footer />
     </b-container>
   </div>
 </template>
@@ -67,13 +68,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-//.background {
-//  background-image: url('../assets/web-developer.svg');
-//  background-size: 500px;
-//  background-attachment: fixed;
-//  background-position: right;
-//  background-repeat: no-repeat;
-//}
+
+.container-fluid {
+  padding: unset !important;
+}
 
 .background {
   max-height: 200px;

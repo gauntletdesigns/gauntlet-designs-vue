@@ -10,6 +10,6 @@ export default {
 
 <style scoped lang="scss">
 a {
-  color: $light-text;
+  color: black;
 }
 </style>

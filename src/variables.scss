@@ -10,17 +10,12 @@ $button-background: #3ac9ff;
 // background-colors
 $background: #f2f4f7;
 $background-light: #ffffff;
-$background-dark: #2d289b;
-$background-darker: #0a064c;
+$background-dark: #a1b3c0;
+$background-darker: #d9dbde;
 
 // svg-colors
 $svg-primary: #71748a;
 $svg-accent: yellow;
-
-// text-colors
-$light-text: rgb(255, 255, 255);
-$dark-text: #242728;
-$button-text: #121212;
 
 //Bootstrap Mods
 $info: $secondary-light;
@@ -31,11 +26,10 @@ $success: $secondary-dark;
 .sub-title {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
-  color: $light-text;
 }
 
 .text {
-  color: $light-text;
+  color: black;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
 }
@@ -44,5 +38,4 @@ $success: $secondary-dark;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 600;
-  color: $light-text;
 }

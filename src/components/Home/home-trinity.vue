@@ -58,7 +58,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   padding-top: 50px;
   padding-bottom: 30px;
-  color: $light-text;
+  color: black;
   max-width: 300px;
 }
 

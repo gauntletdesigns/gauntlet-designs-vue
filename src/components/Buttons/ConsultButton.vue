@@ -32,7 +32,7 @@ export default {
 }
 
 .consult-btn:hover {
-  color: $dark-text;
+  color: white;
   transition: all 0.2s ease;
 }
 
