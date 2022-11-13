@@ -3,7 +3,7 @@
     <b-row>
       <AddressInfo />
       <Footer-Logo />
-      <Footer-Contact />
+      <Footer-Contact v-if="$route.name !== 'contact'" />
       <Copyright />
     </b-row>
   </b-container>
