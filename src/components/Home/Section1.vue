@@ -11,7 +11,8 @@
             owned business located in the DC Metro Area. Our products are clean, light, responsive and fully
             customizable to meet your business needs.
           </div>
-          <BorderButton class="contact-button mt-4 animate__animated animate__fadeIn animate__delay-3s animate__slower"
+          <BorderButton
+              class="contact-button mt-4 animate__animated animate__fadeIn animate__delay-3s animate__slower"
                         text="Learn More" linkName="services"/>
         </div>
       </b-container>
@@ -48,8 +49,8 @@ export default {
 }
 
 .header-container {
-  padding-top: 100px;
   padding-bottom: 10vh;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@ export default {
 
 .header {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2em;
   letter-spacing: 10px;
   color: #eceff1;
   font-family: 'Montserrat', sans-serif;

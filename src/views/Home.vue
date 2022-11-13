@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container fluid>
+    <b-container fluid class="section1">
           <Section1 />
     </b-container>
     <b-container>
@@ -71,6 +71,10 @@ p {
 
 .container-fluid {
   padding: unset !important;
+}
+
+.section1 {
+  height: 100vh;
 }
 
 .background {

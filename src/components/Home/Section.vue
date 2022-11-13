@@ -1,10 +1,7 @@
 <template>
   <b-row
-      data-aos-once="true"
-      :data-aos="left ? 'fade-right' : 'fade-left'"
-      data-aos-offset="50"
-      :data-aos-anchor="trigger"
       class="py-5"
+      :class="left ? 'animate__animated animate__fadeInRight' : 'animate__animated animate__fadeInLeft'"
   >
     <b-col v-if="left" cols="12" md="5" lg="3" offset-lg="1" class="d-none d-md-block">
       <img

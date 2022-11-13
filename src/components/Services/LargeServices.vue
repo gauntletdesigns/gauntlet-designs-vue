@@ -42,6 +42,7 @@ export default {
       showCollapse: true,
     };
   },
+
   computed: {
     active() {
       return this.$route.query?.active || this.services[0]?.name;

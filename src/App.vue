@@ -26,6 +26,6 @@ export default {
 
 .app-container {
   flex: 1;
-  background: linear-gradient($background-darker, $background-dark);
+  background: #f2f4f5;
 }
 </style>
