@@ -1,0 +1,76 @@
+/* ===================================================================
+   THEME VARIABLES AND THEME-SPECIFIC STYLES
+   ================================================================= */
+
+/* Light Mode Theme Variables */
+:root {
+  --color-primary: #5a9186;
+  --color-primary-hover: #4a7d70;
+  --color-secondary: #c67854;
+  --color-secondary-hover: #b56742;
+  --color-background: #fafbfc;
+  --color-surface: #f3f6f5;
+  --color-text-primary: #252e41;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #8e939b;
+  --color-border: #d1e7dd;
+  --color-accent: #dcb49f;
+}
+
+/* Dark Mode Theme Variables */
+[data-theme="dark"] {
+  --color-primary: #82c8b5;
+  --color-primary-hover: #50776d;
+  --color-secondary: #e09f7d;
+  --color-secondary-hover: rgb(199, 145, 117);
+  --color-background: #111827;
+  --color-surface: #2b333d;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #9ca3af;
+  --color-border: #4b5563;
+  --color-accent: #d9a78c;
+}
+
+/* ===================================================================
+   GLOBAL THEME STYLES
+   ================================================================= */
+
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===================================================================
+   THEME UTILITY CLASSES
+   ================================================================= */
+
+.theme-bg {
+  background-color: var(--color-background);
+}
+
+.theme-surface {
+  background-color: var(--color-surface);
+}
+
+.theme-text {
+  color: var(--color-text-primary);
+}
+
+.theme-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--color-text-muted);
+}
+
+.theme-border {
+  border-color: var(--color-border);
+}
+
+.theme-accent {
+  color: var(--color-accent);
+}

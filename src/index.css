@@ -1,0 +1,323 @@
+/* ===================================================================
+   TAILWIND CSS IMPORTS
+   ================================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================================
+   BASE STYLES
+   ================================================================= */
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===================================================================
+   TYPOGRAPHY
+   ================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+}
+
+/* ===================================================================
+   COMPONENT STYLES
+   ================================================================= */
+
+@layer components {
+  /* =============================================================
+     BUTTON COMPONENTS
+     ============================================================= */
+
+  /* Primary Button - Solid in Light Mode, Outline in Dark Mode */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg;
+    background-color: var(--color-primary);
+    color: white;
+    border: 2px solid var(--color-primary);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(90, 145, 134, 0.25);
+  }
+
+  /* Secondary Button - Solid in Light Mode, Outline in Dark Mode */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg;
+    background-color: var(--color-secondary);
+    color: white;
+    border: 2px solid var(--color-secondary);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-secondary-hover);
+    border-color: var(--color-secondary-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(198, 120, 84, 0.25);
+  }
+
+  /* Dark Mode Button Overrides - Outline Style */
+  [data-theme="dark"] .btn-primary {
+    background-color: transparent;
+    color: var(--color-primary);
+    box-shadow: none;
+  }
+
+  [data-theme="dark"] .btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: scale(1.05);
+    box-shadow: none;
+  }
+
+  [data-theme="dark"] .btn-secondary {
+    background-color: transparent;
+    color: var(--color-secondary);
+    box-shadow: none;
+  }
+
+  [data-theme="dark"] .btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+    box-shadow: none;
+  }
+
+  /* =============================================================
+     NAVIGATION COMPONENTS
+     ============================================================= */
+
+  .nav-link {
+    @apply text-base font-medium transition-colors duration-200 pb-1 border-b-2 border-transparent;
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+
+  .nav-link:hover {
+    color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
+  }
+
+  /* Dark Mode Navigation - Same behavior as light mode */
+  [data-theme="dark"] .nav-link {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+
+  [data-theme="dark"] .nav-link:hover {
+    color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
+  }
+
+  .mobile-menu-btn {
+    @apply p-2 rounded-lg transition-colors duration-200;
+    color: var(--color-text-primary);
+  }
+
+  .mobile-menu-btn:hover {
+    background-color: var(--color-surface);
+  }
+
+  /* =============================================================
+     HEADER COMPONENTS
+     ============================================================= */
+
+  .header-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .header-content {
+    @apply flex justify-between items-center py-4 md:py-6;
+  }
+
+  /* Logo Text */
+  .logo-text {
+    @apply text-xl md:text-2xl font-bold font-heading px-4 py-2 transition-all duration-200;
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .logo-text:hover {
+    border-color: var(--color-secondary);
+  }
+
+  /* Dark Mode Logo - Muted Border */
+  [data-theme="dark"] .logo-text {
+    border-color: var(--color-border);
+  }
+
+  [data-theme="dark"] .logo-text:hover {
+    border-color: var(--color-secondary);
+  }
+
+  .nav-container {
+    @apply flex items-center space-x-4;
+  }
+
+  /* =============================================================
+     THEME TOGGLE COMPONENTS
+     ============================================================= */
+
+  /* Header Theme Toggle */
+  .theme-toggle {
+    @apply p-2 rounded-lg hover:bg-opacity-80 transition-colors duration-200;
+  }
+
+  .theme-toggle:hover {
+    background-color: var(--color-surface);
+  }
+
+  /* Floating Theme Toggle */
+  .floating-theme-toggle {
+    @apply absolute bottom-8 right-8 z-50 p-3 rounded-full transition-all duration-200 shadow-lg;
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-border);
+    transform: scale(1);
+  }
+
+  .floating-theme-toggle:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .floating-theme-toggle:hover .h-6 {
+    color: white !important;
+  }
+
+  /* =============================================================
+     LAYOUT COMPONENTS
+     ============================================================= */
+
+  .hero-section {
+    @apply flex items-center justify-center py-8 sm:py-12 lg:py-24;
+  }
+
+  .container-responsive {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-container {
+    @apply max-w-3xl mx-auto mb-12;
+  }
+
+  .button-group {
+    @apply space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center mb-12;
+  }
+
+  .contact-section {
+    @apply pt-8 mb-8 border-t;
+    border-color: var(--color-border);
+  }
+
+  .contact-links {
+    @apply flex flex-col sm:flex-row gap-6 justify-center items-center text-base;
+    color: var(--color-text-muted);
+  }
+
+  /* =============================================================
+     TYPOGRAPHY COMPONENTS
+     ============================================================= */
+
+  .hero-title {
+    @apply text-3xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight font-heading;
+    color: var(--color-text-primary);
+  }
+
+  .hero-text {
+    @apply text-lg sm:text-xl leading-relaxed mb-6;
+  }
+
+  .contact-prompt {
+    @apply mb-6;
+    color: var(--color-text-muted);
+  }
+
+  /* =============================================================
+     CONTACT LINK COMPONENTS
+     ============================================================= */
+
+  .contact-link {
+    @apply relative transition-all duration-300 font-medium;
+    color: var(--color-text-secondary);
+    border-bottom: 2px solid transparent;
+  }
+
+  .contact-link:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+    transform: translateY(-1px);
+  }
+
+  /* =============================================================
+     FOOTER COMPONENTS
+     ============================================================= */
+
+  .footer-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6;
+  }
+
+  .footer-content {
+    @apply text-center;
+  }
+
+  .footer-text {
+    @apply text-sm;
+    color: var(--color-text-secondary);
+  }
+
+  .footer-subtext {
+    @apply text-xs mt-2;
+    color: var(--color-text-muted);
+  }
+
+  /* =============================================================
+     ACCESSIBILITY COMPONENTS
+     ============================================================= */
+
+  /* Skip Link */
+  .skip-link {
+    @apply absolute -top-full left-0 z-50 px-4 py-2 text-sm font-medium transition-all duration-200;
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* =============================================================
+     ACCENT ELEMENTS
+     ============================================================= */
+
+  .accent-bar {
+    @apply w-48 h-1 mx-auto;
+    background-color: var(--color-accent);
+  }
+}

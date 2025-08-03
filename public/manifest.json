@@ -1,0 +1,17 @@
+{
+  "name": "Gauntlet Designs - Farewell",
+  "short_name": "Farewell",
+  "description": "Gauntlet Designs - Thank you for the journey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f2f4",
+  "theme_color": "#5a9186",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
