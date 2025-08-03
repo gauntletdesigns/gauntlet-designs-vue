@@ -1,8 +1,7 @@
 {
   "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "outputDirectory": "dist",
   "framework": "vite",
-  "functions": {
-    "node": "18.x"
-  }
+  "nodeVersion": "18.x"
 }

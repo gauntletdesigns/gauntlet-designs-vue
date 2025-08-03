@@ -32,19 +32,34 @@ This project serves as a professional closure page that:
 ## Project Structure
 
 ```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── AppHeader.vue         # Navigation and branding
-│   │   └── AppFooter.vue         # Footer with copyright
-│   ├── MainContent.vue           # Hero section and main content
-│   └── FloatingThemeToggle.vue   # Theme switcher button
-├── composables/
-│   └── useTheme.js               # Theme management composable
-├── theme.css                     # CSS custom properties for theming
-├── index.css                     # Component styles with Tailwind
-├── main.js                       # Application entry point
-└── App.vue                       # Root component with layout
+gauntlet-designs-vue/
+├── public/
+│   ├── .well-known/              # Well-known URIs for web standards
+│   ├── favicon.svg               # Site favicon
+│   ├── manifest.json             # Web app manifest
+│   ├── robots.txt                # Search engine crawler instructions
+│   └── sitemap.xml               # Site map for SEO
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── AppHeader.vue     # Navigation and branding
+│   │   │   └── AppFooter.vue     # Footer with copyright
+│   │   ├── FloatingThemeToggle.vue # Theme switcher button
+│   │   └── MainContent.vue       # Hero section and main content
+│   ├── composables/
+│   │   └── useTheme.js           # Theme management composable
+│   ├── App.vue                   # Root component with layout
+│   ├── index.css                 # Component styles with Tailwind
+│   ├── main.js                   # Application entry point
+│   └── theme.css                 # CSS custom properties for theming
+├── deploy.sh                     # Deployment script
+├── index.html                    # Main HTML template
+├── jsconfig.json                 # JavaScript configuration
+├── package.json                  # Project dependencies and scripts
+├── postcss.config.js             # PostCSS configuration
+├── tailwind.config.js            # Tailwind CSS configuration
+├── vercel.json                   # Vercel deployment configuration
+└── vite.config.js                # Vite build tool configuration
 ```
 
 ## Development
