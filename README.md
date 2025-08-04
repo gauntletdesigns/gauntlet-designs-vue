@@ -84,6 +84,51 @@ npm run build
 npm run preview
 ```
 
+## Deployment
+
+⚠️ **Important**: This repository syncs to the production repository for Vercel deployment.
+
+### Development vs Production Repositories
+
+- **Development repo**: `aftongauntlett/gauntlet-designs-vue` (this repo)
+- **Production repo**: `gauntletdesigns/gauntlet-designs-vue` (Vercel watches this)
+
+### Deployment Methods
+
+#### Option 1: Manual Deployment (Recommended)
+```bash
+# Deploy current main branch to production
+npm run deploy
+
+# Check deployment status
+npm run deploy:check
+```
+
+#### Option 2: Using the Script Directly
+```bash
+# Make sure you're on main branch with committed changes
+./deploy-production.sh
+```
+
+#### Option 3: Automatic via GitHub Actions
+- Pushes to `main` branch automatically sync to production repo
+- Requires `PRODUCTION_REPO_TOKEN` secret in GitHub settings
+
+### Important Notes
+
+1. **Only deploy from main branch** - The script prevents accidental deployments from feature branches
+2. **Commit changes first** - Uncommitted changes will prevent deployment
+3. **Production updates** - Vercel only deploys when the `gauntletdesigns` org repo is updated
+4. **Branch merges** - When PRs are merged to main, run `npm run deploy` to update production
+
+### Vercel Configuration
+
+The site deploys automatically to Vercel when the production repository is updated:
+- **Build command**: `npm run build`
+- **Output directory**: `dist`
+- **Framework**: Vite
+- **Live URL**: https://gauntletdesigns.com
+
 ## License
 
 MIT License - Feel free to explore, learn from, and adapt the code for educational purposes.

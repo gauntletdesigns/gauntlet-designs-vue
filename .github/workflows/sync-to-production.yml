@@ -1,0 +1,30 @@
+name: Sync to Production Repo
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Get full history
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Push to production repo
+      env:
+        PRODUCTION_REPO_TOKEN: ${{ secrets.PRODUCTION_REPO_TOKEN }}
+      run: |
+        # Configure git
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # Add production repo as remote
+        git remote add production https://$PRODUCTION_REPO_TOKEN@github.com/gauntletdesigns/gauntlet-designs-vue.git
+        
+        # Push to production repo main branch
+        git push production main --force
