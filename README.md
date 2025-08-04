@@ -1,7 +1,10 @@
 # Gauntlet Designs - Farewell Website
 
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/gauntletdesigns/gauntlet-designs-vue)](https://github.com/gauntletdesigns/gauntlet-designs-vue/commits)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/gauntletdesigns/gauntlet-designs-vue)
+[![Deploy Status](https://img.shields.io/badge/deploy-automated-success)](https://github.com/aftongauntlett/gauntlet-designs-vue/actions)
+[![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/aftongauntlett/gauntlet-designs-vue/sync-to-production.yml?branch=main&label=CI%2FCD&logo=github-actions)](https://github.com/aftongauntlett/gauntlet-designs-vue/actions)
+[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)](https://gauntletdesigns.com)
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/aftongauntlett/gauntlet-designs-vue?logo=git)](https://github.com/aftongauntlett/gauntlet-designs-vue/commits)
+[![Live Site](https://img.shields.io/badge/live%20site-gauntletdesigns.com-blue?logo=web)](https://gauntletdesigns.com)
 
 A clean, modern, accessible farewell website built with Vue 3, Vite, and Tailwind CSS to serve as a graceful closure for the Gauntlet Designs business.
 
@@ -96,6 +99,7 @@ npm run preview
 ### Deployment Methods
 
 #### Option 1: Manual Deployment (Recommended)
+
 ```bash
 # Deploy current main branch to production
 npm run deploy
@@ -105,12 +109,14 @@ npm run deploy:check
 ```
 
 #### Option 2: Using the Script Directly
+
 ```bash
 # Make sure you're on main branch with committed changes
 ./deploy-production.sh
 ```
 
 #### Option 3: Automatic via GitHub Actions
+
 - Pushes to `main` branch automatically sync to production repo
 - Requires `PRODUCTION_REPO_TOKEN` secret in GitHub settings
 
@@ -124,6 +130,7 @@ npm run deploy:check
 ### Vercel Configuration
 
 The site deploys automatically to Vercel when the production repository is updated:
+
 - **Build command**: `npm run build`
 - **Output directory**: `dist`
 - **Framework**: Vite
