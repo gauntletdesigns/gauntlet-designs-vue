@@ -7,13 +7,9 @@
       <div class="header-content">
         <!-- Logo/Brand -->
         <div class="flex items-center">
-          <a
-            href="https://gauntletdesigns.com/"
-            class="logo-text"
-            aria-label="Gauntlet Designs Home"
-          >
+          <span class="logo-text cursor-default" aria-label="Gauntlet Designs">
             Gauntlet Designs
-          </a>
+          </span>
         </div>
 
         <!-- Navigation -->

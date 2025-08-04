@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,vue}",
     "./src/*.{js,ts,jsx,tsx,vue}",
   ],
+  darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     extend: {
       fontFamily: {
