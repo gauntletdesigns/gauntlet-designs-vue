@@ -1,7 +1,7 @@
 # Gauntlet Designs - Farewell Website
 
-[![Deploy Status](https://img.shields.io/badge/deploy-automated-success)](https://github.com/aftongauntlett/gauntlet-designs-vue/actions)
-[![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/aftongauntlett/gauntlet-designs-vue/sync-to-production.yml?branch=main&label=CI%2FCD&logo=github-actions)](https://github.com/aftongauntlett/gauntlet-designs-vue/actions)
+[![Deploy Status](https://img.shields.io/badge/deploy-manual-blue)](https://github.com/aftongauntlett/gauntlet-designs-vue)
+[![CI/CD Pipeline](https://img.shields.io/badge/pipeline-ready-success?logo=github-actions)](https://github.com/aftongauntlett/gauntlet-designs-vue/actions)
 [![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)](https://gauntletdesigns.com)
 [![Commit Activity](https://img.shields.io/github/commit-activity/m/aftongauntlett/gauntlet-designs-vue?logo=git)](https://github.com/aftongauntlett/gauntlet-designs-vue/commits)
 [![Live Site](https://img.shields.io/badge/live%20site-gauntletdesigns.com-blue?logo=web)](https://gauntletdesigns.com)
@@ -115,10 +115,11 @@ npm run deploy:check
 ./deploy-production.sh
 ```
 
-#### Option 3: Automatic via GitHub Actions
+#### Option 3: Automatic via GitHub Actions (Optional)
 
-- Pushes to `main` branch automatically sync to production repo
-- Requires `PRODUCTION_REPO_TOKEN` secret in GitHub settings
+- **Setup required**: Add `PRODUCTION_REPO_TOKEN` secret in GitHub repository settings
+- **Once configured**: Pushes to `main` branch automatically sync to production repo
+- **Current status**: Manual deployment recommended (working perfectly)
 
 ### Important Notes
 
